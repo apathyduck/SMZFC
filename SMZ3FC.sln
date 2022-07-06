@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMZ3FC", "SMZ3FC\SMZ3FC.csproj", "{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpoilerLogSplitter", "SpoilerLogSplitter\SpoilerLogSplitter.csproj", "{91DA039E-B1AC-4169-857A-9535EB738D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DA039E-B1AC-4169-857A-9535EB738D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DA039E-B1AC-4169-857A-9535EB738D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DA039E-B1AC-4169-857A-9535EB738D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DA039E-B1AC-4169-857A-9535EB738D43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD95B4E4-DEAE-4038-A451-5241245CD2E0}
+	EndGlobalSection
+EndGlobal

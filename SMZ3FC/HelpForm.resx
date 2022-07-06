@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tbAreaGuide.Text" xml:space="preserve">
+    <value>All Locations Should remain hidden until you enter the respective area. 
+The +/- buttons will not work while a value is hidden to prevent misclicks
+The checkbox in each section will update what is shown on the Stream Viewer window, 
+if you want to dispaly this on stream.
+
+The Areas are grouped as follows (subject to change through testing/feedback)
+
+For ALTTP:
+Light World is everything not on Death Mountain. 
+Cave 45, Graveyard Ledge, Checkerboard Cave, and Bombos Tablet are Light World
+
+Death Mountain Starts when you enter Old Man Cave and then the rest of DM
+
+Dark World is everything not on Dark Death Mountain
+You can scout the Dark Death Mountain count by using the portal on DM below Hera
+Smith and Purple Chest are Dark World
+The Mire Area is Dark World (just the 2 checks in shed)
+
+Escape includes the 2 Old Man Checks
+
+The Dungeons should be obvious (you can scout SP without mirror and reveal its items)
+
+SM should Follow the SM FC closely but has larger areas:
+Crateria Includes Crateria up to the far moat door (moat missles is in Crat)
+Crateria ALSO includes Blue Brin
+
+Brinstar is Green + Red + Pink + Kraid
+
+Wrecked Ship is all of Wrecked Ship proper + Outside Crateria
+You can scout wreck ship by going across the moat to West Ocean. (this is earlier than you can see if Phantoon is a pendant/crystal)
+If for some headass reason you go through Forgotten Highway the offical Maridia/WS split is on the elevator
+
+Upper Norfair is all of UN + Croc
+You must ride the elevator down to Norfair to Scout Norfair (just going to Kraid doesnt count)
+Lower Norfiar does not begin until you ride the elevator to LN so you cant scout it just by doing lava dive.
+
+Maridia is all of Maridia
+You must actually break the tube and enter Maridia to scout it. Running through the tube does not count.
+
+Lower Norfair is all of Lower Norfair. 
+Upper Norfair begins again when you enter back into Single Chamber.</value>
+  </data>
+  <data name="tbHowTo.Text" xml:space="preserve">
+    <value>All Locations Should remain hidden until you enter the respective area. 
+The +/- buttons will not work while a value is hidden to prevent misclicks
+The checkbox in each section will update what is shown on the Stream Viewer window, 
+if you want to dispaly this on stream.
+The number after the | on each location is the total amount of individuals locations in that area
+
+Any XML file added to the same Directory will be attempted to be parsed.
+File-&gt;Select Groups will allow you to pick what sorting algorithm and what item list to include</value>
+  </data>
+</root>

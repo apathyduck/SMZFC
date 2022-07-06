@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6E44744-30B7-4F96-8CB9-D7BBDA76CB2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SMZ3FC</RootNamespace>
+    <AssemblyName>SMZ3FC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaEditorLocationBuilderLocation.cs" />
+    <Compile Include="AreaEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaEditor.Designer.cs">
+      <DependentUpon>AreaEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaEditorLocationBuilder.cs" />
+    <Compile Include="EditorFileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorFileSelector.Designer.cs">
+      <DependentUpon>EditorFileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaEditorXMLBuilder.cs" />
+    <Compile Include="AreaGroupings.cs" />
+    <Compile Include="AreaItemManager.cs" />
+    <Compile Include="ConfigurableProperty.cs" />
+    <Compile Include="CollatedLocationData.cs" />
+    <Compile Include="HelpTextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpTextEditor.Designer.cs">
+      <DependentUpon>HelpTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemEditor.Designer.cs">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEditorItemBuilder.cs" />
+    <Compile Include="ItemEditorItemBuilderItem.cs" />
+    <Compile Include="ItemEditorXMLBuilder.cs" />
+    <Compile Include="LocationAndItemKeys.cs" />
+    <Compile Include="LocationInfo.cs" />
+    <Compile Include="ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupSelector.Designer.cs">
+      <DependentUpon>GroupSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemCountViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemCountViewer.Designer.cs">
+      <DependentUpon>ItemCountViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationCollator.cs" />
+    <Compile Include="FCXMLParser.cs" />
+    <Compile Include="MajorItemsList.cs" />
+    <Compile Include="ShiftedSubLocation.cs" />
+    <Compile Include="SMZ3FCSettings.cs" />
+    <Compile Include="StreamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StreamView.Designer.cs">
+      <DependentUpon>StreamView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubLocationData.cs" />
+    <Compile Include="LocationKeys.cs" />
+    <Compile Include="LogParser.cs" />
+    <Compile Include="MajorKeys.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LocationDisp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LocationDisp.Designer.cs">
+      <DependentUpon>LocationDisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubLocViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubLocViewer.Designer.cs">
+      <DependentUpon>SubLocViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XMLPreviewWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XMLPreviewWindow.Designer.cs">
+      <DependentUpon>XMLPreviewWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AreaEditor.resx">
+      <DependentUpon>AreaEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorFileSelector.resx">
+      <DependentUpon>EditorFileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpTextEditor.resx">
+      <DependentUpon>HelpTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEditor.resx">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupSelector.resx">
+      <DependentUpon>GroupSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemCountViewer.resx">
+      <DependentUpon>ItemCountViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LocationDisp.resx">
+      <DependentUpon>LocationDisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StreamView.resx">
+      <DependentUpon>StreamView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubLocViewer.resx">
+      <DependentUpon>SubLocViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XMLPreviewWindow.resx">
+      <DependentUpon>XMLPreviewWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultLocations.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DefaultItems.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DummyLocs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MajorProgItems.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Majors name="MajorProg">
+  <Help>
+    idk its less
+  </Help>
+  <!--SM Items-->
+  <Item>Morphing Ball</Item>
+  <Item>Morph Bombs</Item>
+  <Item>Spring Ball</Item>
+  <Item>Charge Beam</Item>
+  <Item>Ice Beam</Item>
+
+
+
+  <Item>Varia Suit</Item>
+  <Item>Gravity Suit</Item>
+
+  <Item>Space Jump</Item>
+  <Item>Speed Booster</Item>
+  <Item>Screw Attack</Item>
+
+
+  <Item>Bow</Item>
+
+  <!--ALTTP Y Items-->
+
+  <Item>Hookshot</Item>
+
+  <Item>Fire Rod</Item>
+  <Item>Ice Rod</Item>
+  <Item>Bombos</Item>
+  <Item>Ether</Item>
+  <Item>Quake</Item>
+  <Item>Lamp</Item>
+  <Item>Hammer</Item>
+
+
+  <Item>Cane of Somaria</Item>
+
+
+  <Item>Magic Mirror</Item>
+  <!--ALTTP A Items-->
+  <Item>Pegasus Boots</Item>
+  <Item>Progressive Glove</Item>
+  <Item>Zora's Flippers</Item>
+  <Item>Moon Pearl</Item>
+  <!--ALTTP Other Items-->
+
+</Majors>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Areas name="Dummy">
+  
+  <Help>
+  Its 2 big areas, Lole
+  </Help>
+ 
+  <Area name="All SM" tab="Poopytown">
+    <Loc>Crateria West</Loc>
+    <Loc>Crateria Central</Loc>
+    <Loc>Brinstar Blue</Loc>
+    <Loc>Brinstar Green</Loc>
+    <Loc>Brinstar Pink</Loc>
+    <Loc>Brinstar Red</Loc>
+    <Loc>Brinstar Kraid</Loc>
+    <Loc>Crateria East</Loc>
+    <Loc>Wrecked Ship</Loc>
+    <Loc>Maridia Outer</Loc>
+    <Loc>Maridia Inner</Loc>
+    <Loc>Norfair Upper West</Loc>
+    <Loc>Norfair Upper East</Loc>
+    <Loc>Norfair Upper Crocomire</Loc>
+    <Loc>Norfair Lower West</Loc>
+    <Loc>Norfair Lower East</Loc>
+  </Area>
+  <Area name="All  LW ALTTP" tab="Fartsburg">
+    <Loc>Light World North West</Loc>
+    <Loc>Light World North East</Loc>
+    <Loc>Light World South</Loc>
+    <Loc>Hyrule Castle</Loc>
+    <Loc>Light World Death Mountain West</Loc>
+    <Loc>Light World Death Mountain East</Loc>
+    <Loc>Eastern Palace</Loc>
+    <Loc>Desert Palace</Loc>
+    <Loc>Tower of Hera</Loc>
+  </Area>
+    <Area name="ALL DW ALTTP" tab ="Dark Farstburg">
+    <Loc>Dark World North West</Loc>
+    <Loc>Dark World North East</Loc>
+    <Loc>Dark World South</Loc>
+    <Loc>Dark World Mire</Loc>
+    <Loc>Dark World Death Mountain West</Loc>
+    <Loc>Dark World Death Mountain East</Loc>
+    <Loc>Palace of Darkness</Loc>
+    <Loc>Swamp Palace</Loc>
+    <Loc>Skull Woods</Loc>
+    <Loc>Thieves' Town</Loc>
+    <Loc>Ice Palace</Loc>
+    <Loc>Misery Mire</Loc>
+    <Loc>Turtle Rock</Loc>
+    <Loc>Ganon's Tower</Loc>
+  </Area>
+</Areas>

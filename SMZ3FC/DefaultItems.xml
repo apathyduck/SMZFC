@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Majors name="Default">
+  <Help>
+    All SM Majors (All Pause menu items + grapple and xray)
+    All  ALLTP Y,A Items
+    Swords, Shields, Mails and Half Magic
+    Single Arrow is not included.
+  </Help>
+  <!--SM Items-->
+  <Item>Morphing Ball</Item>
+  <Item>Morph Bombs</Item>
+  <Item>Spring Ball</Item>
+  <Item>Charge Beam</Item>
+  <Item>Ice Beam</Item>
+  <Item>Spazer</Item>
+  <Item>Wave Beam</Item>
+  <Item>Plasma Beam</Item>
+  <Item>Varia Suit</Item>
+  <Item>Gravity Suit</Item>
+  <Item>Hi-Jump Boots</Item>
+  <Item>Space Jump</Item>
+  <Item>Speed Booster</Item>
+  <Item>Screw Attack</Item>
+  <Item>Grappling Beam</Item>
+  <Item>X-Ray Scope</Item>
+  <Item>Bow</Item>
+  <Item>Silver Arrows</Item>
+  <!--ALTTP Y Items-->
+  <Item>Blue Boomerang</Item>
+  <Item>Red Boomerang</Item>
+  <Item>Hookshot</Item>
+  <Item>Magic Powder</Item>
+  <Item>Mushroom</Item>
+  <Item>Fire Rod</Item>
+  <Item>Ice Rod</Item>
+  <Item>Bombos</Item>
+  <Item>Ether</Item>
+  <Item>Quake</Item>
+  <Item>Lamp</Item>
+  <Item>Hammer</Item>
+  <Item>Flute</Item>
+  <Item>Shovel</Item>
+  <Item>Bug Catching Net</Item>
+  <Item>Book of Mudora</Item>
+  <Item>Bottle</Item>
+  <Item>Cane of Somaria</Item>
+  <Item>Cane of Byrna</Item>
+  <Item>Magic Cape</Item>
+  <Item>Magic Mirror</Item>
+  <!--ALTTP A Items-->
+  <Item>Pegasus Boots</Item>
+  <Item>Progressive Glove</Item>
+  <Item>Zora's Flippers</Item>
+  <Item>Moon Pearl</Item>
+  <!--ALTTP Other Items-->
+  <Item>Half Magic</Item>
+  <Item>Progressive Sword</Item>
+  <Item>Progressive Shield</Item>
+  <Item>Progressive Mail</Item>
+</Majors>

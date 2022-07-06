@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Areas name="Default">
+  <Help>
+    For ALTTP:
+    Light World is everything not on Death Mountain.
+    Cave 45, Graveyard Ledge, Checkerboard Cave, and Bombos Tablet are Light World
+
+    Death Mountain Starts when you enter Old Man Cave and then the rest of DM
+    Death Mounttain includes Mimic Cave
+
+    Dark World is everything not on Dark Death Mountain
+    You can scout the Dark Death Mountain count by using the portal on DM below Hera
+    Smith and Purple Chest are Dark World
+    The Mire Area is Dark World (just the 2 checks in shed)
+
+    Escape includes the 2 Old Man Checks
+
+    The Dungeons should be obvious (you can scout SP without mirror and reveal its items)
+
+    SM should Follow the SM FC closely but has larger areas:
+    Crateria Includes Crateria up to the far moat door (moat missles is in Crat)
+    Crateria ALSO includes Blue Brin
+
+    Brinstar is Green + Red + Pink + Kraid
+
+    Wrecked Ship is all of Wrecked Ship proper + Outside Crateria
+    You can scout wreck ship by going across the moat to West Ocean. (this is earlier than you can see if Phantoon is a pendant/crystal)
+    If for some headass reason you go through Forgotten Highway the offical Maridia/WS split is on the elevator
+
+    Upper Norfair is all of UN + Croc
+    You must ride the elevator down to Norfair to Scout Norfair (just going to Kraid doesnt count)
+    Lower Norfiar does not begin until you ride the elevator to LN so you cant scout it just by doing lava dive.
+
+    Maridia is all of Maridia
+    You must actually break the tube and enter Maridia to scout it. Running through the tube does not count.
+
+    Lower Norfair is all of Lower Norfair.
+    Upper Norfair begins again when you enter back into Single Chamber.
+  </Help>
+  <Area name="Crateria" tab="SM">
+    <Loc>Crateria West</Loc>
+    <Loc>Crateria Central</Loc>
+    <Loc>Brinstar Blue</Loc>
+    <SubLoc>Missile (Crateria moat)</SubLoc>
+  </Area>
+  <Area name="Brinstar" tab="SM">
+    <Loc>Brinstar Green</Loc>
+    <Loc>Brinstar Pink</Loc>
+    <Loc>Brinstar Red</Loc>
+    <Loc>Brinstar Kraid</Loc>
+  </Area>
+  <Area name="Wrecked Ship" tab="SM">
+    <Loc>Crateria East</Loc>
+    <Loc>Wrecked Ship</Loc> 
+  </Area>
+  <Area name="Maridia" tab="SM">
+    <Loc>Maridia Outer</Loc>
+    <Loc>Maridia Inner</Loc>
+  </Area>
+  <Area name="Upper Norfair" tab="SM">
+    <Loc>Norfair Upper West</Loc>
+    <Loc>Norfair Upper East</Loc>
+    <Loc>Norfair Upper Crocomire</Loc>
+  </Area>
+  <Area name="Lower Norfair" tab="SM">
+    <Loc>Norfair Lower West</Loc>
+    <Loc>Norfair Lower East</Loc>
+  </Area>
+  <Area name="Light World" tab="ALTTP">
+    <Loc>Light World North West</Loc>
+    <Loc>Light World North East</Loc>
+    <Loc>Light World South</Loc>
+  </Area>
+  <Area name="Hyrule Castle" tab="ALTTP">
+    <Loc>Hyrule Castle</Loc> 
+  </Area>
+  <Area name="Death Mountain" tab="ALTTP">
+    <Loc>Light World Death Mountain West</Loc>
+    <Loc>Light World Death Mountain East</Loc>
+  </Area>
+  <Area name="Eastern Palace" tab="ALTTP">
+    <Loc>Eastern Palace</Loc>
+  </Area>
+  <Area name="Desert Palcae" tab="ALTTP">
+    <Loc>Desert Palace</Loc>
+  </Area>
+  <Area name="Tower of Hera" tab="ALTTP">
+    <Loc>Tower of Hera</Loc>
+  </Area>
+  <Area name="Dark World" tab="ALTTP">
+    <Loc>Dark World North West</Loc>
+    <Loc>Dark World North East</Loc>
+    <Loc>Dark World South</Loc>
+    <Loc>Dark World Mire</Loc>
+  </Area>
+  <Area name="Dark Death Mountain" tab="ALTTP">
+    <Loc>Dark World Death Mountain West</Loc>
+    <Loc>Dark World Death Mountain East</Loc>
+  </Area>
+  <Area name="Palace of Darkness" tab="ALTTP">
+    <Loc>Palace of Darkness</Loc>
+  </Area>
+  <Area name="Swamp Palace" tab="ALTTP">
+    <Loc>Swamp Palace</Loc>
+  </Area>
+  <Area name="Skull Woods" tab="ALTTP">
+    <Loc>Skull Woods</Loc>
+  </Area>
+  <Area name="Thieves' Town" tab="ALTTP">
+    <Loc>Thieves' Town</Loc>
+  </Area>
+  <Area name="Ice Palace" tab="ALTTP">
+    <Loc>Ice Palace</Loc>
+  </Area>
+  <Area name="Misery Mire" tab="ALTTP">
+    <Loc>Misery Mire</Loc>
+  </Area>
+  <Area name="Turtle Rock" tab="ALTTP">
+    <Loc>Turtle Rock</Loc>
+  </Area>
+  <Area name="Ganon's Tower" tab="ALTTP">
+    <Loc>Ganon's Tower</Loc>
+  </Area>
+</Areas>
