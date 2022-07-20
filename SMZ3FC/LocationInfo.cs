@@ -3,19 +3,53 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace SMZ3FC
 {
     public class LocationInfo
     {
 
-        public string SpoilerSubLoc { get; set; }
-        public string SpoilerLine { get; set; }
-        public string SpoilerItem { get; set; }
-        public string SpoilerLocationHeader { get; set; }
+        public string Name
+        {
+            get
+            {
+                if (UseFriendly)
+                {
+                    return FriendlyName;
+                }
+                return SpoilerLocationName;
+            }
+        }
+
+        [JsonProperty("areaname")]
+        public string AreaName { get; set; }
+        [JsonProperty("friendlyname")]
+        public string FriendlyName { get; set; }
+        [JsonProperty("spoilername")]
+        public string SpoilerLocationName { get; set; }
+
         public bool IsMajor { get; set; }
 
+        [JsonProperty("use")]
+        public bool UseFriendly
 
+        { 
+            get 
+            {
+                return use && !string.IsNullOrEmpty(FriendlyName);
+            }              
+            set 
+            {
+                use = value;
+            } 
+        }
+
+        private bool use;
+
+        public override string ToString()
+        {
+            return Name;
+        }
 
     }
 }

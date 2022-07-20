@@ -14,7 +14,7 @@ namespace SMZ3FC
         private const string kName = "name";
         private const string kHelp = "Help";
 
-        public static XDocument GenerateXML(string title, ListBox lb, string helptext)
+        public static SMZ3XMLFileInfo GenerateXML(string title, ListBox lb, string helptext, SMZ3XMLFileInfo fi)
         {
 
             XDocument doc = new XDocument();
@@ -32,7 +32,12 @@ namespace SMZ3FC
                 
             }
 
-            return doc;
+            fi.Name = title;
+            fi.Path = fi.Info.FullName;
+            fi.Contents = doc.ToString();
+            fi.FileType = SMZ3XMLFileType.Items;
+
+            return fi;
 
 
         }

@@ -15,24 +15,26 @@ namespace SMZ3FC
 
 
 
-    public partial class AreaEditor : Form
+    public partial class WorldEditor : Form
     {
 
         
         const string kLoc = "Locations";
         const string kSubLoc = "Sub Locations";
-        AreaGroupings myArea;
-        FileInfo myXMLFileInfo;
+        
+        WorldDefinition curWorld;
+        SMZ3XMLFileInfo myXMLFileInfo;
         List<string> currentAreaKeys;
 
         string myHelpText = string.Empty;
         string editFromTitle = string.Empty;
+        SMZ3FCManager manager;
 
-        public AreaEditor(string grouptitle, List<string> cak)
+        public WorldEditor(SMZ3FCManager ai, string grouptitle, List<string> cak)
         {
             InitializeComponent();
 
-
+            manager = ai;
             currentAreaKeys = cak;
 
             lblFeedback.Text = string.Empty;
@@ -61,35 +63,126 @@ namespace SMZ3FC
             tvArea.DragEnter += TvArea_DragEnter;
             tvArea.DragOver += TvArea_DragOver;
             tvArea.DragDrop += TvArea_DragDrop;
-
-
-
-
-
         }
 
-        public void SetAreaGroup(AreaGroupings ag)
+        //public void SetAreaGroup(AreaGroupings ag)
+        //{
+            //myArea = ag;
+            //myHelpText = ag.HelpText;
+
+            //foreach (CollatedLocationData cld in myArea.Locations)
+            //{                
+            //    if (!tvArea.Nodes[0].Nodes.ContainsKey(cld.Tab))
+            //    {
+            //        TreeNode tntab = new TreeNode();
+            //        tntab.Text = cld.Tab;
+            //        tntab.Name = cld.Tab;
+            //        tntab.Tag = new TabTag();
+            //        tvArea.Nodes[0].Nodes.Add(tntab);
+            //    }
+
+            //    TreeNode tab = tvArea.Nodes[0].Nodes[cld.Tab];
+            //    AreaEditorLocationBuilder alb = new AreaEditorLocationBuilder();
+            //    alb.Name = cld.Name;
+            //    alb.Tab = cld.Tab;
+
+            //    TreeNode tna = new TreeNode();
+            //    tna.Tag = alb;
+            //    tna.Name = alb.Name;
+            //    tna.Text = alb.Name;
+
+            //    TreeNode tnl = new TreeNode();
+            //    tnl.Name = kLoc;
+            //    tnl.Text = kLoc;
+            //    tnl.Tag = new LocationTag();
+
+            //    TreeNode tnsl = new TreeNode();
+            //    tnsl.Name = kSubLoc;
+            //    tnsl.Text = kSubLoc;
+            //    tnsl.Tag = new SubLocationTag();
+
+            //    tab.Nodes.Add(tna);
+            //    tna.Nodes.Add(tnl);
+            //    tna.Nodes.Add(tnsl);
+
+
+            //    foreach (string sld in cld.SubLocations)
+            //    {
+            //        WorldEditorAreaBuilderItem foundloc = null;
+            //        foreach (WorldEditorAreaBuilderItem albl in lbSpoilerLocs.Items)
+            //        {
+            //            if(string.Equals(albl.Name, sld))
+            //            {
+            //                foundloc = albl;
+            //                break;
+            //            }
+            //        }
+            //        TreeNode locnode = new TreeNode();
+            //        locnode.Name = foundloc.Name;
+            //        locnode.Text = foundloc.Name;
+            //        locnode.Tag = foundloc;
+            //        tnl.Nodes.Add(locnode);
+
+            //        lbSpoilerLocs.Items.Remove(foundloc);
+            //        alb.Locations.Add(foundloc);
+
+            //    }
+
+            //    foreach(string ssld in cld.ShiftLocsIn)
+            //    {
+            //        WorldEditorAreaBuilderItem foundloc = null;
+            //        foreach (WorldEditorAreaBuilderItem albl in lbSpoilerSubLocs.Items)
+            //        {
+            //            if (string.Equals(albl.Name, ssld))
+            //            {
+            //                foundloc = albl;
+            //                break;
+            //            }
+            //        }
+            //        TreeNode slocnode = new TreeNode();
+            //        slocnode.Name = foundloc.Name;
+            //        slocnode.Text = foundloc.Name;
+            //        slocnode.Tag = foundloc;
+            //        tnsl.Nodes.Add(slocnode);
+
+            //        lbSpoilerSubLocs.Items.Remove(foundloc);
+            //        alb.SubLocations.Add(foundloc);
+            //    }
+
+            //    tab.Expand();
+            //    tna.Expand();
+            //    tnl.Expand();
+            //    tnsl.Expand();
+            //}
+
+
+            //tvArea.Nodes[0].Expand();
+            
+
+            
+
+        //}
+
+        public void SetWorld(WorldDefinition wd)
         {
-            myArea = ag;
-            myHelpText = ag.HelpText;
+            curWorld = wd; 
+            myHelpText = curWorld.HelpText;
 
-            foreach (CollatedLocationData cld in myArea.Locations)
+            foreach (AreaDefinition ad in curWorld.Areas.Values)
             {
-
-                
-                if (!tvArea.Nodes[0].Nodes.ContainsKey(cld.Tab))
+                if (!tvArea.Nodes[0].Nodes.ContainsKey(ad.Tab))
                 {
                     TreeNode tntab = new TreeNode();
-                    tntab.Text = cld.Tab;
-                    tntab.Name = cld.Tab;
+                    tntab.Text = ad.Tab;
+                    tntab.Name = ad.Tab;
                     tntab.Tag = new TabTag();
                     tvArea.Nodes[0].Nodes.Add(tntab);
                 }
 
-                TreeNode tab = tvArea.Nodes[0].Nodes[cld.Tab];
-                AreaEditorLocationBuilder alb = new AreaEditorLocationBuilder();
-                alb.Name = cld.Name;
-                alb.Tab = cld.Tab;
+                TreeNode tab = tvArea.Nodes[0].Nodes[ad.Tab];
+                WorldEditorAreaBuilder alb = new WorldEditorAreaBuilder();
+                alb.Name = ad.Name;
+                alb.Tab = ad.Tab;
 
                 TreeNode tna = new TreeNode();
                 tna.Tag = alb;
@@ -111,14 +204,14 @@ namespace SMZ3FC
                 tna.Nodes.Add(tnsl);
 
 
-                foreach (string sld in cld.SubLocations)
+                foreach (AreaInfo ai in ad.SpoilerAreas.Values)
                 {
-                    AreaEditorLocationBuilderLocation foundloc = null;
-                    foreach (AreaEditorLocationBuilderLocation albl in lbSpoilerLocs.Items)
+                    WorldEditorAreaBuilderItem foundloc = null;
+                    foreach (WorldEditorAreaBuilderItem wbi in lbSpoilerLocs.Items)
                     {
-                        if(string.Equals(albl.Name, sld))
+                        if (string.Equals(wbi.Name, ai.Name))
                         {
-                            foundloc = albl;
+                            foundloc = wbi;
                             break;
                         }
                     }
@@ -133,14 +226,14 @@ namespace SMZ3FC
 
                 }
 
-                foreach(string ssld in cld.ShiftLocsIn)
+                foreach (LocationInfo li in ad.SubLocations.Values)
                 {
-                    AreaEditorLocationBuilderLocation foundloc = null;
-                    foreach (AreaEditorLocationBuilderLocation albl in lbSpoilerSubLocs.Items)
+                    WorldEditorAreaBuilderItem foundloc = null;
+                    foreach (WorldEditorAreaBuilderItem wbi in lbSpoilerSubLocs.Items)
                     {
-                        if (string.Equals(albl.Name, ssld))
+                        if (string.Equals(wbi.Name, li))
                         {
-                            foundloc = albl;
+                            foundloc = wbi;
                             break;
                         }
                     }
@@ -162,13 +255,11 @@ namespace SMZ3FC
 
 
             tvArea.Nodes[0].Expand();
-            
-
-            
 
         }
 
-        public void SetXMLFile(FileInfo fi)
+
+        public void SetXMLFile(SMZ3XMLFileInfo fi)
         {
             myXMLFileInfo = fi;
         }
@@ -197,17 +288,17 @@ namespace SMZ3FC
                 // location and add it to the node at the drop location.  
                 if (e.Effect == DragDropEffects.Move)
                 {
-                    if (draggedNode.Tag is AreaEditorLocationBuilderLocation)
+                    if (draggedNode.Tag is WorldEditorAreaBuilderItem)
                     {
 
-                        TreeNode oldAreaNode = FindParentWithTag(draggedNode, typeof(AreaEditorLocationBuilder));
-                        var oldarea = (AreaEditorLocationBuilder)oldAreaNode.Tag;
+                        TreeNode oldAreaNode = FindParentWithTag(draggedNode, typeof(WorldEditorAreaBuilder));
+                        var oldarea = (WorldEditorAreaBuilder)oldAreaNode.Tag;
                            
-                        var loc = (AreaEditorLocationBuilderLocation)draggedNode.Tag;
+                        var loc = (WorldEditorAreaBuilderItem)draggedNode.Tag;
 
-                        TreeNode newAreaNode = FindParentWithTag(targetNode, typeof(AreaEditorLocationBuilder));
-                        var newarea = (AreaEditorLocationBuilder)newAreaNode.Tag;
-                        if (loc.TypeOfLocation == LocationType.Location)
+                        TreeNode newAreaNode = FindParentWithTag(targetNode, typeof(WorldEditorAreaBuilder));
+                        var newarea = (WorldEditorAreaBuilder)newAreaNode.Tag;
+                        if (loc.TypeOfLocation == LocationType.Area)
                         {
                             oldarea.Locations.Remove(loc);
                             draggedNode.Remove();
@@ -216,7 +307,7 @@ namespace SMZ3FC
                             newarea.Locations.Add(loc);
                             
                         }
-                        if (loc.TypeOfLocation == LocationType.SubLocation)
+                        if (loc.TypeOfLocation == LocationType.Location)
                         {
                             oldarea.SubLocations.Remove(loc);
                             draggedNode.Remove();
@@ -226,9 +317,9 @@ namespace SMZ3FC
                         }
                     }
 
-                    if (draggedNode.Tag is AreaEditorLocationBuilder)
+                    if (draggedNode.Tag is WorldEditorAreaBuilder)
                     {
-                        var area = (AreaEditorLocationBuilder)draggedNode.Tag;
+                        var area = (WorldEditorAreaBuilder)draggedNode.Tag;
                         area.Tab = targetNode.Name;
                         draggedNode.Remove();
                         targetNode.Nodes.Add(draggedNode);
@@ -263,9 +354,9 @@ namespace SMZ3FC
             }
 
 
-            if (draggedNode.Tag is AreaEditorLocationBuilderLocation)
+            if (draggedNode.Tag is WorldEditorAreaBuilderItem)
             {
-                if (overnode.Tag is LocationTag || overnode.Tag is SubLocationTag || overnode.Tag is AreaEditorLocationBuilder || overnode.Tag is AreaEditorLocationBuilderLocation)
+                if (overnode.Tag is LocationTag || overnode.Tag is SubLocationTag || overnode.Tag is WorldEditorAreaBuilder || overnode.Tag is WorldEditorAreaBuilderItem)
                 {
                     e.Effect = DragDropEffects.Move;
                     return;
@@ -273,7 +364,7 @@ namespace SMZ3FC
 
             }
 
-            if (draggedNode.Tag is AreaEditorLocationBuilder && overnode.Tag is TabTag)
+            if (draggedNode.Tag is WorldEditorAreaBuilder && overnode.Tag is TabTag)
             {
                 e.Effect = DragDropEffects.Move;
                 return;
@@ -307,7 +398,7 @@ namespace SMZ3FC
 
             lblFeedback.Text = string.Empty;
             TreeNode tn = (TreeNode)e.Item;
-            if (!(tn.Tag is AreaEditorLocationBuilder) && !(tn.Tag is AreaEditorLocationBuilderLocation))
+            if (!(tn.Tag is WorldEditorAreaBuilder) && !(tn.Tag is WorldEditorAreaBuilderItem))
             {
                 return;
             }
@@ -356,7 +447,7 @@ namespace SMZ3FC
                     }
                     tn.Remove();
                 }
-                if (tn.Tag is AreaEditorLocationBuilder)
+                if (tn.Tag is WorldEditorAreaBuilder)
                 {
                     RemoveWholeLocation(tn);
                     tn.Remove();
@@ -411,13 +502,13 @@ namespace SMZ3FC
                 foreach (TreeNode node in tn.Nodes)
                 {
 
-                    var loc = (AreaEditorLocationBuilder)node.Tag;
+                    var loc = (WorldEditorAreaBuilder)node.Tag;
                     loc.Tab = tn.Text;
                     tn.Expand();
                 }
 
             }
-            if (tn.Tag is AreaEditorLocationBuilder)
+            if (tn.Tag is WorldEditorAreaBuilder)
             {
 
 
@@ -426,7 +517,7 @@ namespace SMZ3FC
                     e.CancelEdit = true;
                     return;
                 }
-                var loc = (AreaEditorLocationBuilder)tn.Tag;
+                var loc = (WorldEditorAreaBuilder)tn.Tag;
                 loc.Name = tn.Text;
                 tn.Expand();
             }
@@ -436,7 +527,7 @@ namespace SMZ3FC
         {
             TreeNode tn = e.Node;
 
-            if (tn.Tag is TabTag || tn.Tag is AreaEditorLocationBuilder || tn == tvArea.TopNode)
+            if (tn.Tag is TabTag || tn.Tag is WorldEditorAreaBuilder || tn == tvArea.TopNode)
             {
                 tn.BeginEdit();
 
@@ -464,26 +555,25 @@ namespace SMZ3FC
             tn.BackColor = SystemColors.HotTrack;
             tn.ForeColor = SystemColors.HighlightText;
 
-
-
-
-
         }
 
         private void BuildLocations()
         {
             int i = 0;
-            foreach (string loc in LocationAndItemKeys.Locations)
+           
+
+            
+            foreach (AreaInfo ai in SpoilerLogStructure.SpoilerAreas.Values)
             {
-                AreaEditorLocationBuilderLocation albl = new AreaEditorLocationBuilderLocation(loc, i, LocationType.Location);
+                WorldEditorAreaBuilderItem albl = new WorldEditorAreaBuilderItem(ai, i);
                 i++;
                 lbSpoilerLocs.Items.Add(albl);
             }
 
             i = 0;
-            foreach (string sloc in LocationAndItemKeys.SubLocations)
+            foreach (LocationInfo li in SpoilerLogStructure.SpoilerLocations.Values)
             {
-                AreaEditorLocationBuilderLocation albl = new AreaEditorLocationBuilderLocation(sloc, i, LocationType.SubLocation);
+                WorldEditorAreaBuilderItem albl = new WorldEditorAreaBuilderItem(li, i);
                 i++;
                 lbSpoilerSubLocs.Items.Add(albl);
             }
@@ -500,28 +590,28 @@ namespace SMZ3FC
 
             TreeNode curnode = tvArea.SelectedNode;
 
-            TreeNode areaparent = FindParentWithTag(curnode, typeof(AreaEditorLocationBuilder));
+            TreeNode areaparent = FindParentWithTag(curnode, typeof(WorldEditorAreaBuilder));
 
-            if (!(areaparent?.Tag is AreaEditorLocationBuilder))
+            if (!(areaparent?.Tag is WorldEditorAreaBuilder))
             {
                 lblFeedback.Text = "You Must Select An Area Node to Add a Location!";
                 lblFeedback.ForeColor = Color.DarkRed;
                 return;
             }
 
-            AreaEditorLocationBuilder alb = (AreaEditorLocationBuilder)areaparent.Tag;
+            WorldEditorAreaBuilder alb = (WorldEditorAreaBuilder)areaparent.Tag;
 
 
-            List<AreaEditorLocationBuilderLocation> locstoremove = new List<AreaEditorLocationBuilderLocation>();
+            List<WorldEditorAreaBuilderItem> locstoremove = new List<WorldEditorAreaBuilderItem>();
             if (lbSpoilerLocs.SelectedIndex != -1)
             {
                 foreach (object locobject in lbSpoilerLocs.SelectedItems)
                 {
-                    var loc = (AreaEditorLocationBuilderLocation)locobject;
+                    var loc = (WorldEditorAreaBuilderItem)locobject;
                     locstoremove.Add(loc);
                     AddLocationNode(loc, alb, areaparent);
                 }
-                foreach (AreaEditorLocationBuilderLocation loc in locstoremove)
+                foreach (WorldEditorAreaBuilderItem loc in locstoremove)
                 {
                     int n = lbSpoilerLocs.SelectedIndex;
                     lbSpoilerLocs.Items.Remove(loc);
@@ -544,11 +634,11 @@ namespace SMZ3FC
             {
                 foreach (object locobject in lbSpoilerSubLocs.SelectedItems)
                 {
-                    var loc = (AreaEditorLocationBuilderLocation)locobject;
+                    var loc = (WorldEditorAreaBuilderItem)locobject;
                     locstoremove.Add(loc);
                     AddLocationNode(loc, alb, areaparent);
                 }
-                foreach (AreaEditorLocationBuilderLocation loc in locstoremove)
+                foreach (WorldEditorAreaBuilderItem loc in locstoremove)
                 {
                     int n = lbSpoilerSubLocs.SelectedIndex;
                     lbSpoilerSubLocs.Items.Remove(loc);
@@ -571,7 +661,7 @@ namespace SMZ3FC
 
         }
 
-        private void AddLocationNode(AreaEditorLocationBuilderLocation loc, AreaEditorLocationBuilder alb, TreeNode areaparent)
+        private void AddLocationNode(WorldEditorAreaBuilderItem loc, WorldEditorAreaBuilder alb, TreeNode areaparent)
         {
             
 
@@ -583,12 +673,12 @@ namespace SMZ3FC
 
 
             TreeNode subnode = null;
-            if (loc.TypeOfLocation == LocationType.Location)
+            if (loc.TypeOfLocation == LocationType.Area)
             {
                 alb.Locations.Add(loc);
                 subnode = areaparent.Nodes[kLoc];
             }
-            if (loc.TypeOfLocation == LocationType.SubLocation)
+            if (loc.TypeOfLocation == LocationType.Location)
             {
                 alb.SubLocations.Add(loc);
                 subnode = areaparent.Nodes[kSubLoc];
@@ -612,7 +702,7 @@ namespace SMZ3FC
         {
 
 
-            AreaEditorLocationBuilder alb = new AreaEditorLocationBuilder();
+            WorldEditorAreaBuilder alb = new WorldEditorAreaBuilder();
             alb.Name = tbSetAreaName.Text;
 
 
@@ -744,9 +834,9 @@ namespace SMZ3FC
 
             
 
-            TreeNode parnode = FindParentWithTag(curnode, typeof(AreaEditorLocationBuilder));
+            TreeNode parnode = FindParentWithTag(curnode, typeof(WorldEditorAreaBuilder));
 
-            if (!curnode?.Tag.GetType().Equals(typeof(AreaEditorLocationBuilderLocation)) ?? true)
+            if (!curnode?.Tag.GetType().Equals(typeof(WorldEditorAreaBuilderItem)) ?? true)
             {
                 lblFeedback.Text = "No Location Selected";
                 lblFeedback.ForeColor = Color.DarkRed;
@@ -756,16 +846,16 @@ namespace SMZ3FC
             parnode.Nodes.Remove(curnode);
 
 
-            AreaEditorLocationBuilder abl = (AreaEditorLocationBuilder)parnode.Tag;
-            var location = (AreaEditorLocationBuilderLocation)curnode.Tag;
-            abl.Locations.Remove((AreaEditorLocationBuilderLocation)curnode.Tag);
+            WorldEditorAreaBuilder abl = (WorldEditorAreaBuilder)parnode.Tag;
+            var location = (WorldEditorAreaBuilderItem)curnode.Tag;
+            abl.Locations.Remove((WorldEditorAreaBuilderItem)curnode.Tag);
 
             ListBox listbox = null;
-            if (location.TypeOfLocation == LocationType.Location)
+            if (location.TypeOfLocation == LocationType.Area)
             {
                 listbox = lbSpoilerLocs;
             }
-            if (location.TypeOfLocation == LocationType.SubLocation)
+            if (location.TypeOfLocation == LocationType.Location)
             {
                 listbox = lbSpoilerSubLocs;
             }
@@ -776,7 +866,7 @@ namespace SMZ3FC
 
             for (int n = 0; n < listbox.Items.Count; n++)
             {
-                int m = ((AreaEditorLocationBuilderLocation)listbox.Items[n]).Index;
+                int m = ((WorldEditorAreaBuilderItem)listbox.Items[n]).Index;
                 if (location.Index < m)
                 {
                     listbox.Items.Insert(n, location);
@@ -809,9 +899,7 @@ namespace SMZ3FC
             }
         }
 
-      
-
- 
+     
         private void btnAddArea_Click(object sender, EventArgs e)
         {
 
@@ -1004,7 +1092,6 @@ namespace SMZ3FC
            
         }
 
-
         bool CompareAndSet(ListBox lb, int n, string searchfor)
         {
             string compare = lb.Items[n].ToString().ToLower(); 
@@ -1025,20 +1112,23 @@ namespace SMZ3FC
 
         private void btnPreview_Click(object sender, EventArgs e)
         {
-            XDocument doc = AreaEditorXMLBuilder.GenerateXML(tvArea.Nodes[0], myHelpText);
-            XMLPreviewWindow pw = new XMLPreviewWindow(doc);
+            myXMLFileInfo = AreaEditorXMLBuilder.GenerateXML(tvArea.Nodes[0], myHelpText, myXMLFileInfo);
+            XMLPreviewWindow pw = new XMLPreviewWindow(myXMLFileInfo);
             if(DialogResult.OK == pw.ShowDialog())
             {
 
-                SaveXML(doc, myXMLFileInfo);
+                SaveXML(myXMLFileInfo);
                 DialogResult = DialogResult.OK;
                 this.Close();
             }
         }
 
-        private void SaveXML(XDocument doc, FileInfo fi)
+        private void SaveXML(SMZ3XMLFileInfo fi)
         {
-            doc.Save(fi.FullName);
+
+            File.WriteAllText(fi.Path, fi.Contents);
+
+           
         }
 
         private void btnEditHelp_Click(object sender, EventArgs e)

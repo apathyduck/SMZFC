@@ -1,0 +1,1898 @@
+[
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Ether Tablet",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Spectacle Rock",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Spectacle Rock Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Old Man",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Floating Island",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Spiral Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Upper - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Upper - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Far Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Middle",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Far Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Mimic Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Master Sword Pedestal",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Mushroom",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Lost Woods Hideout",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Lumberjack Tree",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Pegasus Rocks",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Graveyard Ledge",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "King's Tomb",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Top",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Middle",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Bottom",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Top",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Far Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Far Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Bottle Merchant",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Chicken House",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Sick Kid",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Tavern",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Magic Bat",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "King Zora",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Zora's Ledge",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Waterfall Fairy - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Waterfall Fairy - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Potion Shop",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Middle",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Maze Race",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Library",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Flute Spot",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "South of Grove",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Link's House",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Aginah's Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Far Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - NPC",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Far Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Desert Ledge",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Checkerboard Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Bombos Tablet",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Floodgate Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Sunken Treasure",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Lake Hylia Island",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Hobo",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Ice Rod Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sanctuary",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Middle",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Dark Cross",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Boomerang Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Zelda's Cell",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Link's Uncle",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Secret Passage",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain West",
+    "spoilername": "Spike Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Top Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Top Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Bottom Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Bottom Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Superbunny Cave - Top",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Superbunny Cave - Bottom",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Bumper Cave",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Chest Game",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "C-Shaped House",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Brewery",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Hammer Pegs",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Blacksmith",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Purple Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Catfish",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid Fairy - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid Fairy - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Digging Game",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Stumpy",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Top",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Middle Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Middle Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Bottom",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - NPC",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Mire",
+    "spoilername": "Mire Shed - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Dark World Mire",
+    "spoilername": "Mire Shed - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Castle Tower",
+    "spoilername": "Castle Tower - Foyer",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Castle Tower",
+    "spoilername": "Castle Tower - Dark Maze",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Cannonball Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Armos Knights",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Torch",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Lanmolas",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Basement Cage",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Moldorm",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Shooter Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Stalfos Basement",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - The Arena - Bridge",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - The Arena - Ledge",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Harmless Hellway",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Basement - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Basement - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Maze - Top",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Maze - Bottom",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Helmasaur King",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Entrance",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - West Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Flooded Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Flooded Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Waterfall Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Arrghus",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Pot Prison",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Pinball Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Bridge Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Mothula",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Ambush Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Attic",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Blind's Cell",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Blind",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Spike Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Iced T Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Freezor Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Kholdstare",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Main Lobby",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Bridge Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Spike Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Vitreous",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Compass Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Roller Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Roller Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Chain Chomps",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Crystaroller Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Top Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Top Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Bottom Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Bottom Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Trinexx",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Bob's Torch",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Top Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Top Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Bottom Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Bottom Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Map Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Firesnake Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Top Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Top Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Bottom Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Bottom Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Hope Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Hope Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Tile Room",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Top Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Top Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Bottom Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Bottom Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Bob's Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Mini Helmasaur Room - Left",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Mini Helmasaur Room - Right",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Pre-Moldorm Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Moldorm Chest",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "\"Energy Tank, Terminator\"",
+    "friendlyname": "Terminator Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "\"Energy Tank, Gauntlet\"",
+    "friendlyname": "Gauntlet Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "Missile (Crateria gauntlet right)",
+    "friendlyname": "Gauntlet Missile - Right",
+    "use": true
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "Missile (Crateria gauntlet left)",
+    "friendlyname": "Gauntlet Missile - Left",
+    "use": true
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Power Bomb (Crateria surface)",
+    "friendlyname": "Landing Site Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Missile (Crateria middle)",
+    "friendlyname": "230 Missle",
+    "use": true
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Missile (Crateria bottom)",
+    "friendlyname": "Old Mother Brain Missile",
+    "use": true
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Super Missile (Crateria)",
+    "friendlyname": "Crateria Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Bombs",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship bottom)",
+    "friendlyname": "West Ocean Missile",
+    "use": true
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship top)",
+    "friendlyname": "Top of the World Missile",
+    "use": true
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship middle)",
+    "friendlyname": "West Ocean Middle Missile",
+    "use": true
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (Crateria moat)",
+    "friendlyname": "Moat Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Morphing Ball",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Power Bomb (blue Brinstar)",
+    "friendlyname": "Blue Brinstar Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar middle)",
+    "friendlyname": "Beta Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "\"Energy Tank, Brinstar Ceiling\"",
+    "friendlyname": "Ceiling Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar bottom)",
+    "friendlyname": "Alpha Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar top)",
+    "friendlyname": "Billy Mays Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar behind missile)",
+    "friendlyname": "Billy Mays Hidden Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Power Bomb (green Brinstar bottom)",
+    "friendlyname": "Etecoons Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar below super missile)",
+    "friendlyname": "Early Supers Bridge Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Super Missile (green Brinstar top)",
+    "friendlyname": "Early Supers",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "\"Reserve Tank, Brinstar\"",
+    "friendlyname": "Brinstar Reserve Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar behind missile)",
+    "friendlyname": "Brinstar Reserve Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar behind reserve tank)",
+    "friendlyname": "Brinstar Reserve Hidden Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "\"Energy Tank, Etecoons\"",
+    "friendlyname": "Etecoons Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Super Missile (green Brinstar bottom)",
+    "friendlyname": "Etecoons Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Super Missile (pink Brinstar)",
+    "friendlyname": "Spore Spawn Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (pink Brinstar top)",
+    "friendlyname": "Big Pink Top Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (pink Brinstar bottom)",
+    "friendlyname": "Charge Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Charge Beam",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Power Bomb (pink Brinstar)",
+    "friendlyname": "Mission Impossible Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (green Brinstar pipe)",
+    "friendlyname": "Green Hills Zone Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "\"Energy Tank, Waterway\"",
+    "friendlyname": "Waterway Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "\"Energy Tank, Brinstar Gate\"",
+    "friendlyname": "Wave Gate Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "X-Ray Scope",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Power Bomb (red Brinstar sidehopper room)",
+    "friendlyname": "Alpha Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Power Bomb (red Brinstar spike room)",
+    "friendlyname": "Beta Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Missile (red Brinstar spike room)",
+    "friendlyname": "Alpha Power Bomb Missile",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Spazer",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "\"Energy Tank, Kraid\"",
+    "friendlyname": "Kraid Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "Varia Suit",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "Missile (Kraid)",
+    "friendlyname": "Kraid Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Wrecked Ship middle)",
+    "friendlyname": "Spooky Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Reserve Tank, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Reserve Tank",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Gravity Suit)",
+    "friendlyname": "Gravity Suit Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Wrecked Ship top)",
+    "friendlyname": "Worker Robots Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Energy Tank, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Super Missile (Wrecked Ship left)",
+    "friendlyname": "Wrecked Ship Left Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Right Super, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Right Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Gravity Suit",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Missile (green Maridia shinespark)",
+    "friendlyname": "Main Street Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Super Missile (green Maridia)",
+    "friendlyname": "Crab Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "\"Energy Tank, Mama turtle\"",
+    "friendlyname": "Mama Turtle Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Missile (green Maridia tatori)",
+    "friendlyname": "Mama Turtle Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Super Missile (yellow Maridia)",
+    "friendlyname": "Watering Hole Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (yellow Maridia super missile)",
+    "friendlyname": "Watering Hole Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (yellow Maridia false wall)",
+    "friendlyname": "Beach Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Plasma Beam",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (left Maridia sand pit room)",
+    "friendlyname": "Left Sandpit Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "\"Reserve Tank, Maridia\"",
+    "friendlyname": "Left Sandpit Reserve Tank",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (right Maridia sand pit room)",
+    "friendlyname": "Right Sandpit Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Power Bomb (right Maridia sand pit room)",
+    "friendlyname": "Right Sandpit Power Bomb ",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (pink Maridia)",
+    "friendlyname": "Aqueduct Missilie",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Super Missile (pink Maridia)",
+    "friendlyname": "Aqueduct Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Spring Ball",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (Draygon)",
+    "friendlyname": "Precious Missile",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "\"Energy Tank, Botwoon\"",
+    "friendlyname": "Botwoon Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Space Jump",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (lava room)",
+    "friendlyname": "Cathedral Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Ice Beam",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (below Ice Beam)",
+    "friendlyname": "Crumble Tower Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Hi-Jump Boots",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (Hi-Jump Boots)",
+    "friendlyname": "Hi-Jump Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Energy Tank (Hi-Jump Boots)",
+    "friendlyname": "Hi-Jump Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "\"Reserve Tank, Norfair\"",
+    "friendlyname": "Norfair Reserve Tank",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Norfair Reserve Tank)",
+    "friendlyname": "Norfair Reserve Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (bubble Norfair green door)",
+    "friendlyname": "Norfair Reserve Entrance Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (bubble Norfair)",
+    "friendlyname": "Bubble Mountain Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Speed Booster)",
+    "friendlyname": "Speed Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Speed Booster",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Wave Beam)",
+    "friendlyname": "Wave Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Wave Beam",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "\"Energy Tank, Crocomire\"",
+    "friendlyname": "Crocomire Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (above Crocomire)",
+    "friendlyname": "Crocomire Escape Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Power Bomb (Crocomire)",
+    "friendlyname": "Crocomire Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (below Crocomire)",
+    "friendlyname": "Cosine Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (Grappling Beam)",
+    "friendlyname": "Indiana Jones Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Grappling Beam",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Missile (Gold Torizo)",
+    "friendlyname": "Gold Torizo Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Super Missile (Gold Torizo)",
+    "friendlyname": "Gold Torizo Super Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Screw Attack",
+    "friendlyname": "",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Missile (Mickey Mouse room)",
+    "friendlyname": "Mickey Mouse Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Missile (lower Norfair above fire flea room)",
+    "friendlyname": "Hotarubi Special Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Power Bomb (lower Norfair above fire flea room)",
+    "friendlyname": "Jail Power Bomb",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Power Bomb (Power Bombs of shame)",
+    "friendlyname": "Power Bombs of Shame",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Missile (lower Norfair near Wave Beam)",
+    "friendlyname": "Three Musketeers Missile",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "\"Energy Tank, Ridley\"",
+    "friendlyname": "Ridley Energy Tank",
+    "use": true
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "\"Energy Tank, Firefleas\"",
+    "friendlyname": "Firefleas Energy Tank",
+    "use": true
+  }
+]

@@ -43,6 +43,8 @@ namespace SMZ3FC
             this.btnPreview = new System.Windows.Forms.Button();
             this.btnEditHelp = new System.Windows.Forms.Button();
             this.lblFeedback = new System.Windows.Forms.Label();
+            this.lblItems = new System.Windows.Forms.Label();
+            this.lblItemList = new System.Windows.Forms.Label();
             this.gbSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +105,7 @@ namespace SMZ3FC
             this.gbSearch.Controls.Add(this.tbSearch);
             this.gbSearch.Location = new System.Drawing.Point(202, 12);
             this.gbSearch.Name = "gbSearch";
-            this.gbSearch.Size = new System.Drawing.Size(217, 134);
+            this.gbSearch.Size = new System.Drawing.Size(217, 118);
             this.gbSearch.TabIndex = 7;
             this.gbSearch.TabStop = false;
             this.gbSearch.Text = "Search";
@@ -185,12 +187,32 @@ namespace SMZ3FC
             this.lblFeedback.TabIndex = 25;
             this.lblFeedback.Text = "Feedback";
             // 
+            // lblItems
+            // 
+            this.lblItems.AutoSize = true;
+            this.lblItems.Location = new System.Drawing.Point(12, 133);
+            this.lblItems.Name = "lblItems";
+            this.lblItems.Size = new System.Drawing.Size(85, 13);
+            this.lblItems.TabIndex = 26;
+            this.lblItems.Text = "Items to Include:";
+            // 
+            // lblItemList
+            // 
+            this.lblItemList.AutoSize = true;
+            this.lblItemList.Location = new System.Drawing.Point(259, 133);
+            this.lblItemList.Name = "lblItemList";
+            this.lblItemList.Size = new System.Drawing.Size(49, 13);
+            this.lblItemList.TabIndex = 27;
+            this.lblItemList.Text = "Item List:";
+            // 
             // ItemEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(440, 543);
+            this.Controls.Add(this.lblItemList);
+            this.Controls.Add(this.lblItems);
             this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.btnEditHelp);
             this.Controls.Add(this.btnPreview);
@@ -227,5 +249,7 @@ namespace SMZ3FC
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.Button btnEditHelp;
         private System.Windows.Forms.Label lblFeedback;
+        private System.Windows.Forms.Label lblItems;
+        private System.Windows.Forms.Label lblItemList;
     }
 }

@@ -15,11 +15,12 @@ namespace SMZ3FC
 
 
         SMZ3FCSettings settings;
-        public void SetLabel(CollatedLocationData loc)
+        public void SetLabel(ActiveArea loc)
         {
 
-            lblStream.Text = $"{loc.Name}: {loc.CurrentCount.ToString()}";
+            lblStream.Text = $"{loc.Name}: {loc.CurrentItems}";
             lblStream.Font = settings.StreamViewFont;
+            lblStream.ForeColor = settings.StreamViewFontColor;
             
 
         }
@@ -42,6 +43,14 @@ namespace SMZ3FC
             else
             {
                 settings.StreamViewColorKey = this.BackColor;
+            }
+            if(settings.StreamViewColorKey != null)
+            {
+                lblStream.ForeColor = settings.StreamViewFontColor;
+            }
+            else
+            {
+                settings.StreamViewFontColor = lblStream.ForeColor;
             }
             
         }

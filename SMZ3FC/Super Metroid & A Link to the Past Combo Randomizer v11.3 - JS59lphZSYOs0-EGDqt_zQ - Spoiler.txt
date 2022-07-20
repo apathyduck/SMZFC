@@ -1,0 +1,356 @@
+- Light World Death Mountain West:
+    Ether Tablet: Missile
+    Spectacle Rock: Piece of Heart
+    Spectacle Rock Cave: Blue Boomerang
+    Old Man: Super Missile
+- Light World Death Mountain East:
+    Floating Island: Missile
+    Spiral Cave: Twenty Rupees
+    Paradox Cave Upper - Left: Piece of Heart
+    Paradox Cave Upper - Right: Three Bombs
+    Paradox Cave Lower - Far Left: Power Bomb
+    Paradox Cave Lower - Left: Energy Tank
+    Paradox Cave Lower - Middle: Screw Attack
+    Paradox Cave Lower - Right: Piece of Heart
+    Paradox Cave Lower - Far Right: Heart Container
+    Mimic Cave: Reserve Tank
+- Light World North West:
+    Master Sword Pedestal: Missile
+    Mushroom: Energy Tank
+    Lost Woods Hideout: Hi-Jump Boots
+    Lumberjack Tree: Fifty Rupees
+    Pegasus Rocks: Fifty Rupees
+    Graveyard Ledge: Bottle
+    King's Tomb: Energy Tank
+    Kakariko Well - Top: Three Bombs
+    Kakariko Well - Left: Five Rupees
+    Kakariko Well - Middle: Five Rupees
+    Kakariko Well - Right: Morphing Ball
+    Kakariko Well - Bottom: Missile
+    Blind's Hideout - Top: Cane of Somaria
+    Blind's Hideout - Far Left: Missile
+    Blind's Hideout - Left: Ten Arrows
+    Blind's Hideout - Right: Morph Bombs
+    Blind's Hideout - Far Right: Super Missile
+    Bottle Merchant: Piece of Heart
+    Chicken House: Reserve Tank
+    Sick Kid: Power Bomb
+    Kakariko Tavern: Missile
+    Magic Bat: Shovel
+- Light World North East:
+    King Zora: Missile
+    Zora's Ledge: Progressive Sword
+    Waterfall Fairy - Left: Three Bombs
+    Waterfall Fairy - Right: Twenty Rupees
+    Potion Shop: Missile
+    Sahasrahla's Hut - Left: Hookshot
+    Sahasrahla's Hut - Middle: Piece of Heart
+    Sahasrahla's Hut - Right: Energy Tank
+    Sahasrahla: Missile
+- Light World South:
+    Maze Race: Piece of Heart
+    Library: Super Missile
+    Flute Spot: Missile
+    South of Grove: Magic Cape
+    Link's House: Ten Arrows
+    Aginah's Cave: Progressive Mail
+    Mini Moldorm Cave - Far Left: Varia Suit
+    Mini Moldorm Cave - Left: Piece of Heart
+    Mini Moldorm Cave - NPC: Progressive Shield
+    Mini Moldorm Cave - Right: Energy Tank
+    Mini Moldorm Cave - Far Right: Moon Pearl
+    Desert Ledge: Magic Powder
+    Checkerboard Cave: Speed Booster
+    Bombos Tablet: Missile
+    Floodgate Chest: Ten Arrows
+    Sunken Treasure: Twenty Rupees
+    Lake Hylia Island: Power Bomb
+    Hobo: Bombos
+    Ice Rod Cave: Power Bomb
+- Hyrule Castle:
+    Sanctuary: Three Bombs
+    Sewers - Secret Room - Left: Three Hundred Rupees
+    Sewers - Secret Room - Middle: Missile
+    Sewers - Secret Room - Right: Sewer Key
+    Sewers - Dark Cross: One Hundred Rupees
+    Hyrule Castle - Map Chest: Power Bomb
+    Hyrule Castle - Boomerang Chest: Hyrule Castle Map
+    Hyrule Castle - Zelda's Cell: Spazer
+    Link's Uncle: Super Missile
+    Secret Passage: Missile
+- Dark World Death Mountain West:
+    Spike Cave: Grappling Beam
+- Dark World Death Mountain East:
+    Hookshot Cave - Top Right: Three Bombs
+    Hookshot Cave - Top Left: Heart Container
+    Hookshot Cave - Bottom Left: Twenty Rupees
+    Hookshot Cave - Bottom Right: Piece of Heart
+    Superbunny Cave - Top: Three Hundred Rupees
+    Superbunny Cave - Bottom: Twenty Rupees
+- Dark World North West:
+    Bumper Cave: Hammer
+    Chest Game: Piece of Heart
+    C-Shaped House: Pegasus Boots
+    Brewery: Missile
+    Hammer Pegs: Power Bomb
+    Blacksmith: Energy Tank
+    Purple Chest: Piece of Heart
+- Dark World North East:
+    Catfish: Five Rupees
+    Pyramid: Progressive Sword
+    Pyramid Fairy - Left: Progressive Shield
+    Pyramid Fairy - Right: Mushroom
+- Dark World South:
+    Digging Game: Piece of Heart
+    Stumpy: Missile
+    Hype Cave - Top: Fifty Rupees
+    Hype Cave - Middle Right: Missile
+    Hype Cave - Middle Left: Twenty Rupees
+    Hype Cave - Bottom: Missile
+    Hype Cave - NPC: Missile
+- Dark World Mire:
+    Mire Shed - Left: Twenty Rupees
+    Mire Shed - Right: Fifty Rupees
+- Castle Tower:
+    Castle Tower - Foyer: Castle Tower Key
+    Castle Tower - Dark Maze: Castle Tower Key
+- Eastern Palace:
+    Eastern Palace - Cannonball Chest: Ice Beam
+    Eastern Palace - Map Chest: Piece of Heart
+    Eastern Palace - Compass Chest: Eastern Palace Big Key
+    Eastern Palace - Big Chest: Eastern Palace Map
+    Eastern Palace - Big Key Chest: Super Missile
+    Eastern Palace - Armos Knights: Eastern Palace Compass
+- Desert Palace:
+    Desert Palace - Big Chest: Desert Palace Map
+    Desert Palace - Torch: Magic Mirror
+    Desert Palace - Map Chest: Desert Palace Key
+    Desert Palace - Big Key Chest: Desert Palace Big Key
+    Desert Palace - Compass Chest: Desert Palace Compass
+    Desert Palace - Lanmolas: Piece of Heart
+- Tower of Hera:
+    Tower of Hera - Basement Cage: Tower of Hera Key
+    Tower of Hera - Map Chest: Twenty Rupees
+    Tower of Hera - Big Key Chest: Tower of Hera Big Key
+    Tower of Hera - Compass Chest: Three Hundred Rupees
+    Tower of Hera - Big Chest: Tower of Hera Map
+    Tower of Hera - Moldorm: Tower of Hera Compass
+- Palace of Darkness:
+    Palace of Darkness - Shooter Room: Missile
+    Palace of Darkness - Big Key Chest: Ten Arrows
+    Palace of Darkness - Stalfos Basement: Palace of Darkness Key
+    Palace of Darkness - The Arena - Bridge: Palace of Darkness Key
+    Palace of Darkness - The Arena - Ledge: Palace of Darkness Key
+    Palace of Darkness - Map Chest: Palace of Darkness Key
+    Palace of Darkness - Compass Chest: Palace of Darkness Key
+    Palace of Darkness - Harmless Hellway: Palace of Darkness Big Key
+    Palace of Darkness - Dark Basement - Left: Palace of Darkness Key
+    Palace of Darkness - Dark Basement - Right: Three Bombs
+    Palace of Darkness - Dark Maze - Top: Heart Container
+    Palace of Darkness - Dark Maze - Bottom: Palace of Darkness Map
+    Palace of Darkness - Big Chest: Flute
+    Palace of Darkness - Helmasaur King: Palace of Darkness Compass
+- Swamp Palace:
+    Swamp Palace - Entrance: Swamp Palace Key
+    Swamp Palace - Map Chest: Piece of Heart
+    Swamp Palace - Big Chest: Missile
+    Swamp Palace - Compass Chest: Swamp Palace Big Key
+    Swamp Palace - West Chest: Heart Container
+    Swamp Palace - Big Key Chest: Missile
+    Swamp Palace - Flooded Room - Left: Progressive Shield
+    Swamp Palace - Flooded Room - Right: Swamp Palace Compass
+    Swamp Palace - Waterfall Room: Energy Tank
+    Swamp Palace - Arrghus: Swamp Palace Map
+- Skull Woods:
+    Skull Woods - Pot Prison: Skull Woods Key
+    Skull Woods - Compass Chest: Fire Rod
+    Skull Woods - Big Chest: Missile
+    Skull Woods - Map Chest: Skull Woods Compass
+    Skull Woods - Pinball Room: Skull Woods Key
+    Skull Woods - Big Key Chest: Skull Woods Map
+    Skull Woods - Bridge Room: Skull Woods Key
+    Skull Woods - Mothula: Skull Woods Big Key
+- Thieves' Town:
+    Thieves' Town - Map Chest: Thieves Town Map
+    Thieves' Town - Ambush Chest: Ice Rod
+    Thieves' Town - Compass Chest: Progressive Glove
+    Thieves' Town - Big Key Chest: Thieves Town Big Key
+    Thieves' Town - Attic: Three Bombs
+    Thieves' Town - Blind's Cell: Heart Container
+    Thieves' Town - Big Chest: Thieves Town Key
+    Thieves' Town - Blind: Thieves Town Compass
+- Ice Palace:
+    Ice Palace - Compass Chest: Piece of Heart
+    Ice Palace - Spike Room: Ice Palace Big Key
+    Ice Palace - Map Chest: Ice Palace Compass
+    Ice Palace - Big Key Chest: Three Bombs
+    Ice Palace - Iced T Room: Ice Palace Map
+    Ice Palace - Freezor Chest: Ice Palace Key
+    Ice Palace - Big Chest: Ice Palace Key
+    Ice Palace - Kholdstare: Ten Arrows
+- Misery Mire:
+    Misery Mire - Main Lobby: Fifty Rupees
+    Misery Mire - Map Chest: Misery Mire Key
+    Misery Mire - Bridge Chest: Misery Mire Big Key
+    Misery Mire - Spike Chest: Misery Mire Key
+    Misery Mire - Compass Chest: Misery Mire Map
+    Misery Mire - Big Key Chest: Super Missile
+    Misery Mire - Big Chest: Misery Mire Key
+    Misery Mire - Vitreous: Misery Mire Compass
+- Turtle Rock:
+    Turtle Rock - Compass Chest: Turtle Rock Big Key
+    Turtle Rock - Roller Room - Left: Red Boomerang
+    Turtle Rock - Roller Room - Right: Turtle Rock Key
+    Turtle Rock - Chain Chomps: Turtle Rock Key
+    Turtle Rock - Big Key Chest: Power Bomb
+    Turtle Rock - Big Chest: Turtle Rock Key
+    Turtle Rock - Crystaroller Room: Charge Beam
+    Turtle Rock - Eye Bridge - Top Right: Twenty Rupees
+    Turtle Rock - Eye Bridge - Top Left: Turtle Rock Key
+    Turtle Rock - Eye Bridge - Bottom Right: Heart Container
+    Turtle Rock - Eye Bridge - Bottom Left: Turtle Rock Compass
+    Turtle Rock - Trinexx: Turtle Rock Map
+- Ganon's Tower:
+    Ganon's Tower - Bob's Torch: Ganons Tower Key
+    Ganon's Tower - DMs Room - Top Left: Ganons Tower Key
+    Ganon's Tower - DMs Room - Top Right: Ten Arrows
+    Ganon's Tower - DMs Room - Bottom Left: Sanctuary Heart Container
+    Ganon's Tower - DMs Room - Bottom Right: Ganons Tower Big Key
+    Ganon's Tower - Map Chest: Super Missile
+    Ganon's Tower - Firesnake Room: One Rupee
+    Ganon's Tower - Randomizer Room - Top Left: Missile
+    Ganon's Tower - Randomizer Room - Top Right: Missile
+    Ganon's Tower - Randomizer Room - Bottom Left: +5 Arrow Capacity
+    Ganon's Tower - Randomizer Room - Bottom Right: +5 Arrow Capacity
+    Ganon's Tower - Hope Room - Left: Missile
+    Ganon's Tower - Hope Room - Right: Fifty Rupees
+    Ganon's Tower - Tile Room: Ganons Tower Key
+    Ganon's Tower - Compass Room - Top Left: Missile
+    Ganon's Tower - Compass Room - Top Right: Ganons Tower Compass
+    Ganon's Tower - Compass Room - Bottom Left: Piece of Heart
+    Ganon's Tower - Compass Room - Bottom Right: Ganons Tower Map
+    Ganon's Tower - Bob's Chest: Energy Tank
+    Ganon's Tower - Big Chest: Missile
+    Ganon's Tower - Big Key Chest: Space Jump
+    Ganon's Tower - Big Key Room - Left: Twenty Rupees
+    Ganon's Tower - Big Key Room - Right: Power Bomb
+    Ganon's Tower - Mini Helmasaur Room - Left: Heart Container
+    Ganon's Tower - Mini Helmasaur Room - Right: +5 Arrow Capacity
+    Ganon's Tower - Pre-Moldorm Chest: Ganons Tower Key
+    Ganon's Tower - Moldorm Chest: X-Ray Scope
+- Crateria West:
+    "Energy Tank, Terminator": Twenty Rupees
+    "Energy Tank, Gauntlet": Bottle
+    Missile (Crateria gauntlet right): Missile
+    Missile (Crateria gauntlet left): Twenty Rupees
+- Crateria Central:
+    Power Bomb (Crateria surface): Half Magic
+    Missile (Crateria middle): Missile
+    Missile (Crateria bottom): Gravity Suit
+    Super Missile (Crateria): Heart Container
+    Bombs: Missile
+- Crateria East:
+    Missile (outside Wrecked Ship bottom): Progressive Sword
+    Missile (outside Wrecked Ship top): Silver Arrows
+    Missile (outside Wrecked Ship middle): Piece of Heart
+    Missile (Crateria moat): Progressive Sword
+- Brinstar Blue:
+    Morphing Ball: Super Missile
+    Power Bomb (blue Brinstar): Twenty Rupees
+    Missile (blue Brinstar middle): Three Bombs
+    "Energy Tank, Brinstar Ceiling": Energy Tank
+    Missile (blue Brinstar bottom): Energy Tank
+    Missile (blue Brinstar top): Missile
+    Missile (blue Brinstar behind missile): Twenty Rupees
+- Brinstar Green:
+    Power Bomb (green Brinstar bottom): Reserve Tank
+    Missile (green Brinstar below super missile): Twenty Rupees
+    Super Missile (green Brinstar top): Power Bomb
+    "Reserve Tank, Brinstar": Missile
+    Missile (green Brinstar behind missile): Super Missile
+    Missile (green Brinstar behind reserve tank): Single Arrow
+    "Energy Tank, Etecoons": Three Bombs
+    Super Missile (green Brinstar bottom): Heart Container
+- Brinstar Pink:
+    Super Missile (pink Brinstar): Piece of Heart
+    Missile (pink Brinstar top): Bottle
+    Missile (pink Brinstar bottom): Energy Tank
+    Charge Beam: Lamp
+    Power Bomb (pink Brinstar): Three Bombs
+    Missile (green Brinstar pipe): Missile
+    "Energy Tank, Waterway": Five Rupees
+    "Energy Tank, Brinstar Gate": Super Missile
+- Brinstar Red:
+    X-Ray Scope: Missile
+    Power Bomb (red Brinstar sidehopper room): Ten Arrows
+    Power Bomb (red Brinstar spike room): Missile
+    Missile (red Brinstar spike room): Super Missile
+    Spazer: Missile
+- Brinstar Kraid:
+    "Energy Tank, Kraid": Twenty Rupees
+    Varia Suit: Bottle
+    Missile (Kraid): Twenty Rupees
+- Wrecked Ship:
+    Missile (Wrecked Ship middle): One Rupee
+    "Reserve Tank, Wrecked Ship": Three Hundred Rupees
+    Missile (Gravity Suit): Twenty Rupees
+    Missile (Wrecked Ship top): +5 Bomb Capacity
+    "Energy Tank, Wrecked Ship": Reserve Tank
+    Super Missile (Wrecked Ship left): Super Missile
+    "Right Super, Wrecked Ship": Missile
+    Gravity Suit: Twenty Rupees
+- Maridia Outer:
+    Missile (green Maridia shinespark): Progressive Mail
+    Super Missile (green Maridia): Ten Arrows
+    "Energy Tank, Mama turtle": Zora's Flippers
+    Missile (green Maridia tatori): Ether
+- Maridia Inner:
+    Super Missile (yellow Maridia): Twenty Rupees
+    Missile (yellow Maridia super missile): Twenty Rupees
+    Missile (yellow Maridia false wall): Energy Tank
+    Plasma Beam: Heart Container
+    Missile (left Maridia sand pit room): Wave Beam
+    "Reserve Tank, Maridia": Missile
+    Missile (right Maridia sand pit room): Twenty Rupees
+    Power Bomb (right Maridia sand pit room): Cane of Byrna
+    Missile (pink Maridia): Missile
+    Super Missile (pink Maridia): Plasma Beam
+    Spring Ball: Super Missile
+    Missile (Draygon): Piece of Heart
+    "Energy Tank, Botwoon": +5 Bomb Capacity
+    Space Jump: Bow
+- Norfair Upper West:
+    Missile (lava room): Twenty Rupees
+    Ice Beam: Twenty Rupees
+    Missile (below Ice Beam): Three Hundred Rupees
+    Hi-Jump Boots: Power Bomb
+    Missile (Hi-Jump Boots): +5 Bomb Capacity
+    Energy Tank (Hi-Jump Boots): Piece of Heart
+- Norfair Upper East:
+    "Reserve Tank, Norfair": Twenty Rupees
+    Missile (Norfair Reserve Tank): +5 Bomb Capacity
+    Missile (bubble Norfair green door): Energy Tank
+    Missile (bubble Norfair): Progressive Glove
+    Missile (Speed Booster): Piece of Heart
+    Speed Booster: Quake
+    Missile (Wave Beam): +5 Arrow Capacity
+    Wave Beam: Twenty Rupees
+- Norfair Upper Crocomire:
+    "Energy Tank, Crocomire": Three Bombs
+    Missile (above Crocomire): Super Missile
+    Power Bomb (Crocomire): Twenty Rupees
+    Missile (below Crocomire): Piece of Heart
+    Missile (Grappling Beam): Book of Mudora
+    Grappling Beam: Piece of Heart
+- Norfair Lower West:
+    Missile (Gold Torizo): Spring Ball
+    Super Missile (Gold Torizo): Missile
+    Screw Attack: Energy Tank
+    Missile (Mickey Mouse room): Super Missile
+- Norfair Lower East:
+    Missile (lower Norfair above fire flea room): Super Missile
+    Power Bomb (lower Norfair above fire flea room): Piece of Heart
+    Power Bomb (Power Bombs of shame): Bug Catching Net
+    Missile (lower Norfair near Wave Beam): Three Bombs
+    "Energy Tank, Ridley": Twenty Rupees
+    "Energy Tank, Firefleas": Fifty Rupees

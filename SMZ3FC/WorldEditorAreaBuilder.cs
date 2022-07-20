@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace SMZ3FC
 {
-    public class AreaEditorLocationBuilder
+    public class WorldEditorAreaBuilder
     {
 
         private const string kArea = "Area";
@@ -20,9 +20,9 @@ namespace SMZ3FC
 
         public string Tab { get; set; }
 
-        public List<AreaEditorLocationBuilderLocation> Locations { get; private set; } = new List<AreaEditorLocationBuilderLocation>();
+        public List<WorldEditorAreaBuilderItem> Locations { get; private set; } = new List<WorldEditorAreaBuilderItem>();
 
-        public List<AreaEditorLocationBuilderLocation> SubLocations { get; private set; } = new List<AreaEditorLocationBuilderLocation>();
+        public List<WorldEditorAreaBuilderItem> SubLocations { get; private set; } = new List<WorldEditorAreaBuilderItem>();
 
         public XElement XMLNode { get { return BuildXMLNode(); } }
 
@@ -34,12 +34,12 @@ namespace SMZ3FC
             element.Add(new XAttribute(kName, Name));
             element.Add(new XAttribute(kTab, Tab));
 
-            foreach(AreaEditorLocationBuilderLocation albl in Locations)
+            foreach(WorldEditorAreaBuilderItem albl in Locations)
             {
                 element.Add(new XElement(kLoc, albl.Name));
             }
 
-            foreach (AreaEditorLocationBuilderLocation albl in SubLocations)
+            foreach (WorldEditorAreaBuilderItem albl in SubLocations)
             {
                 element.Add(new XElement(kSubLoc, albl.Name));
             }

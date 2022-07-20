@@ -120,6 +120,12 @@ namespace SMZ3FC
             this.btnSub.UseVisualStyleBackColor = true;
             this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
+            // tipLocationList
+            // 
+            this.tipLocationList.AutoPopDelay = 32000;
+            this.tipLocationList.InitialDelay = 500;
+            this.tipLocationList.ReshowDelay = 100;
+            // 
             // LocationDisp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

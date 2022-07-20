@@ -14,8 +14,9 @@ namespace SMZ3FC
         private const string kName = "name";
         private const string kHelp = "Help";
 
-        public static XDocument GenerateXML(TreeNode top, string helptext)
+        public static SMZ3XMLFileInfo GenerateXML(TreeNode top, string helptext, SMZ3XMLFileInfo fi)
         {
+
 
             XDocument doc = new XDocument();
             XElement root = new XElement(kAreas);
@@ -29,14 +30,18 @@ namespace SMZ3FC
                 foreach(TreeNode loc in tag.Nodes)
                 {
 
-                    var alb = (AreaEditorLocationBuilder) loc.Tag;
+                    var alb = (WorldEditorAreaBuilder) loc.Tag;
                     root.Add(alb.XMLNode);
                 }
             }
 
+            fi.Name = top.Text;
+            fi.Path = fi.Info.FullName;
+            fi.Contents = doc.ToString();
+            fi.FileType = SMZ3XMLFileType.World;
 
            
-            return doc;
+            return fi;
         }
 
     }

@@ -24,15 +24,23 @@ namespace SMZ3FC
        
         [ConfigurableProperty("Default")]
         public string DefaultItem { get; set; }
+
+        [ConfigurableProperty("LocationInfo.json")]
+        public string LocationInfoJsonPath { get; set; }
         
         [ConfigurableProperty("")]
         public Font StreamViewFont { get; set; }
+
+        [ConfigurableProperty("")]
+        public Color StreamViewFontColor { get; set; }
 
         [ConfigurableProperty("")]
         public Color StreamViewColorKey { get; set; }
         
         [ConfigurableProperty("")]
         public Color PrimaryLocColor { get; set; }
+
+        
      
         public SMZ3FCSettings()
         {

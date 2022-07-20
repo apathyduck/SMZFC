@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 namespace SMZ3FC
 {
 
-
-
     public class ConfigurableProperty : Attribute
-    {
-      
+    {   
         public string DefaultValue { get; private set; }
 
         public ConfigurableProperty(string defaultval)

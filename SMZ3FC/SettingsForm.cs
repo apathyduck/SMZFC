@@ -37,8 +37,12 @@ namespace SMZ3FC
             settings.PrimaryLocColor = cdPrimaryLoc.Color;
             settings.StreamViewColorKey = cdStrmView.Color;
             settings.StreamViewFont = fdStreamView.Font;
+            settings.StreamViewFontColor = cdSVFont.Color;
             settings.AddButtonAuto = cbAddAuto.Checked;
             settings.SubButtonAuto = cbSubAuto.Checked;
+
+            settings.SaveSettings();
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -73,6 +77,11 @@ namespace SMZ3FC
         private void cbAddAuto_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnFontColor_Click(object sender, EventArgs e)
+        {
+            cdSVFont.ShowDialog();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace SMZ3FC
 {
     public partial class LocationDisp : UserControl
     {
-        public CollatedLocationData LocData { get; private set; }
+        public ActiveArea AreaData { get; private set; }
 
         public static event EventHandler ActiveStatusOn;
         public static event EventHandler CountChanged;
@@ -34,15 +34,15 @@ namespace SMZ3FC
         }
 
 
-        public void SetLocationData(CollatedLocationData cld)
+        public void SetLocationData(ActiveArea active)
         {
-            LocData = cld;
-            gbTitle.Text = $"{cld.Name} | ?";
+            AreaData = active;
+            gbTitle.Text = $"{active.Name} | ?";
 
             StringBuilder sb = new StringBuilder();
-            foreach(LocationInfo li in cld.ItemLines)
+            foreach(ActiveLocation li in AreaData.CurrentLocations.Values)
             {
-                sb.AppendLine(li.SpoilerSubLoc);
+                sb.AppendLine(li.Name);
             }
 
             ToolTipText = sb.ToString();
@@ -56,18 +56,18 @@ namespace SMZ3FC
 
         public void OtherActiveStatusOnHandler(object sender, EventArgs e)
         {
-            CollatedLocationData data = ((LocationDisp)sender).LocData;
-            if(!data.Name.Equals(this.LocData.Name))
+            ActiveArea data = ((LocationDisp)sender).AreaData;
+            if(!data.Name.Equals(AreaData.Name))
             {
                 cbActive.Checked = false;
                 gbTitle.BackColor = SystemColors.Control;
-                this.BackColor = SystemColors.Control;
+                BackColor = SystemColors.Control;
             }
             else
             {
                 rbShow.Checked = true;
                 gbTitle.BackColor = settings.PrimaryLocColor;
-                this.BackColor = settings.PrimaryLocColor;
+                BackColor = settings.PrimaryLocColor;
             }
             
         }
@@ -75,7 +75,7 @@ namespace SMZ3FC
 
         public void HandleLocDataUpdated(object sender, EventArgs e)
         {
-            gbTitle.Text = $"{LocData.Name} | {LocData.IndividualLocs}";
+            gbTitle.Text = $"{AreaData.Name} | {AreaData.LocationCount}";
         }
 
       
@@ -91,10 +91,10 @@ namespace SMZ3FC
             switch (changeval)
             {              
                 case 1:
-                    LocData.AddCurrentItem();
+                    AreaData.ItemReplace();
                     break;
                 case -1:
-                    LocData.RemoveCurrentItem();
+                    AreaData.ItemFound();
                     break;
                 default:
                     break;
@@ -102,7 +102,7 @@ namespace SMZ3FC
           
             if(rbShow.Checked)
             {
-                lblCount.Text = LocData.CurrentCount.ToString();
+                lblCount.Text = $"{AreaData.CurrentItems}/{AreaData.TotalItems}";
             }
             else
             {

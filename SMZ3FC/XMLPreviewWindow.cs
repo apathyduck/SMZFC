@@ -13,10 +13,10 @@ namespace SMZ3FC
 {
     public partial class XMLPreviewWindow : Form
     {
-        public XMLPreviewWindow(XDocument doc)
+        public XMLPreviewWindow(SMZ3XMLFileInfo fi)
         {
             InitializeComponent();
-            rtbShowXML.AppendText(doc.ToString());
+            rtbShowXML.AppendText(fi.Contents);
            
         }
 

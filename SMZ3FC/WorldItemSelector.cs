@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SMZ3FC
 {
-    public partial class GroupSelector : Form
+    public partial class WorldItemSelector : Form
     {
 
   
@@ -33,29 +33,29 @@ namespace SMZ3FC
 
         public bool SetAsDefault { get; private set; } = false;
 
-        private AreaItemManager aiManage;
+        private SMZ3FCManager manager;
 
-        public GroupSelector(AreaItemManager aim)
+        public WorldItemSelector(SMZ3FCManager man)
         {
 
            
             InitializeComponent();
 
-            aiManage = aim;
+            manager = man;
 
-            foreach(string g in aim.Groupings.Keys)
+            foreach(string g in manager.Worlds.Keys)
             {
                 lbGroups.Items.Add(g);
             }
 
-            foreach(string i in aim.ItemsList.Keys)
+            foreach(string i in manager.ItemSets.Keys)
             {
                 lbItems.Items.Add(i);
             }
 
             
-            lbGroups.SelectedIndex = lbGroups.Items.IndexOf(aim.CurrentGroupKey);
-            lbItems.SelectedIndex = lbItems.Items.IndexOf(aim.CurrentItemKey);
+            lbGroups.SelectedIndex = lbGroups.Items.IndexOf(manager.CurrentWorldKey);
+            lbItems.SelectedIndex = lbItems.Items.IndexOf(manager.CurrentItemKey);
 
         }
 
@@ -67,16 +67,16 @@ namespace SMZ3FC
 
             if (groupinit)
             {
-                lblLocHash.Text = $"Location Hash: {aiManage.Groupings[lbGroups.SelectedItem.ToString()].Hash}";
+                lblLocHash.Text = $"Location Hash: {manager.Worlds[lbGroups.SelectedItem.ToString()].Hash}";
             }
             if(iteminit)
             {
-                lblItemHash.Text = $"Item List Hash: {aiManage.ItemsList[lbItems.SelectedItem.ToString()].Hash}";
+                lblItemHash.Text = $"Item List Hash: {manager.ItemSets[lbItems.SelectedItem.ToString()].Hash}";
             }
 
             if (groupinit && iteminit)
             {
-                lblCombinedHash.Text = $"Combined Hash: {aiManage.CombineHashes(lbGroups.SelectedItem.ToString(), lbItems.SelectedItem.ToString())}";
+                lblCombinedHash.Text = $"Combined Hash: {manager.CombineHashes(lbGroups.SelectedItem.ToString(), lbItems.SelectedItem.ToString())}";
             }
         }
 

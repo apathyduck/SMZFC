@@ -17,7 +17,7 @@ namespace SMZ3FC
 
         private string myTitle;
         private string myHelpText = string.Empty;
-        private FileInfo myXMLFileInfo;
+        private SMZ3XMLFileInfo myXMLFileInfo;
         private List<string> curItemKeys;
         private string tempTitle;
         private bool titleCollison = false;
@@ -47,7 +47,7 @@ namespace SMZ3FC
         }
 
 
-        public void SetItemList(MajorItemsList mil)
+        public void SetItemList(MajorItemsDefinition mil)
         {
 
             List<ItemEditorItemBuilderItem> ielist = new List<ItemEditorItemBuilderItem>();
@@ -85,7 +85,7 @@ namespace SMZ3FC
 
         }
 
-        public void SetXMLFile(FileInfo fi)
+        public void SetXMLFile(SMZ3XMLFileInfo fi)
         {
             myXMLFileInfo = fi;
         }
@@ -244,20 +244,21 @@ namespace SMZ3FC
 
         private void btnPreview_Click(object sender, EventArgs e)
         {
-            XDocument doc = ItemEditorXMLBuilder.GenerateXML(tbTitle.Text, lbFinalItems, myHelpText);
-            XMLPreviewWindow pw = new XMLPreviewWindow(doc);
+            myXMLFileInfo = ItemEditorXMLBuilder.GenerateXML(tbTitle.Text, lbFinalItems, myHelpText, myXMLFileInfo);
+            XMLPreviewWindow pw = new XMLPreviewWindow(myXMLFileInfo);
             if (DialogResult.OK == pw.ShowDialog())
             {
 
-                SaveXML(doc, myXMLFileInfo);
+                SaveXML(myXMLFileInfo);
                 DialogResult = DialogResult.OK;
                 this.Close();
             }
         }
 
-        private void SaveXML(XDocument doc, FileInfo fi)
+        private void SaveXML(SMZ3XMLFileInfo fi)
         {
-            doc.Save(fi.FullName);
+            File.WriteAllText(fi.Path, fi.Contents);
+           
         }
 
         private void tbTitle_TextChanged(object sender, EventArgs e)

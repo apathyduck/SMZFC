@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SMZ3FC
 {
+  
     public static class LocationAndItemKeys
     {
         public static List<string> Locations { get; set; } = new List<string>()

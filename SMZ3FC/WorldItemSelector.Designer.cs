@@ -1,7 +1,7 @@
 ﻿
 namespace SMZ3FC
 {
-    partial class GroupSelector
+    partial class WorldItemSelector
     {
         /// <summary>
         /// Required designer variable.

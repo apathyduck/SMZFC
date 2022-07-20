@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,27 +23,12 @@ namespace SMZ3FC
 
         private SettingsForm setForm;
 
-        private AreaItemManager aiManager;
+        private SMZ3FCManager smzManager;
         private SMZ3FCSettings settings;
         private SubLocViewer myLocView; 
 
      
-        public string CurrentGroupKey
-        {
-            get
-            {
-                return aiManager.CurrentGroupKey;
-            }
-        }
-
-        public string CurrentItemKey
-        {
-            get
-            {
-                return aiManager.CurrentItemKey;
-            }
-        }
-
+      
         public string SpoilerLogPath { get; private set; } = string.Empty;
 
         //public event EventHandler OpenNewSpoilerLog;
@@ -50,7 +36,7 @@ namespace SMZ3FC
         bool showstreamview = true;
         bool showlocviwer = false;
 
-        public ItemCountViewer(AreaItemManager ai, SMZ3FCSettings set)
+        public ItemCountViewer(SMZ3FCManager ai, SMZ3FCSettings set)
         {
             InitializeComponent();
 
@@ -59,7 +45,7 @@ namespace SMZ3FC
             
             lblHash.Text = "No File Loaded";
 
-            aiManager = ai;
+            smzManager = ai;
 
             //SetGroups(ag);
             
@@ -84,7 +70,7 @@ namespace SMZ3FC
 
         private void SetGroupHash(string h)
         {
-            lblGroupHash.Text = $"Group Hash: ({aiManager.CurrentGroupKey} and {aiManager.CurrentItemKey}) - {h}";
+            lblGroupHash.Text = $"Group Hash: ({smzManager.CurrentWorldKey} and {smzManager.CurrentItemKey}) - {h}";
         }
 
         public void SetGroups()
@@ -95,10 +81,10 @@ namespace SMZ3FC
             this.tabLocationTab.SuspendLayout();
           
        
-            SetGroupHash(aiManager.CurrentCombinedHash);
+            SetGroupHash(smzManager.CurrentCombinedHash);
             int index = 0;
 
-            foreach(string t in aiManager.CurrentGroup.GameTabList)
+            foreach(string t in smzManager.CurrentWorldDefintion.Tabs)
             {
                 TabPage tp = new TabPage();
                 tp.Name = t;
@@ -119,14 +105,14 @@ namespace SMZ3FC
             }
 
 
-            foreach (CollatedLocationData cld in aiManager.CurrentGroup.Locations)
+            foreach (ActiveArea active in smzManager.ActiveWorld.Areas.Values)
             {
                 LocationDisp ld = new LocationDisp(settings);
-                ld.SetLocationData(cld);
+                ld.SetLocationData(active);
                 LocationDisp.ActiveStatusOn += ld.OtherActiveStatusOnHandler;
                 LocationDataUpdated += ld.HandleLocDataUpdated;
 
-                tabLocationTab.TabPages[cld.Tab].Controls[$"flp{cld.Tab}"].Controls.Add(ld);
+                tabLocationTab.TabPages[active.Tab].Controls[$"flp{active.Tab}"].Controls.Add(ld);
               
             }
 
@@ -182,7 +168,7 @@ namespace SMZ3FC
         private void UpdateStreamView(object sender)
         {
             LocationDisp s = (LocationDisp)sender;
-            myStrmView.SetLabel(s.LocData);
+            myStrmView.SetLabel(s.AreaData);
             if (showstreamview)
             {
                 myStrmView.Show();
@@ -192,33 +178,33 @@ namespace SMZ3FC
 
         private void SetTotalItems()
         {
-            lblTotal.Text = $"Total Items: {aiManager.CurrentGroup.FoundItemCount}/{aiManager.CurrentGroup.TotalItemCount}";
+            lblTotal.Text = $"Total Items: {smzManager.ActiveWorld.FoundItems}/{smzManager.ActiveWorld.TotalItems}";
         }
 
         private void LoadSpoilerLog()
         {
-            aiManager.ParseLog(SpoilerLogPath);
+            smzManager.LoadLogFile(SpoilerLogPath);
             SetGroups();
             LocationDataUpdated?.Invoke(this, new EventArgs());
             SetTotalItems();
-            lblHash.Text = LogParser.SpoilerHash;
+            lblHash.Text = smzManager.ActiveWorld.CurrentLog.LogHash;
             pnLoadSpoilerBlank.Visible = false;
         }
 
         private void SetSelectedGroup(string groupk, string itemk, bool def)
         {
-            aiManager.CurrentGroupKey = groupk;
-            aiManager.CurrentItemKey = itemk;
+            smzManager.CurrentWorldKey = groupk;
+            smzManager.CurrentItemKey = itemk;
 
             if (def)
             {
                 settings.DefaultGroup = groupk;
-                settings.DefaultGroup = itemk;
+                settings.DefaultItem = itemk;
                 settings.SaveSettings();
 
             }
 
-            hlpForm.SetHelpText(aiManager.CurrentGroup.HelpText, aiManager.CurrentItemList.HelpText);
+            hlpForm.SetHelpText(smzManager.CurrentWorldDefintion.HelpText, smzManager.CurrentItemList.HelpText);
 
             if (!string.IsNullOrEmpty(SpoilerLogPath))
             {
@@ -246,7 +232,7 @@ namespace SMZ3FC
 
         private void selectGroupingFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GroupSelector gs = new GroupSelector(aiManager);
+            WorldItemSelector gs = new WorldItemSelector(smzManager);
             
             if(gs.ShowDialog(this) == DialogResult.OK)
             {
@@ -264,7 +250,7 @@ namespace SMZ3FC
             if (hlpForm.IsDisposed)
             {
                 hlpForm = new HelpForm();
-                hlpForm.SetHelpText(aiManager.CurrentGroup.HelpText, aiManager.CurrentItemList.HelpText);
+                hlpForm.SetHelpText(smzManager.CurrentWorldDefintion.HelpText, smzManager.CurrentItemList.HelpText);
             }
             if (!hlpForm.Visible)
             {
@@ -334,10 +320,10 @@ namespace SMZ3FC
 
         private void areaEdiotToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditorFileSelector aes = new EditorFileSelector(aiManager, typeof(AreaGroupings));
+            EditorFileSelector aes = new EditorFileSelector(smzManager, typeof(WorldDefinition));
             if (DialogResult.OK == aes.ShowDialog(this))
             {
-                AreaEditor ae = new AreaEditor(aes.GroupTitle, aiManager.Groupings.Keys.ToList<string>());
+                WorldEditor ae = new WorldEditor(smzManager, aes.GroupTitle, smzManager.Worlds.Keys.ToList<string>());
 
                 if (aes.OverWriteCurrent)
                 {
@@ -349,20 +335,20 @@ namespace SMZ3FC
 
                 if (!aes.BlankFile)
                 {
-                    AreaGroupings ag = aiManager.Groupings[aes.SelectedKey];
-                    ae.SetAreaGroup(ag);
+                    WorldDefinition wd = smzManager.Worlds[aes.SelectedKey];
+                    ae.SetWorld(wd);
                 }
 
                 if (DialogResult.OK == ae.ShowDialog(this))
                 {
                     if (aes.OverWriteCurrent)
                     {
-                        aiManager.RemoveGroup(aes.GroupTitle);
+                        smzManager.RemoveWorld(aes.GroupTitle);
                     }
-                    FCXMLParser.LoadSingleFile(aes.XMLFileInfo);
 
+                    smzManager.AddWorld(aes.XMLFileInfo);
 
-                    SetSelectedGroup(aes.GroupTitle, aiManager.CurrentItemKey, false);
+                    SetSelectedGroup(aes.GroupTitle, smzManager.CurrentItemKey, false);
 
                 }
 
@@ -371,10 +357,10 @@ namespace SMZ3FC
 
         private void itemEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditorFileSelector aes = new EditorFileSelector(aiManager, typeof(MajorItemsList));
+            EditorFileSelector aes = new EditorFileSelector(smzManager, typeof(MajorItemsDefinition));
             if (DialogResult.OK == aes.ShowDialog(this))
             {
-                ItemEditor ie = new ItemEditor(aes.GroupTitle, aiManager.ItemsList.Keys.ToList<string>());
+                ItemEditor ie = new ItemEditor(aes.GroupTitle, smzManager.ItemSets.Keys.ToList<string>());
 
                 if (aes.OverWriteCurrent)
                 {
@@ -385,7 +371,7 @@ namespace SMZ3FC
 
                 if (!aes.BlankFile)
                 {
-                    MajorItemsList mil = aiManager.ItemsList[aes.SelectedKey];
+                    MajorItemsDefinition mil = smzManager.ItemSets[aes.SelectedKey];
                     ie.SetItemList(mil);
                 }
 
@@ -393,13 +379,13 @@ namespace SMZ3FC
                 {
                     if (aes.OverWriteCurrent)
                     {
-                        aiManager.RemoveGroup(aes.GroupTitle);
+                        smzManager.RemoveWorld(aes.GroupTitle);
 
                     }
-                    FCXMLParser.LoadSingleFile(aes.XMLFileInfo);
 
+                    smzManager.AddItemSet(aes.XMLFileInfo);
 
-                    SetSelectedGroup(aiManager.CurrentGroup.Name, aes.GroupTitle, false);
+                    SetSelectedGroup(smzManager.CurrentWorldDefintion.Name, aes.GroupTitle, false);
 
                 }
 
@@ -422,12 +408,38 @@ namespace SMZ3FC
 
         private void generateReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(SpoilerLogPath))
+            if(!smzManager.ActiveWorld.IsInitialized)
             {
                 return;
             }
-            ReportViewer rv = new ReportViewer(aiManager);
+            ReportViewer rv = new ReportViewer(smzManager.ActiveWorld);
             rv.ShowDialog(this);
+        }
+
+        private void downloadXMLsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGitXML fgx = new FormGitXML();
+            DialogResult res = fgx.ShowDialog();
+            if(res == DialogResult.OK)
+            {
+                foreach(SMZ3XMLFileInfo fi in fgx.NewFiles)
+                {
+                    smzManager.AddFile(fi);
+                }
+            }
+
+        }
+
+        private void generateSeedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //GenSeed gs = new GenSeed();
+            //gs.ShowDialog();
+        }
+
+        private void locationNameEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FriendlyNameEditor fne = new FriendlyNameEditor(SpoilerLogStructure.SpoilerLocations);
+            fne.ShowDialog();
         }
     }
     

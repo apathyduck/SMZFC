@@ -5,16 +5,17 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SMZ3FC
 {
-    public class MajorItemsList
+    public class MajorItemsDefinition
     {
         public List<string> MajorItems { get; private set; } = new List<string>();
 
         public string Name { get; private set; }
 
-        public FileInfo ItemsXMLFile { get; private set; }
+        public SMZ3XMLFileInfo ItemsFile { get; private set; }
 
         public string StringToHash { get; private set; }
 
@@ -22,24 +23,47 @@ namespace SMZ3FC
 
         public string HelpText { get; set; }
 
-        public MajorItemsList(string name, FileInfo fi, List<string> mi, string help)
+        public bool ParseError { get; private set; } = false;
+
+        public MajorItemsDefinition(SMZ3XMLFileInfo xfi)
         {
-            Name = name;
-            ItemsXMLFile = fi;
-            MajorItems = mi;
-            HelpText = help;
+            ItemsFile = xfi;
+            Parse();
             GenHash();
         }
 
-        public MajorItemsList GetCleanCopy()
+        public bool IsMajor(string item)
         {
 
-            string[] copy = new string[MajorItems.Count()];
-            MajorItems.CopyTo(copy);
-            List<string> ci = new List<string>(copy);
-            return new MajorItemsList(Name, ItemsXMLFile, ci, HelpText);
+          //  MajorItems.Con
+            return MajorItems.Contains(item);
         }
 
+        void Parse()
+        {
+            try
+            {
+                XDocument doc = XDocument.Parse(ItemsFile.Contents);
+                XElement root = doc.Root;
+
+                Name = root.Attribute("name").Value;
+                HelpText = root.Element("Help")?.Value ?? string.Empty;
+
+                List<string> items = new List<string>();
+                
+                foreach (XElement itm in root.Elements("Item"))
+                {
+                    MajorItems.Add(itm.Value);
+                   
+
+                }
+            }
+            catch
+            {
+                ParseError = true;
+                return;
+            }
+        }
 
         void GenHash()
         {

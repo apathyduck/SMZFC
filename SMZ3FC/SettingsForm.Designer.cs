@@ -39,6 +39,8 @@ namespace SMZ3FC
             this.fdStreamView = new System.Windows.Forms.FontDialog();
             this.btnApply = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnFontColor = new System.Windows.Forms.Button();
+            this.cdSVFont = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // cbSubAuto
@@ -75,7 +77,7 @@ namespace SMZ3FC
             // 
             // btnSVKey
             // 
-            this.btnSVKey.Location = new System.Drawing.Point(9, 99);
+            this.btnSVKey.Location = new System.Drawing.Point(9, 128);
             this.btnSVKey.Name = "btnSVKey";
             this.btnSVKey.Size = new System.Drawing.Size(104, 23);
             this.btnSVKey.TabIndex = 3;
@@ -85,7 +87,7 @@ namespace SMZ3FC
             // 
             // btnPLCol
             // 
-            this.btnPLCol.Location = new System.Drawing.Point(9, 128);
+            this.btnPLCol.Location = new System.Drawing.Point(9, 157);
             this.btnPLCol.Name = "btnPLCol";
             this.btnPLCol.Size = new System.Drawing.Size(104, 23);
             this.btnPLCol.TabIndex = 4;
@@ -95,7 +97,7 @@ namespace SMZ3FC
             // 
             // btnApply
             // 
-            this.btnApply.Location = new System.Drawing.Point(248, 128);
+            this.btnApply.Location = new System.Drawing.Point(241, 157);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(85, 23);
             this.btnApply.TabIndex = 5;
@@ -105,7 +107,7 @@ namespace SMZ3FC
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(157, 128);
+            this.btnCancel.Location = new System.Drawing.Point(150, 157);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(85, 23);
             this.btnCancel.TabIndex = 6;
@@ -113,11 +115,22 @@ namespace SMZ3FC
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnFontColor
+            // 
+            this.btnFontColor.Location = new System.Drawing.Point(9, 99);
+            this.btnFontColor.Name = "btnFontColor";
+            this.btnFontColor.Size = new System.Drawing.Size(104, 23);
+            this.btnFontColor.TabIndex = 7;
+            this.btnFontColor.Text = "Font Color";
+            this.btnFontColor.UseVisualStyleBackColor = true;
+            this.btnFontColor.Click += new System.EventHandler(this.btnFontColor_Click);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 165);
+            this.ClientSize = new System.Drawing.Size(338, 198);
+            this.Controls.Add(this.btnFontColor);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnApply);
             this.Controls.Add(this.btnPLCol);
@@ -146,5 +159,7 @@ namespace SMZ3FC
         private System.Windows.Forms.FontDialog fdStreamView;
         private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnFontColor;
+        private System.Windows.Forms.ColorDialog cdSVFont;
     }
 }

@@ -13,11 +13,11 @@ namespace SMZ3FC
 {
     public partial class EditorFileSelector : Form
     {
-        AreaItemManager aiManager;
+        SMZ3FCManager smzManager;
 
         public string SelectedKey { get; private set; }
         public string GroupTitle { get; private set; }
-        public FileInfo XMLFileInfo { get; private set; }
+        public SMZ3XMLFileInfo XMLFileInfo { get; private set; }
 
         public bool BlankFile { get; private set; } = false;
 
@@ -26,25 +26,25 @@ namespace SMZ3FC
         private Type selEditorType = null;
        
 
-        public EditorFileSelector(AreaItemManager aim, Type seltype)
+        public EditorFileSelector(SMZ3FCManager man, Type seltype)
         {
             InitializeComponent();
-            aiManager = aim;
+            smzManager = man;
             selEditorType = seltype;
 
-            if (selEditorType.IsAssignableFrom(typeof(MajorItemsList)))
+            if (selEditorType.IsAssignableFrom(typeof(MajorItemsDefinition)))
             {
-                foreach (string s in aim.ItemsList.Keys)
+                foreach (string s in smzManager.ItemSets.Keys)
                 {
-                    lbCurrentGroups.Items.Add(s);
+                    lbCurrentWorlds.Items.Add(s);
                 }
             }
 
-            else if (selEditorType.IsAssignableFrom(typeof(AreaGroupings)))
+            else if (selEditorType.IsAssignableFrom(typeof(WorldDefinition)))
             {
-                foreach (string s in aim.Groupings.Keys)
+                foreach (string s in smzManager.Worlds.Keys)
                 {
-                    lbCurrentGroups.Items.Add(s);
+                    lbCurrentWorlds.Items.Add(s);
                 }
             }
             else
@@ -53,24 +53,24 @@ namespace SMZ3FC
                 throw new Exception();
             }
 
-            lbCurrentGroups.SelectedIndex = 0;
+            lbCurrentWorlds.SelectedIndex = 0;
 
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
            
-            SelectedKey = lbCurrentGroups.SelectedItem.ToString();
+            SelectedKey = lbCurrentWorlds.SelectedItem.ToString();
             DialogResult = DialogResult.OK;
             GroupTitle = SelectedKey;
-            if (selEditorType.IsAssignableFrom(typeof(MajorItemsList)))
+            if (selEditorType.IsAssignableFrom(typeof(MajorItemsDefinition)))
             {
-                XMLFileInfo = aiManager.ItemsList[SelectedKey].ItemsXMLFile;
+                XMLFileInfo = smzManager.ItemSets[SelectedKey].ItemsFile;
             }
 
-            else if (selEditorType.IsAssignableFrom(typeof(AreaGroupings)))
+            else if (selEditorType.IsAssignableFrom(typeof(WorldDefinition)))
             {
-                XMLFileInfo = aiManager.Groupings[SelectedKey].LocXmlFile;
+                XMLFileInfo = smzManager.Worlds[SelectedKey].WorldFile;
             }
             else
             {
@@ -83,7 +83,7 @@ namespace SMZ3FC
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
-            SelectedKey = lbCurrentGroups.SelectedItem.ToString();
+            SelectedKey = lbCurrentWorlds.SelectedItem.ToString();
             GroupTitle = tbNewName.Text;
 
             string filepath = CheckAndGetFilePath(GroupTitle);
@@ -93,7 +93,12 @@ namespace SMZ3FC
             }
 
 
-            XMLFileInfo = new FileInfo(filepath);
+            XMLFileInfo = new SMZ3XMLFileInfo()
+            {
+                Info = new FileInfo(filepath)
+            };
+
+
             DialogResult = DialogResult.OK;
             this.Close();
 
@@ -111,7 +116,12 @@ namespace SMZ3FC
             }
 
             BlankFile = true;
-            XMLFileInfo = new FileInfo(filepath);
+            XMLFileInfo = new SMZ3XMLFileInfo()
+            {
+                Info = new FileInfo(filepath)
+            };
+                
+               
             DialogResult = DialogResult.OK;
             this.Close();
 
@@ -119,19 +129,26 @@ namespace SMZ3FC
 
         private string CheckAndGetFilePath(string title)
         {
-            string filepath = string.Empty;
-            if (selEditorType.IsAssignableFrom(typeof(MajorItemsList)))
+
+            if(string.IsNullOrEmpty(title))
             {
-                if (aiManager.ItemsList.ContainsKey(GroupTitle))
+                MessageBox.Show("Must Input a Title for a New or Copied File", "No Title", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return string.Empty;
+
+            }
+            string filepath = string.Empty;
+            if (selEditorType.IsAssignableFrom(typeof(MajorItemsDefinition)))
+            {
+                if (smzManager.ItemSets.ContainsKey(GroupTitle))
                 {
                     MessageBox.Show("Item List Already Exists with this Title", "Key Collison", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return filepath;
                 }
                 return filepath = Path.Combine(Environment.CurrentDirectory, $"{GroupTitle}Items.xml");
             }
-            else if (selEditorType.IsAssignableFrom(typeof(AreaGroupings)))
+            else if (selEditorType.IsAssignableFrom(typeof(WorldDefinition)))
             {
-                if (aiManager.Groupings.ContainsKey(GroupTitle))
+                if (smzManager.Worlds.ContainsKey(GroupTitle))
                 {
                     MessageBox.Show("Group Already Exists with this Title", "Key Collison", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return filepath;

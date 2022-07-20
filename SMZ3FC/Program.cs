@@ -16,7 +16,7 @@ namespace SMZ3FC
 
 
         private static ItemCountViewer mainForm;
-        private static AreaItemManager aiManager;
+        private static SMZ3FCManager aiManager;
         private static SMZ3FCSettings smz3Set;
         /// <summary>
         /// The main entry point for the application.
@@ -25,14 +25,12 @@ namespace SMZ3FC
         static void Main()
         {
 
-            //LocationKeys.Initialize();
-            //MajorKeys.Initialize();
-
+           
             smz3Set = new SMZ3FCSettings();
 
          
 
-            aiManager = new AreaItemManager(smz3Set);
+            aiManager = new SMZ3FCManager(smz3Set);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

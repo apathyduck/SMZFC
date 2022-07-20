@@ -29,7 +29,7 @@ namespace SMZ3FC
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbCurrentGroups = new System.Windows.Forms.ListBox();
+            this.lbCurrentWorlds = new System.Windows.Forms.ListBox();
             this.tbNewName = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnCopy = new System.Windows.Forms.Button();
@@ -37,13 +37,13 @@ namespace SMZ3FC
             this.lblGroupTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lbCurrentGroups
+            // lbCurrentWorlds
             // 
-            this.lbCurrentGroups.FormattingEnabled = true;
-            this.lbCurrentGroups.Location = new System.Drawing.Point(12, 12);
-            this.lbCurrentGroups.Name = "lbCurrentGroups";
-            this.lbCurrentGroups.Size = new System.Drawing.Size(187, 160);
-            this.lbCurrentGroups.TabIndex = 0;
+            this.lbCurrentWorlds.FormattingEnabled = true;
+            this.lbCurrentWorlds.Location = new System.Drawing.Point(12, 12);
+            this.lbCurrentWorlds.Name = "lbCurrentWorlds";
+            this.lbCurrentWorlds.Size = new System.Drawing.Size(187, 160);
+            this.lbCurrentWorlds.TabIndex = 0;
             // 
             // tbNewName
             // 
@@ -101,7 +101,7 @@ namespace SMZ3FC
             this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.tbNewName);
-            this.Controls.Add(this.lbCurrentGroups);
+            this.Controls.Add(this.lbCurrentWorlds);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EditorFileSelector";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -113,7 +113,7 @@ namespace SMZ3FC
 
         #endregion
 
-        private System.Windows.Forms.ListBox lbCurrentGroups;
+        private System.Windows.Forms.ListBox lbCurrentWorlds;
         private System.Windows.Forms.TextBox tbNewName;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnCopy;

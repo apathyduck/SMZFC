@@ -12,74 +12,58 @@ namespace SMZ3FC
 {
     public partial class ReportViewer : Form
     {
-        AreaItemManager manager;
-        public ReportViewer(AreaItemManager ai)
+        
+        WorldState state;
+        public ReportViewer(WorldState ws)
         {
             InitializeComponent();
-            manager = ai;
+
+            state = ws;
             PopulateText();
         }
 
         private void PopulateText()
-        {
-            AreaGroupings ag = manager.CurrentGroup;
-
-
-           
-            foreach(CollatedLocationData cld in ag.Locations)
+        {          
+            foreach(ActiveArea area in state.Areas.Values)
             {
                 rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 14, FontStyle.Bold);
-                rtbReport.AppendText($"{cld.Name} - {cld.TotalCount}");
+                rtbReport.AppendText($"{area.Name} - {area.TotalItems}");
 
                 rtbReport.AppendText(Environment.NewLine);
                 rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 8, FontStyle.Regular);
                 
 
                 string currentheader = string.Empty;
-                foreach(LocationInfo li in cld.ItemLines)
-                {
-                
 
-                    if ((cbMajorsOnly.Checked && li.IsMajor) || !cbMajorsOnly.Checked)
-                    {
-                        if (!li.SpoilerLocationHeader.Equals(currentheader))
-                        {
-                            currentheader = li.SpoilerLocationHeader;
-                            rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 10, FontStyle.Italic);
-                            rtbReport.AppendText(currentheader);
-                            rtbReport.AppendText(Environment.NewLine);
-                        }
+                List<string> spoilerareas = (from loc in area.CurrentLocations select loc.Value.LogLocation.AreaName).Distinct().ToList();
 
-                        rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 8, FontStyle.Regular);
-                        rtbReport.AppendText("     ");
-                        rtbReport.AppendText(li.SpoilerLine);
-                        rtbReport.AppendText(Environment.NewLine);
-                    }
-                  
-                }
-                foreach (ShiftedSubLocation ssl in ag.ShiftedLocations)
+                foreach (string spoilerarea in spoilerareas)
                 {
-                    if (ssl.ShiftToGroup.Equals(cld.Name))
+
+
+
+                    List<ActiveLocation> locs = (from slocs in area.CurrentLocations where slocs.Value.LogLocation.AreaName.Equals(spoilerarea) select slocs.Value).ToList();
+                    bool writeheader = false;
+                    foreach (ActiveLocation actloc in locs)
                     {
-                        if ((cbMajorsOnly.Checked && ssl.LocInfo.IsMajor) || !cbMajorsOnly.Checked)
+                        if (cbMajorsOnly.Checked && actloc.IsMajor || !cbMajorsOnly.Checked)
                         {
-                            if (!ssl.LocInfo.SpoilerLocationHeader.Equals(currentheader))
+                            if (!writeheader)
                             {
-                                currentheader = ssl.LocInfo.SpoilerLocationHeader;
+
                                 rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 10, FontStyle.Italic);
-                                rtbReport.AppendText(currentheader);
+                                rtbReport.AppendText(spoilerarea);
                                 rtbReport.AppendText(Environment.NewLine);
+                                writeheader = true;
                             }
 
                             rtbReport.SelectionFont = new Font("Microsoft Sans Serif", 8, FontStyle.Regular);
                             rtbReport.AppendText("     ");
-                            rtbReport.AppendText(ssl.LocInfo.SpoilerLine);
+                            rtbReport.AppendText($"{actloc.Info.Name}: {actloc.LogLocation.FullLine}");
                             rtbReport.AppendText(Environment.NewLine);
                         }
                     }
                 }
-
-
             }
 
             rtbReport.SelectionStart = 0;

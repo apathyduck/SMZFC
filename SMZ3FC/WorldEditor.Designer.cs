@@ -1,7 +1,7 @@
 ﻿
 namespace SMZ3FC
 {
-    partial class AreaEditor
+    partial class WorldEditor
     {
         /// <summary>
         /// Required designer variable.
