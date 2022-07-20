@@ -21,14 +21,15 @@ namespace SMZ3FC
         SMZ3FCSettings settings;
 
         public string ToolTipText { get; private set; }
-       
 
+        //Label lblTotalItemSmall = new Label();
 
         public LocationDisp(SMZ3FCSettings set)
         {
             InitializeComponent();
             settings = set;
-
+            lblTotalItemSmall.Text = string.Empty;
+           
 
 
         }
@@ -102,11 +103,19 @@ namespace SMZ3FC
           
             if(rbShow.Checked)
             {
-                lblCount.Text = $"{AreaData.CurrentItems}/{AreaData.TotalItems}";
+                lblCount.Text = $"{AreaData.CurrentItems}";
+                //int x = lblCount.Location.X + (int)(lblCount.Font.Size * lblCount.Text.Count());
+                //int y = lblCount.Location.Y + lblCount.Font.Height;
+                lblTotalItemSmall.Text = $"/{AreaData.TotalItems}";
+                //lblTotalItemSmall.Location = new Point(x, y);
+             
+            
+
             }
             else
             {
                 lblCount.Text = "?";
+                lblTotalItemSmall.Text = string.Empty;
             }
             CountChanged?.Invoke(this, new EventArgs());
         }
