@@ -104,13 +104,7 @@ namespace SMZ3FC
             if(rbShow.Checked)
             {
                 lblCount.Text = $"{AreaData.CurrentItems}";
-                //int x = lblCount.Location.X + (int)(lblCount.Font.Size * lblCount.Text.Count());
-                //int y = lblCount.Location.Y + lblCount.Font.Height;
                 lblTotalItemSmall.Text = $"/{AreaData.TotalItems}";
-                //lblTotalItemSmall.Location = new Point(x, y);
-             
-            
-
             }
             else
             {
