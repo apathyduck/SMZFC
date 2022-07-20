@@ -38,6 +38,7 @@ namespace SMZ3FC
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSub = new System.Windows.Forms.Button();
             this.tipLocationList = new System.Windows.Forms.ToolTip(this.components);
+            this.lblTotalItemSmall = new System.Windows.Forms.Label();
             this.gbTitle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@ namespace SMZ3FC
             // gbTitle
             // 
             this.gbTitle.BackColor = System.Drawing.SystemColors.Control;
+            this.gbTitle.Controls.Add(this.lblTotalItemSmall);
             this.gbTitle.Controls.Add(this.cbActive);
             this.gbTitle.Controls.Add(this.lblCount);
             this.gbTitle.Controls.Add(this.btnAdd);
@@ -99,6 +101,7 @@ namespace SMZ3FC
             this.lblCount.Size = new System.Drawing.Size(31, 34);
             this.lblCount.TabIndex = 4;
             this.lblCount.Text = "?";
+            this.lblCount.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnAdd
             // 
@@ -126,6 +129,16 @@ namespace SMZ3FC
             this.tipLocationList.InitialDelay = 500;
             this.tipLocationList.ReshowDelay = 100;
             // 
+            // lblTotalItemSmall
+            // 
+            this.lblTotalItemSmall.AutoSize = true;
+            this.lblTotalItemSmall.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalItemSmall.Location = new System.Drawing.Point(131, 49);
+            this.lblTotalItemSmall.Name = "lblTotalItemSmall";
+            this.lblTotalItemSmall.Size = new System.Drawing.Size(21, 15);
+            this.lblTotalItemSmall.TabIndex = 6;
+            this.lblTotalItemSmall.Text = "/5";
+            // 
             // LocationDisp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,5 +163,6 @@ namespace SMZ3FC
         private System.Windows.Forms.Button btnSub;
         private System.Windows.Forms.CheckBox cbActive;
         private System.Windows.Forms.ToolTip tipLocationList;
+        private System.Windows.Forms.Label lblTotalItemSmall;
     }
 }
