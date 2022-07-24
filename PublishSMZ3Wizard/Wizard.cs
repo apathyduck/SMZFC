@@ -29,7 +29,11 @@ namespace PublishSMZ3Wizard
         {
             var httpClinet = new HttpClient();
             var gitClient = new GitHubClient(new ProductHeaderValue("SMZ3-Full-Countdown"));
-            //var threadrepo = await gitClient.Repository.Content.GetAllContents(repoid);
+            //var repo = await gitClient.Repository.Content.GetAllContents(repoid);
+
+            //var smz3fold = (from dir in repo where dir.Name.Equals("SMZ3FC") select dir).First();
+
+            var repo = await gitClient.Repository.Content.GetAllContents(repoid, "SMZ3FC");
             var releases = await gitClient.Repository.Release.GetAll(repoid);
             var latest = releases[0];
 
