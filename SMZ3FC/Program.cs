@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.ComponentModel;
 using System.Drawing;
+using System.Reflection;
 
 namespace SMZ3FC
 {
@@ -25,6 +26,8 @@ namespace SMZ3FC
         static void Main()
         {
 
+           var ass = Assembly.GetCallingAssembly();
+            
            
             smz3Set = new SMZ3FCSettings();
 

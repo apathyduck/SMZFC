@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoUpdaterDotNET;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -27,14 +28,17 @@ namespace SMZ3FC
         private SMZ3FCSettings settings;
         private SubLocViewer myLocView; 
 
-     
-      
+        
         public string SpoilerLogPath { get; private set; } = string.Empty;
 
     
       
         public ItemCountViewer(SMZ3FCManager ai, SMZ3FCSettings set)
         {
+
+            AutoUpdater.ShowRemindLaterButton = false;
+            AutoUpdater.Start("https://apathyduck.github.io/SMZFC/UpdateConfig.xml");
+
             InitializeComponent();
 
             settings = set;
@@ -44,7 +48,6 @@ namespace SMZ3FC
 
             smzManager = ai;
 
-            //SetGroups(ag);
             
             if(settings.PrimaryLocColor == Color.Empty)
             {
