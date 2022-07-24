@@ -31,11 +31,8 @@ namespace SMZ3FC
       
         public string SpoilerLogPath { get; private set; } = string.Empty;
 
-        //public event EventHandler OpenNewSpoilerLog;
-        public event EventHandler LocationDataUpdated;
-        bool showstreamview = true;
-        bool showlocviwer = false;
-
+    
+      
         public ItemCountViewer(SMZ3FCManager ai, SMZ3FCSettings set)
         {
             InitializeComponent();
@@ -55,16 +52,11 @@ namespace SMZ3FC
             }
 
 
-            myStrmView = new StreamView(settings);
+            myStrmView = new StreamView(settings, smzManager.ActiveWorld);
             hlpForm = new HelpForm();
             setForm = new SettingsForm(settings);
-            
-
-            LocationDisp.ActiveStatusOn += StatusOnHandler;
-            LocationDisp.CountChanged += LocationDisp_CountChanged;
-
-            showstreamview = streamviewToolStripMenuItem.Checked = true;
-            myLocView = new SubLocViewer();
+                    
+            myLocView = new SubLocViewer(smzManager.ActiveWorld);
 
         }
 
@@ -109,9 +101,6 @@ namespace SMZ3FC
             {
                 LocationDisp ld = new LocationDisp(settings);
                 ld.SetLocationData(active);
-                LocationDisp.ActiveStatusOn += ld.OtherActiveStatusOnHandler;
-                LocationDataUpdated += ld.HandleLocDataUpdated;
-
                 tabLocationTab.TabPages[active.Tab].Controls[$"flp{active.Tab}"].Controls.Add(ld);
               
             }
@@ -128,52 +117,11 @@ namespace SMZ3FC
 
             tabLocationTab.SuspendLayout();
 
-
-           
-
             foreach (TabPage tp in tabLocationTab.TabPages)
             {
                 tabLocationTab.TabPages.Remove(tp);
             }
             tabLocationTab.ResumeLayout();
-
-
-        }
-
-        private void LocationDisp_CountChanged(object sender, EventArgs e)
-        {
-
-
-            SetTotalItems();
-            UpdateStreamView(sender);
-            UpdateSubLocViewer(sender);
-        }
-
-        private void UpdateSubLocViewer(object sender)
-        {
-            LocationDisp s = (LocationDisp)sender;
-            myLocView.SetText(s.ToolTipText);
-            if (showlocviwer)
-            {
-                myLocView.Show();
-            }
-        }
-
-        private void StatusOnHandler(object sender, EventArgs e)
-        {
-
-            UpdateStreamView(sender);
-        }
-
-        private void UpdateStreamView(object sender)
-        {
-            LocationDisp s = (LocationDisp)sender;
-            myStrmView.SetLabel(s.AreaData);
-            if (showstreamview)
-            {
-                myStrmView.Show();
-            }
-
         }
 
         private void SetTotalItems()
@@ -185,10 +133,12 @@ namespace SMZ3FC
         {
             smzManager.LoadLogFile(SpoilerLogPath);
             SetGroups();
-            LocationDataUpdated?.Invoke(this, new EventArgs());
+           
             SetTotalItems();
             lblHash.Text = smzManager.ActiveWorld.CurrentLog.LogHash;
             pnLoadSpoilerBlank.Visible = false;
+            streamviewToolStripMenuItem.Checked = true;
+            myStrmView.Show();
         }
 
         private void SetSelectedGroup(string groupk, string itemk, bool def)
@@ -217,16 +167,12 @@ namespace SMZ3FC
             myStrmView.Close();
         }
 
-      
-
         private void loadSpoilerLogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (ofdOpenSpoilerBrowser.ShowDialog() == DialogResult.OK)
-            {
-                
+            {               
                 SpoilerLogPath = ofdOpenSpoilerBrowser.FileName;
                 LoadSpoilerLog();
-               
             }
         }
 
@@ -242,8 +188,7 @@ namespace SMZ3FC
 
         }
 
-      
-
+  
         private void getHelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -306,16 +251,10 @@ namespace SMZ3FC
             }
         }
 
-     
-
         private void streamviewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             streamviewToolStripMenuItem.Checked = !streamviewToolStripMenuItem.Checked;
-            showstreamview = streamviewToolStripMenuItem.Checked;
-            if(!showstreamview)
-            {
-                myStrmView.Hide();
-            }
+            myStrmView.Display(streamviewToolStripMenuItem.Checked);
         }
 
         private void areaEdiotToolStripMenuItem_Click(object sender, EventArgs e)
@@ -399,11 +338,8 @@ namespace SMZ3FC
 
         private void subLocationWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            showlocviwer = subLocationWindowToolStripMenuItem.Checked = !subLocationWindowToolStripMenuItem.Checked;
-            if(!showlocviwer)
-            {
-                myLocView.Hide();
-            }
+            subLocationWindowToolStripMenuItem.Checked = !subLocationWindowToolStripMenuItem.Checked;
+            myLocView.Display(subLocationWindowToolStripMenuItem.Checked);
         }
 
         private void generateReportToolStripMenuItem_Click(object sender, EventArgs e)
@@ -438,7 +374,7 @@ namespace SMZ3FC
 
         private void locationNameEditorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FriendlyNameEditor fne = new FriendlyNameEditor(SpoilerLogStructure.SpoilerLocations);
+            FriendlyNameEditor fne = new FriendlyNameEditor(settings);
             fne.ShowDialog();
         }
     }

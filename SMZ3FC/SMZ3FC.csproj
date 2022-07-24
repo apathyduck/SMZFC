@@ -78,7 +78,6 @@
     <Compile Include="AreaGroupings.cs" />
     <Compile Include="SMZ3FCManager.cs" />
     <Compile Include="ConfigurableProperty.cs" />
-    <Compile Include="CollatedLocationData.cs" />
     <Compile Include="FormGitXML.cs">
       <SubType>Form</SubType>
     </Compile>

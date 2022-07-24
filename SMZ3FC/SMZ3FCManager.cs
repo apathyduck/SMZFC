@@ -59,8 +59,6 @@ namespace SMZ3FC
 
         public List<LocationInfo> AllLocationInfo { get; private set; }
 
-        
-    
         public string CurrentLogFilePath { get; private set; }
 
         public string CurrentCombinedHash
@@ -103,7 +101,6 @@ namespace SMZ3FC
             }
         }
 
-
         public void AddFile(SMZ3XMLFileInfo fi)
         {
             switch(fi.FileType)
@@ -135,7 +132,6 @@ namespace SMZ3FC
             }
 
         }
-
 
         public void RemoveItemList(string k)
         {
@@ -198,9 +194,6 @@ namespace SMZ3FC
                 SMZ3ManagerError?.Invoke(this, ea);
                 return;
             }
-
-
-
 
             if (Worlds.Keys.Contains(settings.DefaultGroup))
             {

@@ -21,9 +21,6 @@ namespace SMZ3FC
         GitHubClient gitClient;
         string kAreaFolderName = "Area Group Files";
         string kItemFolderName = "Item Files";
-        string kArea = "Area";
-        string kItem = "Item";
-        
         public List<SMZ3XMLFileInfo> NewFiles { get; private set; }
 
        
@@ -75,6 +72,7 @@ namespace SMZ3FC
                         {
                             Name = f.Name,
                             Path = f.Path,
+                            Info = new FileInfo(f.Path),
                             FileType = SMZ3XMLFileType.World
                         };
                         Action addtolb = delegate { DelegateAddToLB(lbAreaDown, ni); };
@@ -95,6 +93,7 @@ namespace SMZ3FC
                     {
                         Name = f.Name,
                         Path = f.Path,
+                        Info = new FileInfo(f.Path),
                         FileType = SMZ3XMLFileType.Items
                      };
                         Action addtolb = delegate { DelegateAddToLB(lbItemsDown, ni); };

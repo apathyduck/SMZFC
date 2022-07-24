@@ -14,6 +14,8 @@ namespace SMZ3FC
 
         public MajorItemsDefinition CurrentItems { get; private set; }
 
+        public ActiveArea PrimaryArea { get; private set; }
+
         public string ItemsKey
         { 
             get
@@ -69,6 +71,16 @@ namespace SMZ3FC
             }
         }
 
+        public event EventHandler PrimaryAreaUpdated;
+
+        public void SetPrimaryArea(ActiveArea aa)
+        {
+            ActiveArea prevActive = PrimaryArea;
+            PrimaryArea = aa;
+            prevActive?.UpdatePrimary();
+            PrimaryAreaUpdated?.Invoke(this, new EventArgs());
+        }
+
         public WorldState(WorldDefinition world, MajorItemsDefinition mi)
         {
             CurrentWorld = world;
@@ -101,14 +113,18 @@ namespace SMZ3FC
             {
                 return;
             }
+
             Areas = new Dictionary<string, ActiveArea>();
             foreach (AreaDefinition ad in CurrentWorld.Areas.Values)
             {
-                ActiveArea aa = new ActiveArea(ad, CurrentLog, this);
+                ActiveArea aa = new ActiveArea(ad, CurrentLog, this);              
                 Areas.Add(aa.Name, aa);
             }
 
+            PrimaryArea = null;
+
         }
 
+   
     }
 }

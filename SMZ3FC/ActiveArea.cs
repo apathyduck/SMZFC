@@ -9,12 +9,13 @@ namespace SMZ3FC
     public class ActiveArea
     {
 
+
         public string Name
         {
             get
             {
                 return CurrentArea.Name;
-                     
+
             }
         }
 
@@ -33,7 +34,7 @@ namespace SMZ3FC
         {
             get
             {
-                 return (from locs in CurrentLocations.Values where locs.IsMajor select locs).Count();
+                return (from locs in CurrentLocations.Values where locs.IsMajor select locs).Count();
             }
         }
 
@@ -45,8 +46,8 @@ namespace SMZ3FC
             }
         }
 
-        public int FoundItems 
-        { 
+        public int FoundItems
+        {
             get
             {
                 return mfounditems;
@@ -56,9 +57,9 @@ namespace SMZ3FC
                 if (value > TotalItems)
                 {
                     mfounditems = TotalItems;
-   
+
                 }
-                else if(value < 0)
+                else if (value < 0)
                 {
                     mfounditems = 0;
                 }
@@ -66,6 +67,7 @@ namespace SMZ3FC
                 {
                     mfounditems = value;
                 }
+                ItemCountUpdate?.Invoke(this, new EventArgs());
             }
         }
 
@@ -79,8 +81,48 @@ namespace SMZ3FC
             }
         }
 
+        public bool IsPrimary
+        {
+            get
+            {
+                return StateOwner.PrimaryArea?.Equals(this) ?? false;
+            }
+        }
+
+        public void SetAsPrimary()
+        {
+            if (StateOwner.PrimaryArea?.Equals(this) ?? false)
+            {
+                return;
+            }
+            StateOwner.SetPrimaryArea(this);
+            UpdatePrimary();
+        }
+
+        public void UpdatePrimary()
+        {
+            PrimaryAreaUpdate?.Invoke(this, new EventArgs());
+        }
+
+        public event EventHandler PrimaryAreaUpdate;
+
+        public event EventHandler ItemCountUpdate;
+
         public Dictionary<string, ActiveLocation> CurrentLocations { get; set; }
 
+        public string LocationTextString
+        {
+            get
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (ActiveLocation loc in CurrentLocations.Values)
+                {
+                    sb.AppendLine(loc.Name);
+                }
+
+                return sb.ToString();
+            }
+        }
         public void ItemFound()
         {
             FoundItems++;
@@ -98,15 +140,19 @@ namespace SMZ3FC
             StateOwner = state;
             CurrentArea = ad;
             CurrentLocations = new Dictionary<string, ActiveLocation>();
-
+          
             foreach (LocationInfo loc in ad.FullLocationList.Values)
             {
                 SpoilerLogLocation sll = sl.LogLocationInfos[loc.SpoilerLocationName];
                 ActiveLocation al = new ActiveLocation(loc, sll, state.CurrentItems.IsMajor(sll.Item));
-                CurrentLocations.Add(al.Key, al);
-            }
+             
 
+                CurrentLocations.Add(al.Key, al);
+            }     
         }
+
+      
+     
 
 
        

@@ -38,7 +38,7 @@ namespace SMZ3FC
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gbLocInfo = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSaveAndExit = new System.Windows.Forms.Button();
             this.gbLocInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,25 +129,27 @@ namespace SMZ3FC
             this.gbLocInfo.TabStop = false;
             this.gbLocInfo.Text = "Location Info";
             // 
-            // button1
+            // btnSaveAndExit
             // 
-            this.button1.Location = new System.Drawing.Point(604, 502);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 34);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSaveAndExit.Location = new System.Drawing.Point(604, 501);
+            this.btnSaveAndExit.Name = "btnSaveAndExit";
+            this.btnSaveAndExit.Size = new System.Drawing.Size(77, 34);
+            this.btnSaveAndExit.TabIndex = 10;
+            this.btnSaveAndExit.Text = "Apply";
+            this.btnSaveAndExit.UseVisualStyleBackColor = true;
+            this.btnSaveAndExit.Click += new System.EventHandler(this.btnSaveAndExit_Click);
             // 
             // FriendlyNameEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 564);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(696, 547);
+            this.Controls.Add(this.btnSaveAndExit);
             this.Controls.Add(this.gbLocInfo);
             this.Controls.Add(this.lbLocations);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FriendlyNameEditor";
-            this.Text = "FriendlyNameEditor";
+            this.Text = "Location Name Editor";
             this.gbLocInfo.ResumeLayout(false);
             this.gbLocInfo.PerformLayout();
             this.ResumeLayout(false);
@@ -165,6 +167,6 @@ namespace SMZ3FC
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox gbLocInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSaveAndExit;
     }
 }

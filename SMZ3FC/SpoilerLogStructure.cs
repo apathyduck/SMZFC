@@ -40,7 +40,11 @@ namespace SMZ3FC
             }
 
         }
-      
 
+        public static void WriteJson(string path)
+        {
+            string jsonstruc = JsonConvert.SerializeObject(SpoilerLocations.Values, Formatting.Indented);
+            File.WriteAllText(Path.Combine(Environment.CurrentDirectory, path), jsonstruc);
+        }
     }
 }

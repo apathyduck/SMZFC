@@ -8,7 +8,7 @@ namespace SMZ3FC
 {
     public class LocationInfo
     {
-
+        [JsonIgnore]
         public string Name
         {
             get
@@ -27,8 +27,6 @@ namespace SMZ3FC
         public string FriendlyName { get; set; }
         [JsonProperty("spoilername")]
         public string SpoilerLocationName { get; set; }
-
-        public bool IsMajor { get; set; }
 
         [JsonProperty("use")]
         public bool UseFriendly

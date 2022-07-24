@@ -14,16 +14,35 @@ namespace SMZ3FC
     {
 
 
-        public void SetText(string s)
-        {
-            rtbSubLocs.Text = s;
-            int n = rtbSubLocs.Lines.Count();
-            this.Height = rtbSubLocs.Font.Height * (n+3) + rtbSubLocs.Margin.Vertical;
-
-        }
-        public SubLocViewer()
+        WorldState curWorld;
+        bool display;
+        public SubLocViewer(WorldState ws)
         {
             InitializeComponent();
+            curWorld = ws;
+            curWorld.PrimaryAreaUpdated += CurWorld_PrimaryAreaUpdated;
+        }
+
+        public void Display(bool disp)
+        {
+            display = disp;
+            if(display)
+            {
+                this.Show();
+            }
+            else
+            { 
+                this.Hide();
+            }
+        }
+
+        private void CurWorld_PrimaryAreaUpdated(object sender, EventArgs e)
+        {
+            rtbSubLocs.Text = curWorld.PrimaryArea?.LocationTextString;
+            if(display)
+            {
+                this.Show();
+            }
         }
     }
 }

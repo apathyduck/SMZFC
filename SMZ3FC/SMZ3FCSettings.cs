@@ -66,9 +66,10 @@ namespace SMZ3FC
                     string setting = ConfigurationManager.AppSettings[key];
                     try
                     {
+                      
                         pi.SetValue(this, conv.ConvertFromString(setting));
                     }
-                    catch
+                    catch(Exception ex)
                     {
                         //Leave value as default
                     }
@@ -105,7 +106,9 @@ namespace SMZ3FC
             {
                 if (Attribute.IsDefined(pi, typeof(ConfigurableProperty)))
                 {
-                    configFile.AppSettings.Settings[pi.Name].Value = pi.GetValue(this).ToString();
+                    TypeConverter conv = TypeDescriptor.GetConverter(pi.PropertyType);
+
+                    configFile.AppSettings.Settings[pi.Name].Value = (string)conv.ConvertTo(pi.GetValue(this), typeof(string));
 
                 }
             }

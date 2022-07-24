@@ -15,103 +15,90 @@ namespace SMZ3FC
     {
         public ActiveArea AreaData { get; private set; }
 
-        public static event EventHandler ActiveStatusOn;
-        public static event EventHandler CountChanged;
 
         SMZ3FCSettings settings;
 
-        public string ToolTipText { get; private set; }
-
-        //Label lblTotalItemSmall = new Label();
 
         public LocationDisp(SMZ3FCSettings set)
         {
             InitializeComponent();
             settings = set;
             lblTotalItemSmall.Text = string.Empty;
-           
-
-
         }
 
 
         public void SetLocationData(ActiveArea active)
         {
             AreaData = active;
-            gbTitle.Text = $"{active.Name} | ?";
+            gbTitle.Text = $"{active.Name} | {AreaData.CurrentArea.TotalLocations}";
 
-            StringBuilder sb = new StringBuilder();
-            foreach(ActiveLocation li in AreaData.CurrentLocations.Values)
-            {
-                sb.AppendLine(li.Name);
-            }
+            AreaData.PrimaryAreaUpdate += AreaData_PrimaryAreaChanged;
+            AreaData.ItemCountUpdate += AreaData_ItemCountUpdate;
+            tipLocationList.SetToolTip(gbTitle, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(btnAdd, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(btnSub, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(rbHide, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(rbShow, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(lblCount, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(lblTotalItemSmall, AreaData.LocationTextString);
+            tipLocationList.SetToolTip(this, AreaData.LocationTextString);
 
-            ToolTipText = sb.ToString();
-            tipLocationList.SetToolTip(gbTitle, ToolTipText);
+
+
         }
 
-        public void SetActive()
+        private void AreaData_ItemCountUpdate(object sender, EventArgs e)
         {
-            cbActive.Checked = true;
+            UpdateCount();      
         }
 
-        public void OtherActiveStatusOnHandler(object sender, EventArgs e)
+        private void AreaData_PrimaryAreaChanged(object sender, EventArgs e)
         {
-            ActiveArea data = ((LocationDisp)sender).AreaData;
-            if(!data.Name.Equals(AreaData.Name))
-            {
-                cbActive.Checked = false;
-                gbTitle.BackColor = SystemColors.Control;
-                BackColor = SystemColors.Control;
-            }
-            else
+            MakePrimary(AreaData.IsPrimary);
+            
+        }
+
+    
+
+        private void MakePrimary(bool prime)
+        {
+            if(prime)
             {
                 rbShow.Checked = true;
                 gbTitle.BackColor = settings.PrimaryLocColor;
                 BackColor = settings.PrimaryLocColor;
+                cbActive.Checked = true;
             }
-            
+            else
+            {
+                cbActive.Checked = false;
+                gbTitle.BackColor = SystemColors.Control;
+                BackColor = SystemColors.Control;
+                cbActive.Checked = false;
+            }
         }
-
-
-        public void HandleLocDataUpdated(object sender, EventArgs e)
-        {
-            gbTitle.Text = $"{AreaData.Name} | {AreaData.LocationCount}";
-        }
-
-      
 
         private void rbShow_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateCount(0);
+            UpdateCount();
         }
 
-        private void UpdateCount(int changeval)
+        private void UpdateCount()
         {
-
-            switch (changeval)
-            {              
-                case 1:
-                    AreaData.ItemReplace();
-                    break;
-                case -1:
-                    AreaData.ItemFound();
-                    break;
-                default:
-                    break;
-            }
-          
-            if(rbShow.Checked)
+            if (rbShow.Checked)
             {
                 lblCount.Text = $"{AreaData.CurrentItems}";
                 lblTotalItemSmall.Text = $"/{AreaData.TotalItems}";
             }
-            else
+            else if (!AreaData.IsPrimary)
             {
                 lblCount.Text = "?";
                 lblTotalItemSmall.Text = string.Empty;
             }
-            CountChanged?.Invoke(this, new EventArgs());
+            else
+            {
+                rbShow.Checked = true;
+            }
         }
 
         private void btnSub_Click(object sender, EventArgs e)
@@ -119,8 +106,8 @@ namespace SMZ3FC
             if(!rbShow.Checked)
             { return; }
 
-           
-            UpdateCount(-1);
+            AreaData.ItemFound();
+          
             if (settings.SubButtonAuto)
             {
                 cbActive.Checked = true;
@@ -131,7 +118,9 @@ namespace SMZ3FC
         {
             if (!rbShow.Checked)
             { return; }
-            UpdateCount(1);
+
+            AreaData.ItemReplace();
+
             if (settings.AddButtonAuto)
             {
                 cbActive.Checked = true;
@@ -139,11 +128,21 @@ namespace SMZ3FC
         }
 
         private void cbActive_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbActive.Checked)
+        {        
+            if(AreaData.IsPrimary)
             {
-                ActiveStatusOn?.Invoke(this, new EventArgs());
+                cbActive.Checked = true;
             }
+            if(cbActive.Checked)
+            {
+                AreaData.SetAsPrimary();
+            }
+        }
+
+        private void tipLocationList_Popup(object sender, PopupEventArgs e)
+        {
+            
+           tipLocationList.ToolTipTitle = AreaData.LocationTextString ;
         }
     }
 }

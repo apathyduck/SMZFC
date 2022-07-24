@@ -15,14 +15,32 @@ namespace SMZ3FC
 
 
         SMZ3FCSettings settings;
-        public void SetLabel(ActiveArea loc)
-        {
+        WorldState curWorldState;
+        bool display = true;
 
-            lblStream.Text = $"{loc.Name}: {loc.CurrentItems}";
+        private void CurWorldState_PrimaryAreaUpdated(object sender, EventArgs e)
+        {
+            lblStream.Text = $"{curWorldState.PrimaryArea.Name}: {curWorldState.PrimaryArea.CurrentItems}";
             lblStream.Font = settings.StreamViewFont;
             lblStream.ForeColor = settings.StreamViewFontColor;
-            
+            if (display)
+            {
+                this.Show();
+            }
+        }
 
+
+        public void Display(bool disp)
+        {
+            display = disp;
+            if(display)
+            {
+                this.Show();
+            }
+            else
+            {
+                this.Hide();
+            }
         }
 
         public void UpdateSettings()
@@ -44,7 +62,7 @@ namespace SMZ3FC
             {
                 settings.StreamViewColorKey = this.BackColor;
             }
-            if(settings.StreamViewColorKey != null)
+            if(settings.StreamViewFontColor != Color.Empty)
             {
                 lblStream.ForeColor = settings.StreamViewFontColor;
             }
@@ -56,12 +74,17 @@ namespace SMZ3FC
         }
 
 
-        public StreamView(SMZ3FCSettings set)
+        public StreamView(SMZ3FCSettings set, WorldState wrld)
         {
            
             InitializeComponent();
             settings = set;
             UpdateSettings();
+            curWorldState = wrld;
+            curWorldState.PrimaryAreaUpdated += CurWorldState_PrimaryAreaUpdated;
+            lblStream.Text = "No Area";
+
+         
         }
     }
 

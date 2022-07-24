@@ -13,12 +13,13 @@ namespace SMZ3FC
     public partial class FriendlyNameEditor : Form
     {
         LocationInfo selLoc;
+        SMZ3FCSettings settings;
 
-        public FriendlyNameEditor(Dictionary<string,LocationInfo> lifs)
+        public FriendlyNameEditor(SMZ3FCSettings set)
         {
             InitializeComponent();
-
-            foreach(LocationInfo li in lifs.Values)
+            settings = set;
+            foreach(LocationInfo li in SpoilerLogStructure.SpoilerLocations.Values)
             {
                 lbLocations.Items.Add(li);
             }
@@ -47,6 +48,10 @@ namespace SMZ3FC
 
             selLoc.FriendlyName = tbFriendly.Text;
             lbLocations.Items[lbLocations.SelectedIndex] = lbLocations.Items[lbLocations.SelectedIndex];
+            if(string.IsNullOrEmpty(tbFriendly.Text))
+            {
+                cbUse.Checked = true;
+            }
         }
 
   
@@ -57,6 +62,12 @@ namespace SMZ3FC
             { return; }
             selLoc.UseFriendly = cbUse.Checked;
             lbLocations.Items[lbLocations.SelectedIndex] = lbLocations.Items[lbLocations.SelectedIndex];
+        }
+
+        private void btnSaveAndExit_Click(object sender, EventArgs e)
+        {
+            SpoilerLogStructure.WriteJson(settings.LocationInfoJsonPath);
+            this.Close();
         }
     }
 }

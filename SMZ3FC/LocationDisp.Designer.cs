@@ -33,12 +33,12 @@ namespace SMZ3FC
             this.rbShow = new System.Windows.Forms.RadioButton();
             this.rbHide = new System.Windows.Forms.RadioButton();
             this.gbTitle = new System.Windows.Forms.GroupBox();
+            this.lblTotalItemSmall = new System.Windows.Forms.Label();
             this.cbActive = new System.Windows.Forms.CheckBox();
             this.lblCount = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSub = new System.Windows.Forms.Button();
             this.tipLocationList = new System.Windows.Forms.ToolTip(this.components);
-            this.lblTotalItemSmall = new System.Windows.Forms.Label();
             this.gbTitle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,16 @@ namespace SMZ3FC
             this.gbTitle.TabIndex = 2;
             this.gbTitle.TabStop = false;
             this.gbTitle.Text = "Loc Name";
+            // 
+            // lblTotalItemSmall
+            // 
+            this.lblTotalItemSmall.AutoSize = true;
+            this.lblTotalItemSmall.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalItemSmall.Location = new System.Drawing.Point(131, 49);
+            this.lblTotalItemSmall.Name = "lblTotalItemSmall";
+            this.lblTotalItemSmall.Size = new System.Drawing.Size(21, 15);
+            this.lblTotalItemSmall.TabIndex = 6;
+            this.lblTotalItemSmall.Text = "/5";
             // 
             // cbActive
             // 
@@ -128,16 +138,7 @@ namespace SMZ3FC
             this.tipLocationList.AutoPopDelay = 32000;
             this.tipLocationList.InitialDelay = 500;
             this.tipLocationList.ReshowDelay = 100;
-            // 
-            // lblTotalItemSmall
-            // 
-            this.lblTotalItemSmall.AutoSize = true;
-            this.lblTotalItemSmall.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalItemSmall.Location = new System.Drawing.Point(131, 49);
-            this.lblTotalItemSmall.Name = "lblTotalItemSmall";
-            this.lblTotalItemSmall.Size = new System.Drawing.Size(21, 15);
-            this.lblTotalItemSmall.TabIndex = 6;
-            this.lblTotalItemSmall.Text = "/5";
+            this.tipLocationList.Popup += new System.Windows.Forms.PopupEventHandler(this.tipLocationList_Popup);
             // 
             // LocationDisp
             // 

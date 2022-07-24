@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SMZ3FC
 {
-  
+
     public static class LocationAndItemKeys
     {
         public static List<string> Locations { get; set; } = new List<string>()
@@ -489,27 +489,27 @@ namespace SMZ3FC
             "Hyrule Castle Map",
             "Sewer Key",
             "Five Rupees",
-            "Sanctuary Heart Container",        
+            "Sanctuary Heart Container",
             "Eastern Palace Compass",
-            "Eastern Palace Map",          
-            "Desert Palace Map",          
+            "Eastern Palace Map",
+            "Desert Palace Map",
             "Tower of Hera Map",
-            "Tower of Hera Compass",         
+            "Tower of Hera Compass",
             "Palace of Darkness Compass",
-            "Palace of Darkness Map",          
-            "Reserve Tank",        
+            "Palace of Darkness Map",
+            "Reserve Tank",
             "Swamp Palace Map",
-            "Swamp Palace Compass",           
-            "Skull Woods Map",            
-            "Skull Woods Compass",          
+            "Swamp Palace Compass",
+            "Skull Woods Map",
+            "Skull Woods Compass",
             "Thieves Town Compass",
-            "Thieves Town Map",       
-            "Ice Palace Compass",            
-            "Ice Palace Map",           
-            "Misery Mire Compass",          
-            "Misery Mire Map",           
+            "Thieves Town Map",
+            "Ice Palace Compass",
+            "Ice Palace Map",
+            "Misery Mire Compass",
+            "Misery Mire Map",
             "Turtle Rock Compass",
-            "Turtle Rock Map",          
+            "Turtle Rock Map",
             "Ganons Tower Map",
             "One Rupee",
             "Ganons Tower Compass",
