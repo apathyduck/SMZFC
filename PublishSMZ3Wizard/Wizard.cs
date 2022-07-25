@@ -44,7 +44,7 @@ namespace PublishSMZ3Wizard
                 {
                     Assest = assest,
                     Name = assest.Name
-
+                    
                 };
                 lbAssests.Items.Add(lba);
 
@@ -59,7 +59,6 @@ namespace PublishSMZ3Wizard
                 tbBuild.Text = myConfig.Build.ToString();
 
             }
-        }
 
 
 
