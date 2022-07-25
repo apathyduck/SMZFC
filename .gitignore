@@ -4,7 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 #Specific Files
-SMZ3FC/PublishSMZ3Wizard/App.Config
+PublishSMZ3Wizard/App.Config
 
 
 # User-specific files
