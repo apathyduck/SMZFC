@@ -92,6 +92,7 @@
     <Compile Include="ActiveArea.cs" />
     <Compile Include="ActiveLocation.cs" />
     <Compile Include="AreaDefinition.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="WorldEditorAreaBuilderItem.cs" />
     <Compile Include="WorldEditor.cs">
       <SubType>Form</SubType>
@@ -207,6 +208,7 @@
     <Compile Include="XMLPreviewWindow.Designer.cs">
       <DependentUpon>XMLPreviewWindow.cs</DependentUpon>
     </Compile>
+    <Content Include="UpdateConfig.xml" />
     <EmbeddedResource Include="WorldEditor.resx">
       <DependentUpon>WorldEditor.cs</DependentUpon>
     </EmbeddedResource>

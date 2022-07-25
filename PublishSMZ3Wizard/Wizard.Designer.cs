@@ -29,54 +29,54 @@ namespace PublishSMZ3Wizard
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbMajor = new System.Windows.Forms.TextBox();
+            this.tbMInor = new System.Windows.Forms.TextBox();
+            this.tbPatch = new System.Windows.Forms.TextBox();
+            this.tbBuild = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbAssests = new System.Windows.Forms.ListBox();
+            this.tbSerVersion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lbAssests = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbMajor
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 23);
-            this.textBox1.TabIndex = 0;
+            this.tbMajor.Location = new System.Drawing.Point(13, 39);
+            this.tbMajor.Name = "tbMajor";
+            this.tbMajor.Size = new System.Drawing.Size(56, 23);
+            this.tbMajor.TabIndex = 0;
             // 
-            // textBox2
+            // tbMInor
             // 
-            this.textBox2.Location = new System.Drawing.Point(75, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(56, 23);
-            this.textBox2.TabIndex = 1;
+            this.tbMInor.Location = new System.Drawing.Point(75, 39);
+            this.tbMInor.Name = "tbMInor";
+            this.tbMInor.Size = new System.Drawing.Size(56, 23);
+            this.tbMInor.TabIndex = 1;
             // 
-            // textBox3
+            // tbPatch
             // 
-            this.textBox3.Location = new System.Drawing.Point(137, 39);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(56, 23);
-            this.textBox3.TabIndex = 2;
+            this.tbPatch.Location = new System.Drawing.Point(137, 39);
+            this.tbPatch.Name = "tbPatch";
+            this.tbPatch.Size = new System.Drawing.Size(56, 23);
+            this.tbPatch.TabIndex = 2;
             // 
-            // textBox4
+            // tbBuild
             // 
-            this.textBox4.Location = new System.Drawing.Point(199, 39);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 23);
-            this.textBox4.TabIndex = 3;
+            this.tbBuild.Location = new System.Drawing.Point(199, 39);
+            this.tbBuild.Name = "tbBuild";
+            this.tbBuild.Size = new System.Drawing.Size(56, 23);
+            this.tbBuild.TabIndex = 3;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.tbSerVersion);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbBuild);
+            this.groupBox1.Controls.Add(this.tbPatch);
+            this.groupBox1.Controls.Add(this.tbMInor);
+            this.groupBox1.Controls.Add(this.tbMajor);
             this.groupBox1.Location = new System.Drawing.Point(24, 18);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(324, 145);
@@ -84,14 +84,13 @@ namespace PublishSMZ3Wizard
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Set New Verison #";
             // 
-            // lbAssests
+            // tbSerVersion
             // 
-            this.lbAssests.FormattingEnabled = true;
-            this.lbAssests.ItemHeight = 15;
-            this.lbAssests.Location = new System.Drawing.Point(24, 218);
-            this.lbAssests.Name = "lbAssests";
-            this.lbAssests.Size = new System.Drawing.Size(324, 169);
-            this.lbAssests.TabIndex = 5;
+            this.tbSerVersion.Location = new System.Drawing.Point(75, 68);
+            this.tbSerVersion.Name = "tbSerVersion";
+            this.tbSerVersion.ReadOnly = true;
+            this.tbSerVersion.Size = new System.Drawing.Size(180, 23);
+            this.tbSerVersion.TabIndex = 5;
             // 
             // label1
             // 
@@ -102,13 +101,14 @@ namespace PublishSMZ3Wizard
             this.label1.TabIndex = 4;
             this.label1.Text = "Old Ver #:";
             // 
-            // textBox5
+            // lbAssests
             // 
-            this.textBox5.Location = new System.Drawing.Point(75, 68);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(180, 23);
-            this.textBox5.TabIndex = 5;
+            this.lbAssests.FormattingEnabled = true;
+            this.lbAssests.ItemHeight = 15;
+            this.lbAssests.Location = new System.Drawing.Point(24, 218);
+            this.lbAssests.Name = "lbAssests";
+            this.lbAssests.Size = new System.Drawing.Size(324, 169);
+            this.lbAssests.TabIndex = 5;
             // 
             // label2
             // 
@@ -138,12 +138,12 @@ namespace PublishSMZ3Wizard
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbMajor;
+        private System.Windows.Forms.TextBox tbMInor;
+        private System.Windows.Forms.TextBox tbPatch;
+        private System.Windows.Forms.TextBox tbBuild;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbSerVersion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lbAssests;
         private System.Windows.Forms.Label label2;
