@@ -94,6 +94,7 @@
     <Compile Include="ActiveArea.cs" />
     <Compile Include="ActiveLocation.cs" />
     <Compile Include="AreaDefinition.cs" />
+    <Compile Include="FCAutoUpdate.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Updater.cs">
       <SubType>Form</SubType>

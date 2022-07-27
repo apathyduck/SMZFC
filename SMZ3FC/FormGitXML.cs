@@ -22,6 +22,7 @@ namespace SMZ3FC
         string kAreaFolderName = "Area Group Files";
         string kItemFolderName = "Item Files";
         public List<SMZ3XMLFileInfo> NewFiles { get; private set; }
+        Thread loadthread;
 
        
         public FormGitXML()
@@ -35,87 +36,88 @@ namespace SMZ3FC
            
 
 
-            Thread loadthread = new Thread(LoadFilesThread);
-            loadthread.Start();
+           
         }
 
 
         void LoadFilesThread()
         {
-            Action setpb = delegate { SetProgessValue(0); };
-            pbSync.Invoke(setpb);
+         
+                Action setpb = delegate { SetProgessValue(0); };
+                pbSync.Invoke(setpb);
 
-            var threadrepo = gitClient.Repository.Content.GetAllContents(repoid);
-            threadrepo.Wait();
+                var threadrepo = gitClient.Repository.Content.GetAllContents(repoid);
+                threadrepo.Wait();
 
-            setpb = delegate { SetProgessValue(33); };
+                setpb = delegate { SetProgessValue(33); };
 
-            pbSync.Invoke(setpb);
-            
-            var repo = threadrepo.Result;
-            int totalarea = 0;
-            int totalitem = 0;
+                pbSync.Invoke(setpb);
 
-            
+                var repo = threadrepo.Result;
+                int totalarea = 0;
+                int totalitem = 0;
 
-            foreach(var c in repo)
-            {
-                if (c.Name.Equals(kAreaFolderName))
+
+
+                foreach (var c in repo)
                 {
-                    var threadfiles = gitClient.Repository.Content.GetAllContents(repoid, c.Name);
-                    threadfiles.Wait();
-                    var files = threadfiles.Result;
-                    totalarea = files.Count;
-                    foreach (var f in files)
+                    if (c.Name.Equals(kAreaFolderName))
                     {
-                        SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
+                        var threadfiles = gitClient.Repository.Content.GetAllContents(repoid, c.Name);
+                        threadfiles.Wait();
+                        var files = threadfiles.Result;
+                        totalarea = files.Count;
+                        foreach (var f in files)
                         {
-                            Name = f.Name,
-                            Path = f.Path,
-                            Info = new FileInfo(f.Path),
-                            FileType = SMZ3XMLFileType.World
-                        };
-                        Action addtolb = delegate { DelegateAddToLB(lbAreaDown, ni); };
-                        lbAreaDown.Invoke(addtolb);
-                        Action addprogress = delegate { UpdateProgressBar(totalarea, 1, 33); };
-                        pbSync.Invoke(addprogress);
+                            SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
+                            {
+                                Name = f.Name,
+                                Path = f.Path,
+                                Info = new FileInfo(f.Path),
+                                FileType = SMZ3XMLFileType.World
+                            };
+                            Action addtolb = delegate { DelegateAddToLB(lbAreaDown, ni); };
+                            lbAreaDown.Invoke(addtolb);
+                            Action addprogress = delegate { UpdateProgressBar(totalarea, 1, 33); };
+                            pbSync.Invoke(addprogress);
+                        }
                     }
-                }
-                if(c.Name.Equals(kItemFolderName))
-                {
-                    var threadfiles = gitClient.Repository.Content.GetAllContents(repoid, c.Name);
-                    threadfiles.Wait();
-                    var files = threadfiles.Result;
-                    totalitem = files.Count;
-                    foreach (var f in files)
+                    if (c.Name.Equals(kItemFolderName))
                     {
-                    SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
-                    {
-                        Name = f.Name,
-                        Path = f.Path,
-                        Info = new FileInfo(f.Path),
-                        FileType = SMZ3XMLFileType.Items
-                     };
-                        Action addtolb = delegate { DelegateAddToLB(lbItemsDown, ni); };
-                        lbItemsDown.Invoke(addtolb);
-                        Action addprogress = delegate { UpdateProgressBar(totalitem, 1, 33); };
-                        pbSync.Invoke(addprogress);
+                        var threadfiles = gitClient.Repository.Content.GetAllContents(repoid, c.Name);
+                        threadfiles.Wait();
+                        var files = threadfiles.Result;
+                        totalitem = files.Count;
+                        foreach (var f in files)
+                        {
+                            SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
+                            {
+                                Name = f.Name,
+                                Path = f.Path,
+                                Info = new FileInfo(f.Path),
+                                FileType = SMZ3XMLFileType.Items
+                            };
+                            Action addtolb = delegate { DelegateAddToLB(lbItemsDown, ni); };
+                            lbItemsDown.Invoke(addtolb);
+                            Action addprogress = delegate { UpdateProgressBar(totalitem, 1, 33); };
+                            pbSync.Invoke(addprogress);
+                        }
+
                     }
-                    
+
+
+
+
                 }
 
+                setpb = delegate { SetProgessValue(100); };
+                pbSync.Invoke(setpb);
 
-
-
-            }
-
-            setpb = delegate { SetProgessValue(100); };
-            pbSync.Invoke(setpb);
-
-            Action enablecntrls = delegate { EnableAllControls(true); };
-            this.Invoke(enablecntrls);
-
+                Action enablecntrls = delegate { EnableAllControls(true); };
+                this.Invoke(enablecntrls);
         }
+            
+        
 
         private void EnableAllControls(bool enable)
         {
@@ -195,11 +197,15 @@ namespace SMZ3FC
             this.Close();
         }
 
-       
+        private void FormGitXML_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+        }
 
- 
-
-      
-
+        private void FormGitXML_Load(object sender, EventArgs e)
+        {
+            loadthread = new Thread(LoadFilesThread);
+            loadthread.Start();
+        }
     }
 }

@@ -114,6 +114,8 @@ namespace SMZ3FC
             this.Controls.Add(this.pbSync);
             this.Name = "FormGitXML";
             this.Text = "FormGitXML";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGitXML_FormClosing);
+            this.Load += new System.EventHandler(this.FormGitXML_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

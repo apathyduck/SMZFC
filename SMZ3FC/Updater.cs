@@ -23,22 +23,10 @@ namespace SMZ3FC
             Assembly thisAss = Assembly.GetExecutingAssembly();
             Version ver = thisAss.GetName().Version;
             tbCurVer.Text = $"v{ver.Major}.{ver.Minor}.{ver.Revision}.{ver.Build}";
-
-            AutoUpdater.ReportErrors = true;
-            AutoUpdater.Mandatory = true;
-            AutoUpdater.UpdateMode = Mode.Normal;
-            AutoUpdater.CheckForUpdateEvent += AutoUpdater_CheckForUpdateEvent;
-            AutoUpdater.Start(settings.UpdaterUrl);
-        }
-
-        private void AutoUpdater_CheckForUpdateEvent(UpdateInfoEventArgs args)
-        {
-            cachedArgs = args;
-            string newver = args.CurrentVersion;
-            tbLatestVer.Text = $"v{newver}";
-            bool avail = args.IsUpdateAvailable;
-            if (avail)
+            tbLatestVer.Text = $"v{FCAutoUpdate.ServerVersion}";
+            if(FCAutoUpdate.CheckForUpdates())
             {
+
                 lblStatus.Text = "Update Available!";
                 btnUpdate.Enabled = true;
             }
@@ -47,23 +35,21 @@ namespace SMZ3FC
                 lblStatus.Text = "No Updates Found";
                 btnUpdate.Enabled = false;
             }
-            
-
+            AutoUpdater.Start(settings.UpdaterUrl);
         }
+
+      
 
         private void llPatchNotes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/apathyduck/SMZFC/releases");
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            
-        }
+      
 
         private void btnUpdate_Click_1(object sender, EventArgs e)
         {
-            AutoUpdater.ShowUpdateForm(cachedArgs);
+            FCAutoUpdate.ShowUpdateForm();
         }
     }
 }

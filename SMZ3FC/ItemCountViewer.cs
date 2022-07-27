@@ -38,14 +38,6 @@ namespace SMZ3FC
 
             settings = set;
 
-
-            AutoUpdater.RunUpdateAsAdmin = false;
-            AutoUpdater.ShowRemindLaterButton = false;
-            AutoUpdater.ReportErrors = true;
-            AutoUpdater.Mandatory = true;
-            AutoUpdater.Start(settings.UpdaterUrl);
-
-
             InitializeComponent();
             
             lblHash.Text = "No File Loaded";
@@ -64,6 +56,12 @@ namespace SMZ3FC
             setForm = new SettingsForm(settings);
                     
             myLocView = new SubLocViewer(smzManager.ActiveWorld);
+
+            if(FCAutoUpdate.CheckForUpdates())
+            {
+                FCAutoUpdate.ShowUpdateForm();
+            }
+            
 
         }
 

@@ -34,6 +34,8 @@ namespace SMZ3FC
          
 
             aiManager = new SMZ3FCManager(smz3Set);
+            FCAutoUpdate.InitUpdater(smz3Set);
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
