@@ -27,7 +27,11 @@ namespace SMZ3FC
 
         [ConfigurableProperty("LocationInfo.json")]
         public string LocationInfoJsonPath { get; set; }
-        
+
+        [ConfigurableProperty(@"https://apathyduck.github.io/SMZFC/SMZ3FC/UpdateConfig.xml")]
+        public string UpdaterUrl { get; set; }
+
+
         [ConfigurableProperty("")]
         public Font StreamViewFont { get; set; }
 

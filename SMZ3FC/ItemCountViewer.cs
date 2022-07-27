@@ -36,13 +36,17 @@ namespace SMZ3FC
         public ItemCountViewer(SMZ3FCManager ai, SMZ3FCSettings set)
         {
 
+            settings = set;
+
+
+            AutoUpdater.RunUpdateAsAdmin = false;
             AutoUpdater.ShowRemindLaterButton = false;
-            AutoUpdater.Start("https://apathyduck.github.io/SMZFC/UpdateConfig.xml");
+            AutoUpdater.ReportErrors = true;
+            AutoUpdater.Mandatory = true;
+            AutoUpdater.Start(settings.UpdaterUrl);
+
 
             InitializeComponent();
-
-            settings = set;
-            this.MaximizeBox = false;
             
             lblHash.Text = "No File Loaded";
 
@@ -379,6 +383,12 @@ namespace SMZ3FC
         {
             FriendlyNameEditor fne = new FriendlyNameEditor(settings);
             fne.ShowDialog();
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Updater upd = new Updater(settings);
+            upd.ShowDialog(this);
         }
     }
     

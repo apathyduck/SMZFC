@@ -96,8 +96,15 @@ namespace SMZ3FC
             WorldDefinition wd = new WorldDefinition(fi);
             if(!wd.ParseError)
             {
-                Worlds.Add(wd.Name, wd);
-                CurrentWorldKey = wd.Name;
+                if (Worlds.ContainsKey(wd.Name))
+                {
+                    Worlds[wd.Name] = wd;
+                }
+                else
+                {
+                    Worlds.Add(wd.Name, wd);
+                    CurrentWorldKey = wd.Name;
+                }
             }
         }
 
