@@ -90,8 +90,8 @@ namespace SMZ3PublishWizard
             myNewConfig = new UpdateXMLConfig();
             myNewConfig.Major = ver.Major;
             myNewConfig.Minor = ver.Minor;
-            myNewConfig.Patch = ver.Revision;
-            myNewConfig.Build = ver.Build;
+            myNewConfig.Patch = ver.Build;
+            myNewConfig.Build = ver.Revision;
             myNewConfig.NotesUrl = Path.Combine(rootChangeUrl, $"v{myNewConfig.Version}");
 
             tbNewVersion.Text = myNewConfig.Version;
