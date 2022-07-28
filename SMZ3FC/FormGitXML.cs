@@ -72,8 +72,7 @@ namespace SMZ3FC
                             SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
                             {
                                 Name = f.Name,
-                                Path = f.Path,
-                                Info = new FileInfo(f.Path),
+                                ServerURl = f.Path,
                                 FileType = SMZ3XMLFileType.World
                             };
                             Action addtolb = delegate { DelegateAddToLB(lbAreaDown, ni); };
@@ -93,8 +92,7 @@ namespace SMZ3FC
                             SMZ3XMLFileInfo ni = new SMZ3XMLFileInfo()
                             {
                                 Name = f.Name,
-                                Path = f.Path,
-                                Info = new FileInfo(f.Path),
+                                ServerURl = f.Path,
                                 FileType = SMZ3XMLFileType.Items
                             };
                             Action addtolb = delegate { DelegateAddToLB(lbItemsDown, ni); };
@@ -162,12 +160,13 @@ namespace SMZ3FC
 
             foreach (SMZ3XMLFileInfo gfi in downloadlist)
             {
-                var threadfile = gitClient.Repository.Content.GetAllContents(repoid, gfi.Path);
+                var threadfile = gitClient.Repository.Content.GetAllContents(repoid, gfi.ServerURl);
                 threadfile.Wait();
                 var file = threadfile.Result;
                 gfi.Contents = file[0].Content;
                 string path = Path.Combine(Environment.CurrentDirectory, gfi.Name);
                 FileInfo fi = new FileInfo(path);
+                gfi.Info = fi;
                 if(fi.Exists)
                 {
                     DialogResult res =  MessageBox.Show($"File {gfi.Name} Already Exists. Do You want to override the currently existing file?", "File Already Exists", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

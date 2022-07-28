@@ -143,7 +143,7 @@ namespace SMZ3FC
           
             foreach (LocationInfo loc in ad.FullLocationList.Values)
             {
-                SpoilerLogLocation sll = sl.LogLocationInfos[loc.SpoilerLocationName];
+                SpoilerLogLocation sll = sl.LogLocationInfos[loc.UniqueName];
                 ActiveLocation al = new ActiveLocation(loc, sll, state.CurrentItems.IsMajor(sll.Item));
              
 

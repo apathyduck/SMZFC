@@ -73,7 +73,7 @@ namespace SMZ3FC
                         {
                             string areaname = locs.Value;
                             AreaInfo ai = SpoilerLogStructure.SpoilerAreas[areaname];
-                            areainfos.Add(ai.Name, ai);
+                            areainfos.Add(ai.UniqueName, ai);
 
 
                         }
@@ -81,7 +81,7 @@ namespace SMZ3FC
                         {
                             string locname = locs.Value;
                             LocationInfo li = SpoilerLogStructure.SpoilerLocations[locname];
-                            shiftlocinfos.Add(li.Name, li);
+                            shiftlocinfos.Add(li.UniqueName, li);
                         }
                     }
 

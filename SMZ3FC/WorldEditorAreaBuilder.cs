@@ -36,12 +36,12 @@ namespace SMZ3FC
 
             foreach(WorldEditorAreaBuilderItem albl in Locations)
             {
-                element.Add(new XElement(kLoc, albl.Name));
+                element.Add(new XElement(kLoc, albl.Key));
             }
 
             foreach (WorldEditorAreaBuilderItem albl in SubLocations)
             {
-                element.Add(new XElement(kSubLoc, albl.Name));
+                element.Add(new XElement(kSubLoc, albl.Key));
             }
 
             return element;

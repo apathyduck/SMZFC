@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 namespace SMZ3FC
 {
-    public class LocationInfo
+    public class LocationInfo : IFCPlaceInfo
     {
         [JsonIgnore]
         public string Name
@@ -41,6 +41,8 @@ namespace SMZ3FC
                 use = value;
             } 
         }
+
+        public string UniqueName { get { return SpoilerLocationName; } }
 
         private bool use;
 

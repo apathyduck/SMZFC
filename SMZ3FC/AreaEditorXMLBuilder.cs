@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,7 @@ namespace SMZ3FC
 
             fi.Name = top.Text;
             fi.Path = fi.Info.FullName;
+            fi.Info = new FileInfo(fi.Path);
             fi.Contents = doc.ToString();
             fi.FileType = SMZ3XMLFileType.World;
 

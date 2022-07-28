@@ -23,7 +23,7 @@ namespace SMZ3FC
                 List<LocationInfo> areali = (from area in SpoilerAreas from locs in area.Value.LocationsInArea select locs).ToList();
                 areali.RemoveAll(IsRemoved);
                 areali.AddRange(SubLocations.Values);
-                return areali.ToDictionary(l => l.SpoilerLocationName);
+                return areali.ToDictionary(l => l.UniqueName);
             }
 
         }
@@ -62,7 +62,7 @@ namespace SMZ3FC
         {
             
 
-            List<string> sorthash = (from locs in FullLocationList select locs.Value.SpoilerLocationName).ToList();
+            List<string> sorthash = (from locs in FullLocationList select locs.Value.UniqueName).ToList();
            
             sorthash.Sort();
             StringBuilder sb = new StringBuilder();

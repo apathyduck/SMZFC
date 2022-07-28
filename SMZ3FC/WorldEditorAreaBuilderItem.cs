@@ -16,59 +16,57 @@ namespace SMZ3FC
     public class WorldEditorAreaBuilderItem
     {
 
-        public LocationInfo Info { get; private set; }
 
-        public AreaInfo AreaInfo { get; private set; }
+        public IFCPlaceInfo Info { get; private set; }
 
-        public string Name { 
+        public string Name 
+        { 
             get 
             {
-                if(TypeOfLocation == LocationType.Area)
-                {
-                    return AreaInfo.Name;
-                }
-                if (TypeOfLocation == LocationType.Location)
-                {
-                    return Info.SpoilerLocationName;
-                }
-                return null;
+                return Info.Name;
             } 
         }
 
+        public string Key
+        {
+            get
+            {
+                return Info.UniqueName;
+            }
+        }
+
+      
         public int Index { get; private set; }
 
         public LocationType TypeOfLocation { get; private set; }
 
         public override string ToString()
         {
-            if (TypeOfLocation == LocationType.Area)
-            {
-                return AreaInfo.Name;
-            }
-            if (TypeOfLocation == LocationType.Location)
-            {
-                return Info.Name;
-            }
 
-            return null;
+            return Name;
         }
 
 
-        public WorldEditorAreaBuilderItem(AreaInfo ai, int i)
+        public WorldEditorAreaBuilderItem(IFCPlaceInfo pi, int i)
         {
-            AreaInfo = ai;
+            Info = pi;
             Index = i;
-            TypeOfLocation = LocationType.Area;
+            if(pi is AreaInfo)
+            {
+                TypeOfLocation = LocationType.Area;    
+            }
+            if(pi is LocationInfo)
+            {
+                TypeOfLocation = LocationType.Location;
+            }
+
         }
 
-        public WorldEditorAreaBuilderItem(LocationInfo li, int i)
+      
+
+        public bool CompareInfo(IFCPlaceInfo pi)
         {
-
-
-            Info = li;
-            Index = i;
-            TypeOfLocation = LocationType.Location;
-
+            return pi.UniqueName.Equals(Info.UniqueName);
         }
 
 

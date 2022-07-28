@@ -13,7 +13,7 @@ namespace SMZ3FC
         {
             get
             {
-                return Info.Name;
+                return Info.UniqueName;
             }
         }
 

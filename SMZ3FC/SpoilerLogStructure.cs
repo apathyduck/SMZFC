@@ -19,7 +19,7 @@ namespace SMZ3FC
         public static void ParseStructureJson(string path)
         {
             string jsontext = File.ReadAllText(path);
-            SpoilerLocations = JsonConvert.DeserializeObject<List<LocationInfo>>(jsontext).ToDictionary(l => l.SpoilerLocationName);
+            SpoilerLocations = JsonConvert.DeserializeObject<List<LocationInfo>>(jsontext).ToDictionary(l => l.UniqueName);
             SpoilerAreas = new Dictionary<string, AreaInfo>();
             ReverseAreaLookup = new Dictionary<LocationInfo, AreaInfo>();
 

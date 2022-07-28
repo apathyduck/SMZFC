@@ -18,8 +18,19 @@ namespace SMZ3FC
     {
         public string Name { get; set; }
 
-        public string Path { get; set; }
+        public string Path
+        {
+            get
+            {
+                return Info.FullName;
+            }
+            set
+            {
+                Info = new FileInfo(value);
+            }
+        }
 
+        public string ServerURl { get; set; }
         public string Contents { get; set; }
 
         public FileInfo Info { get; set; }

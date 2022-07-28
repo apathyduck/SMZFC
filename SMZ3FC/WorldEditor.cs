@@ -209,14 +209,21 @@ namespace SMZ3FC
                     WorldEditorAreaBuilderItem foundloc = null;
                     foreach (WorldEditorAreaBuilderItem wbi in lbSpoilerLocs.Items)
                     {
-                        if (string.Equals(wbi.Name, ai.Name))
+                        if (wbi.CompareInfo(ai))
                         {
                             foundloc = wbi;
                             break;
                         }
                     }
+
+                    if(foundloc == null)
+                    {
+                        //This is a bug!!!
+                        continue;
+                    }
+
                     TreeNode locnode = new TreeNode();
-                    locnode.Name = foundloc.Name;
+                    locnode.Name = foundloc.Key;
                     locnode.Text = foundloc.Name;
                     locnode.Tag = foundloc;
                     tnl.Nodes.Add(locnode);
@@ -231,14 +238,20 @@ namespace SMZ3FC
                     WorldEditorAreaBuilderItem foundloc = null;
                     foreach (WorldEditorAreaBuilderItem wbi in lbSpoilerSubLocs.Items)
                     {
-                        if (string.Equals(wbi.Name, li))
+                        if (wbi.CompareInfo(li))
                         {
                             foundloc = wbi;
                             break;
                         }
                     }
+
+                    if(foundloc == null)
+                    {
+                        //This is a bug!!!
+                        continue;
+                    }
                     TreeNode slocnode = new TreeNode();
-                    slocnode.Name = foundloc.Name;
+                    slocnode.Name = foundloc.Key;
                     slocnode.Text = foundloc.Name;
                     slocnode.Tag = foundloc;
                     tnsl.Nodes.Add(slocnode);
@@ -666,7 +679,7 @@ namespace SMZ3FC
             
 
             TreeNode tn = new TreeNode();
-            tn.Name = loc.Name;
+            tn.Name = loc.Key;
             tn.Text = loc.Name;
             tn.Tag = loc;
             tn.Expand();
