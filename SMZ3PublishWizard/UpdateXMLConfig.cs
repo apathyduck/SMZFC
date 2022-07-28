@@ -69,6 +69,7 @@ namespace SMZ3PublishWizard
             //{
             //    Contents = Contents.Remove(0, _byteOrderMarkUtf8.Length);
             //}
+            Contents = Contents.Trim();
 
             XMLDoc = XDocument.Parse(Contents, LoadOptions.PreserveWhitespace);
             XElement root = XMLDoc.Root;
