@@ -105,6 +105,11 @@ namespace SMZ3PublishWizard
                 BomFileInfo bfi = new BomFileInfo(fi.FullName);
                 clbReleaseDirItems.Items.Add(bfi);                     
             }
+            foreach(DirectoryInfo di in releaseDirInfo.GetDirectories())
+            {
+                BomFileInfo bfi = new BomFileInfo(di.FullName);
+                clbReleaseDirItems.Items.Add(bfi);
+            }
 
             UpdateCheckedItems(rbNew.Checked);
         }
@@ -290,7 +295,7 @@ namespace SMZ3PublishWizard
                 if (bfi.Info.Exists)
                 {
                     bfi.FoundInBuild = true;
-                    bfi.Info.CopyTo(Path.Combine(di.FullName, bfi.Info.Name));
+                    bfi.CopyTo(Path.Combine(di.FullName, bfi.Info.Name));
                 }
                 else
                 {

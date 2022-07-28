@@ -15,6 +15,8 @@ namespace SMZ3PublishWizard
         internal XDocument BOMXML { get; private set; }
         internal DirectoryInfo RootDir { get; private set; }
 
+      
+
         internal WizardBOM(FileInfo fi, DirectoryInfo di)
         {
             BOM = new List<BomFileInfo>();
@@ -63,17 +65,29 @@ namespace SMZ3PublishWizard
         }
     }
 
-    class BomFileInfo 
+    class BomFileInfo
     {
-
+        internal FileAttributes FileAttributeFlag { get; private set; }
         internal bool FoundInBuild { get; set; } = false;
+
 
         internal BomFileInfo(string path)
         {
-            Info = new FileInfo(path);
+
+            FileAttributeFlag = File.GetAttributes(path);
+
+            if (FileAttributes.Directory == FileAttributeFlag)
+            {
+                Info = new DirectoryInfo(path);
+            }
+
+            else
+            {
+                Info = new FileInfo(path);
+            }
         }
 
-        internal FileInfo Info { get; set; }
+        internal FileSystemInfo Info { get; set; }
 
         public override string ToString()
         {
@@ -88,8 +102,47 @@ namespace SMZ3PublishWizard
 
         public override int GetHashCode()
         {
+
+
             return base.GetHashCode();
 
         }
+
+        public void CopyTo(string path)
+        {
+            if (Info is FileInfo)
+            {
+                ((FileInfo)Info).CopyTo(path);
+            }
+            else if (Info is DirectoryInfo)
+            {
+                CopyDirectoryAndChildren((DirectoryInfo)Info, path);
+            }
+        }
+
+        public void CopyDirectoryAndChildren(DirectoryInfo origin, string path)
+        {
+            string newdir = path;
+            DirectoryInfo ndi = new DirectoryInfo(newdir);
+            if(!ndi.Exists)
+            {
+                ndi.Create();
+            }
+
+
+           
+
+            foreach(var fi in origin.EnumerateFiles())
+            {
+                fi.CopyTo(Path.Combine(ndi.FullName, fi.Name));
+            }
+
+            foreach(DirectoryInfo di in origin.EnumerateDirectories())
+            {
+                CopyDirectoryAndChildren(di, Path.Combine(ndi.FullName,di.Name));
+            }
+
+        }
+
     }
 }
