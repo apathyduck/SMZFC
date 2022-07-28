@@ -22,7 +22,7 @@ namespace SMZ3FC
             InitializeComponent();
             Assembly thisAss = Assembly.GetExecutingAssembly();
             Version ver = thisAss.GetName().Version;
-            tbCurVer.Text = $"v{ver.Major}.{ver.Minor}.{ver.Revision}.{ver.Build}";
+            tbCurVer.Text = $"v{ver.Major}.{ver.Minor}.{ver.Build}.{ver.Revision}";
             tbLatestVer.Text = $"v{FCAutoUpdate.ServerVersion}";
             if(FCAutoUpdate.CheckForUpdates())
             {
