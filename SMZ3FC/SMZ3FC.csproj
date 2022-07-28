@@ -218,7 +218,9 @@
     <Compile Include="XMLPreviewWindow.Designer.cs">
       <DependentUpon>XMLPreviewWindow.cs</DependentUpon>
     </Compile>
-    <Content Include="UpdateConfig.xml" />
+    <Content Include="UpdateConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Updater.resx">
       <DependentUpon>Updater.cs</DependentUpon>
     </EmbeddedResource>

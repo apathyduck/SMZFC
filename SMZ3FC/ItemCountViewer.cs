@@ -31,8 +31,6 @@ namespace SMZ3FC
         
         public string SpoilerLogPath { get; private set; } = string.Empty;
 
-    
-      
         public ItemCountViewer(SMZ3FCManager ai, SMZ3FCSettings set)
         {
 
@@ -207,7 +205,6 @@ namespace SMZ3FC
 
         }
 
-  
         private void getHelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
 

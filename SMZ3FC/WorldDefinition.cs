@@ -101,7 +101,10 @@ namespace SMZ3FC
                 List<LocationInfo> shifted = (from ads in Areas.Values from shift in ads.SubLocations select shift.Value).ToList();
                 foreach(LocationInfo shift in shifted)
                 {
-                    LocationLookup[shift].ShiftLocation(shift);
+                    if (LocationLookup.ContainsKey(shift))
+                    {
+                        LocationLookup[shift].ShiftLocation(shift);
+                    }
                 }
             }
             catch(Exception ex)
