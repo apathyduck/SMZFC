@@ -52,6 +52,7 @@ namespace SMZ3FC
             this.Controls.Add(this.rtbSubLocs);
             this.Name = "SubLocViewer";
             this.Text = "SubLocViewer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SubLocViewer_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -17,6 +17,7 @@ namespace SMZ3FC
         SMZ3FCSettings settings;
         WorldState curWorldState;
         bool display = true;
+        bool forceclose = false;
 
         private void CurWorldState_PrimaryAreaUpdated(object sender, EventArgs e)
         {
@@ -29,6 +30,11 @@ namespace SMZ3FC
             }
         }
 
+        public void ForceClose()
+        {
+            forceclose = true;
+            this.Close();
+        }
 
         public void Display(bool disp)
         {
@@ -85,6 +91,18 @@ namespace SMZ3FC
             lblStream.Text = "No Area";
 
          
+        }
+
+        private void StreamView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(!forceclose)
+            {
+                this.Hide();
+                display = false;
+                e.Cancel = true;
+                return;
+            }
+
         }
     }
 

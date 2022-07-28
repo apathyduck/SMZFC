@@ -52,10 +52,12 @@ namespace SMZ3FC
 
 
             myStrmView = new StreamView(settings, smzManager.ActiveWorld);
+            myStrmView.VisibleChanged += MyStrmView_VisibleChanged;
             hlpForm = new HelpForm();
             setForm = new SettingsForm(settings);
                     
             myLocView = new SubLocViewer(smzManager.ActiveWorld);
+            myLocView.VisibleChanged += MyLocView_VisibleChanged;
 
             if(FCAutoUpdate.CheckForUpdates())
             {
@@ -63,6 +65,17 @@ namespace SMZ3FC
             }
             
 
+        }
+
+        private void MyStrmView_VisibleChanged(object sender, EventArgs e)
+        {
+            streamviewToolStripMenuItem.Checked = myStrmView.Visible;
+        }
+
+        private void MyLocView_VisibleChanged(object sender, EventArgs e)
+        {
+            subLocationWindowToolStripMenuItem.Checked = myLocView.Visible;
+            
         }
 
         private void SetGroupHash(string h)
@@ -169,7 +182,8 @@ namespace SMZ3FC
 
         private void ItemCountViewer_FormClosed(object sender, FormClosedEventArgs e)
         {
-            myStrmView.Close();
+            myStrmView.ForceClose();
+            myLocView.ForceClose();
         }
 
         private void loadSpoilerLogToolStripMenuItem_Click(object sender, EventArgs e)

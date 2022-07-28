@@ -54,6 +54,7 @@ namespace SMZ3FC
             this.Name = "StreamView";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "StreamView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StreamView_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

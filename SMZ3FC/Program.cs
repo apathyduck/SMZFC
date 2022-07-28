@@ -7,6 +7,7 @@ using System.Configuration;
 using System.ComponentModel;
 using System.Drawing;
 using System.Reflection;
+using System.Globalization;
 
 namespace SMZ3FC
 {
@@ -25,8 +26,9 @@ namespace SMZ3FC
         [STAThread]
         static void Main()
         {
+           //Application.ThreadException += Application_ThreadException;
 
-           var ass = Assembly.GetCallingAssembly();
+           // var ass = Assembly.GetCallingAssembly();
             
            
             smz3Set = new SMZ3FCSettings();
@@ -35,16 +37,18 @@ namespace SMZ3FC
 
             aiManager = new SMZ3FCManager(smz3Set);
             FCAutoUpdate.InitUpdater(smz3Set);
+           
 
-
+            Application.CurrentCulture = new System.Globalization.CultureInfo("en-US");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             mainForm = new ItemCountViewer(aiManager, smz3Set);
-          
+
             Application.Run(mainForm);
+            
         }
 
-       
+        
     }
 }

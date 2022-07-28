@@ -16,6 +16,10 @@ namespace SMZ3FC
 
         WorldState curWorld;
         bool display;
+        bool forceclose = false;
+
+       
+
         public SubLocViewer(WorldState ws)
         {
             InitializeComponent();
@@ -36,6 +40,12 @@ namespace SMZ3FC
             }
         }
 
+        public void ForceClose()
+        {
+            forceclose = true;
+            this.Close();
+        }
+
         private void CurWorld_PrimaryAreaUpdated(object sender, EventArgs e)
         {
             rtbSubLocs.Text = curWorld.PrimaryArea?.LocationTextString;
@@ -43,6 +53,18 @@ namespace SMZ3FC
             {
                 this.Show();
             }
+        }
+
+        private void SubLocViewer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!forceclose)
+            {
+                display = false;
+                this.Hide();
+                e.Cancel = true;
+                return;
+            }
+
         }
     }
 }
