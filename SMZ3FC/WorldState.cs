@@ -76,8 +76,19 @@ namespace SMZ3FC
         public void SetPrimaryArea(ActiveArea aa)
         {
             ActiveArea prevActive = PrimaryArea;
+            if (prevActive != null)
+            {
+                prevActive.ItemCountUpdate -= PrimaryArea_ItemCountUpdate;
+                prevActive.UpdatePrimary();
+            }
             PrimaryArea = aa;
-            prevActive?.UpdatePrimary();
+            PrimaryArea.ItemCountUpdate += PrimaryArea_ItemCountUpdate;
+            
+            PrimaryAreaUpdated?.Invoke(this, new EventArgs());
+        }
+
+        private void PrimaryArea_ItemCountUpdate(object sender, EventArgs e)
+        {
             PrimaryAreaUpdated?.Invoke(this, new EventArgs());
         }
 
