@@ -61,8 +61,8 @@ namespace SMZ3FC
             {
                 FCAutoUpdate.ShowUpdateForm();
             }
-            
 
+            smzManager.ActiveWorld.AreaStateUpdate += ActiveWorld_PrimaryAreaUpdated;
         }
 
         private void MyStrmView_VisibleChanged(object sender, EventArgs e)
@@ -147,14 +147,23 @@ namespace SMZ3FC
 
         private void LoadSpoilerLog()
         {
+
+         
             smzManager.LoadLogFile(SpoilerLogPath);
-            SetGroups();
+            SetGroups();    
            
-            SetTotalItems();
             lblHash.Text = smzManager.ActiveWorld.CurrentLog.LogHash;
+
+            
             pnLoadSpoilerBlank.Visible = false;
             streamviewToolStripMenuItem.Checked = true;
+            SetTotalItems();
             myStrmView.Show();
+        }
+
+        private void ActiveWorld_PrimaryAreaUpdated(object sender, EventArgs e)
+        {
+            SetTotalItems();
         }
 
         private void SetSelectedGroup(string groupk, string itemk, bool def)

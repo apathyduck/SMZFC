@@ -71,25 +71,19 @@ namespace SMZ3FC
             }
         }
 
-        public event EventHandler PrimaryAreaUpdated;
+        public event EventHandler AreaStateUpdate;
 
         public void SetPrimaryArea(ActiveArea aa)
         {
-            ActiveArea prevActive = PrimaryArea;
-            if (prevActive != null)
-            {
-                prevActive.ItemCountUpdate -= PrimaryArea_ItemCountUpdate;
-                prevActive.UpdatePrimary();
-            }
+            ActiveArea prevActive = PrimaryArea;      
             PrimaryArea = aa;
-            PrimaryArea.ItemCountUpdate += PrimaryArea_ItemCountUpdate;
-            
-            PrimaryAreaUpdated?.Invoke(this, new EventArgs());
+            prevActive?.NotifyPrimaryChanged();
+            AreaStateUpdate?.Invoke(this, new EventArgs());
         }
 
-        private void PrimaryArea_ItemCountUpdate(object sender, EventArgs e)
+        private void PrimaryArea_StateUpdate(object sender, EventArgs e)
         {
-            PrimaryAreaUpdated?.Invoke(this, new EventArgs());
+            AreaStateUpdate?.Invoke(this, new EventArgs());
         }
 
         public WorldState(WorldDefinition world, MajorItemsDefinition mi)
@@ -124,18 +118,28 @@ namespace SMZ3FC
             {
                 return;
             }
+            
+            if(Areas != null)
+            {
+                foreach(ActiveArea aa in Areas.Values)
+                {
+                    aa.ItemCountUpdate -= PrimaryArea_StateUpdate;
+                }
+            }
 
             Areas = new Dictionary<string, ActiveArea>();
             foreach (AreaDefinition ad in CurrentWorld.Areas.Values)
             {
-                ActiveArea aa = new ActiveArea(ad, CurrentLog, this);              
+                ActiveArea aa = new ActiveArea(ad, CurrentLog, this);            
+                aa.ItemCountUpdate += PrimaryArea_StateUpdate;
                 Areas.Add(aa.Name, aa);
+                
             }
 
             PrimaryArea = null;
 
         }
 
-   
+       
     }
 }

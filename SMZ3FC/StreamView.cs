@@ -87,7 +87,7 @@ namespace SMZ3FC
             settings = set;
             UpdateSettings();
             curWorldState = wrld;
-            curWorldState.PrimaryAreaUpdated += CurWorldState_PrimaryAreaUpdated;
+            curWorldState.AreaStateUpdate += CurWorldState_PrimaryAreaUpdated;
             lblStream.Text = "No Area";
 
          

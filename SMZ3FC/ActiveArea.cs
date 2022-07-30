@@ -96,10 +96,10 @@ namespace SMZ3FC
                 return;
             }
             StateOwner.SetPrimaryArea(this);
-            UpdatePrimary();
+            NotifyPrimaryChanged();
         }
 
-        public void UpdatePrimary()
+        public void NotifyPrimaryChanged()
         {
             PrimaryAreaUpdate?.Invoke(this, new EventArgs());
         }

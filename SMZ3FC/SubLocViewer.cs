@@ -24,7 +24,7 @@ namespace SMZ3FC
         {
             InitializeComponent();
             curWorld = ws;
-            curWorld.PrimaryAreaUpdated += CurWorld_PrimaryAreaUpdated;
+            curWorld.AreaStateUpdate += CurWorld_PrimaryAreaUpdated;
         }
 
         public void Display(bool disp)

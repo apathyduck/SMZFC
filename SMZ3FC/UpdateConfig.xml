@@ -1,6 +1,7 @@
-﻿<item>
-  <version>0.3.4.0</version>
-  <url>https://github.com/apathyduck/SMZFC/releases/download/v0.3.4.0/SMZ3FCUpdatePackage.zip</url>
-  <changelog>https://github.com/apathyduck/SMZFC/releases/tag\v0.3.4.0</changelog>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<item>
+  <version>0.3.4.1</version>
+  <url>https://github.com/apathyduck/SMZFC/releases/download/v0.3.4.1/SMZ3FCUpdatePackage.zip</url>
+  <changelog>https://github.com/apathyduck/SMZFC/releases/tag\v0.3.4.1</changelog>
   <mandatory>false</mandatory>
 </item>
