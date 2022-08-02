@@ -21,6 +21,8 @@ namespace SMZ3FC
 
         private void CurWorldState_PrimaryAreaUpdated(object sender, EventArgs e)
         {
+            if(curWorldState.PrimaryArea == null)
+            { return; }
             lblStream.Text = $"{curWorldState.PrimaryArea.Name}: {curWorldState.PrimaryArea.CurrentItems}";
             lblStream.Font = settings.StreamViewFont;
             lblStream.ForeColor = settings.StreamViewFontColor;
