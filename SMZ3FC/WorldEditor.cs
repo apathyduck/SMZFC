@@ -861,15 +861,17 @@ namespace SMZ3FC
 
             WorldEditorAreaBuilder abl = (WorldEditorAreaBuilder)parnode.Tag;
             var location = (WorldEditorAreaBuilderItem)curnode.Tag;
-            abl.Locations.Remove((WorldEditorAreaBuilderItem)curnode.Tag);
 
+     
             ListBox listbox = null;
             if (location.TypeOfLocation == LocationType.Area)
             {
+                abl.Locations.Remove((WorldEditorAreaBuilderItem)curnode.Tag);
                 listbox = lbSpoilerLocs;
             }
             if (location.TypeOfLocation == LocationType.Location)
             {
+                abl.SubLocations.Remove((WorldEditorAreaBuilderItem)curnode.Tag);
                 listbox = lbSpoilerSubLocs;
             }
 
