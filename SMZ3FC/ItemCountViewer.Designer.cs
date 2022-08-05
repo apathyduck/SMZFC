@@ -48,6 +48,7 @@ namespace SMZ3FC
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblGroupHash = new System.Windows.Forms.Label();
             this.tabLocationTab = new System.Windows.Forms.TabControl();
             this.tpSMLocs = new System.Windows.Forms.TabPage();
@@ -57,7 +58,8 @@ namespace SMZ3FC
             this.ofdOpenSpoilerBrowser = new System.Windows.Forms.OpenFileDialog();
             this.pnLoadSpoilerBlank = new System.Windows.Forms.Panel();
             this.lblDragAndDrop = new System.Windows.Forms.Label();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autotrackerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnViewerMenu.SuspendLayout();
             this.tabLocationTab.SuspendLayout();
             this.tpSMLocs.SuspendLayout();
@@ -204,7 +206,8 @@ namespace SMZ3FC
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem,
             this.getHelpToolStripMenuItem,
-            this.checkForUpdatesToolStripMenuItem});
+            this.checkForUpdatesToolStripMenuItem,
+            this.debugToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.helpToolStripMenuItem.Text = "Other";
@@ -222,6 +225,13 @@ namespace SMZ3FC
             this.getHelpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.getHelpToolStripMenuItem.Text = "Get Help";
             this.getHelpToolStripMenuItem.Click += new System.EventHandler(this.getHelpToolStripMenuItem_Click);
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // lblGroupHash
             // 
@@ -304,12 +314,20 @@ namespace SMZ3FC
             this.lblDragAndDrop.TabIndex = 0;
             this.lblDragAndDrop.Text = "Drag And Drop Spoiler Log File to Load";
             // 
-            // checkForUpdatesToolStripMenuItem
+            // debugToolStripMenuItem
             // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
+            this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.autotrackerToolStripMenuItem});
+            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.debugToolStripMenuItem.Text = "Debug";
+            // 
+            // autotrackerToolStripMenuItem
+            // 
+            this.autotrackerToolStripMenuItem.Name = "autotrackerToolStripMenuItem";
+            this.autotrackerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.autotrackerToolStripMenuItem.Text = "Autotracker";
+            this.autotrackerToolStripMenuItem.Click += new System.EventHandler(this.autotrackerToolStripMenuItem_Click);
             // 
             // ItemCountViewer
             // 
@@ -370,5 +388,7 @@ namespace SMZ3FC
         private System.Windows.Forms.ToolStripMenuItem downloadXMLsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem locationNameEditorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem debugToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autotrackerToolStripMenuItem;
     }
 }

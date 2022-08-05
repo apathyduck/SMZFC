@@ -408,6 +408,12 @@ namespace SMZ3FC
             Updater upd = new Updater(settings);
             upd.ShowDialog(this);
         }
+
+        private void autotrackerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AutoTrackTestForm atf = new AutoTrackTestForm(smzManager);
+            atf.ShowDialog();
+        }
     }
     
 }

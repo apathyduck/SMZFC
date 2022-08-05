@@ -12,7 +12,15 @@ namespace SMZ3FC
         public bool IsInitialized { get; private set; }
         public Dictionary<string, ActiveArea> Areas { get; private set; }
 
-        public MajorItemsDefinition CurrentItems { get; private set; }
+        public Dictionary<string, ActiveLocation> AllActiveLocations
+        {
+            get
+            {
+                return (from areas in Areas.Values from locs in areas.CurrentLocations.Values select locs).ToDictionary(l => l.Name);
+            }
+        }
+
+    public MajorItemsDefinition CurrentItems { get; private set; }
 
         public ActiveArea PrimaryArea { get; private set; }
 

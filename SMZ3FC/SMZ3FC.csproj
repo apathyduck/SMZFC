@@ -69,8 +69,8 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Octokit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Octokit.1.0.0\lib\net46\Octokit.dll</HintPath>
+    <Reference Include="Octokit, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Octokit.1.0.1\lib\net46\Octokit.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -88,14 +88,28 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="websocket-sharp, Version=1.0.1.0, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocketSharp-netstandard.1.0.1\lib\net45\websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveArea.cs" />
     <Compile Include="ActiveLocation.cs" />
     <Compile Include="AreaDefinition.cs" />
+    <Compile Include="AutotrackingManager.cs" />
+    <Compile Include="AutoTrackTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoTrackTestForm.Designer.cs">
+      <DependentUpon>AutoTrackTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sd2SnesConnection.cs" />
     <Compile Include="FCAutoUpdate.cs" />
     <Compile Include="IFCPlaceInfo.cs" />
+    <Compile Include="MessagePackage.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Updater.cs">
       <SubType>Form</SubType>
@@ -221,6 +235,9 @@
     <Content Include="UpdateConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="AutoTrackTestForm.resx">
+      <DependentUpon>AutoTrackTestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Updater.resx">
       <DependentUpon>Updater.cs</DependentUpon>
     </EmbeddedResource>

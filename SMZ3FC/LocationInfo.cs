@@ -31,16 +31,28 @@ namespace SMZ3FC
         [JsonProperty("use")]
         public bool UseFriendly
 
-        { 
-            get 
+        {
+            get
             {
                 return use && !string.IsNullOrEmpty(FriendlyName);
-            }              
-            set 
+            }
+            set
             {
                 use = value;
-            } 
+            }
         }
+
+        [JsonProperty("offset")]
+        public int AddressOffset { get; set; }
+
+        [JsonProperty("mask")]
+        public int Mask { get; set; }
+
+        [JsonProperty("game")]
+        public string Game { get; set; }
+
+        [JsonProperty("group")]
+        public string Group { get; set; }
 
         public string UniqueName { get { return SpoilerLocationName; } }
 
