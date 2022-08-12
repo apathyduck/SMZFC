@@ -20,7 +20,7 @@ namespace SMZ3FC
             }
         }
 
-    public MajorItemsDefinition CurrentItems { get; private set; }
+        public MajorItemsDefinition CurrentItems { get; private set; }
 
         public ActiveArea PrimaryArea { get; private set; }
 

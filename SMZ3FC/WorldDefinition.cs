@@ -72,6 +72,11 @@ namespace SMZ3FC
                         if (locs.Name.ToString().Equals("Loc"))
                         {
                             string areaname = locs.Value;
+                            if(!SpoilerLogStructure.SpoilerAreas.ContainsKey(areaname))
+                            {
+                                //zzz add error message
+                                continue;
+                            }
                             AreaInfo ai = SpoilerLogStructure.SpoilerAreas[areaname];
                             areainfos.Add(ai.UniqueName, ai);
 
@@ -80,6 +85,11 @@ namespace SMZ3FC
                         else if (locs.Name.ToString().Equals("SubLoc"))
                         {
                             string locname = locs.Value;
+                            if (!SpoilerLogStructure.SpoilerLocations.ContainsKey(locname))
+                            {
+                                //zzz add error message
+                                continue;
+                            }
                             LocationInfo li = SpoilerLogStructure.SpoilerLocations[locname];
                             shiftlocinfos.Add(li.UniqueName, li);
                         }

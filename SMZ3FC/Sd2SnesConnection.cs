@@ -28,60 +28,43 @@ namespace SMZ3FC
         }
 
 
-        public Task<MessagePackage> SendMessage(MessagePackage msg)
+        //public Task<MessagePackage> SendMessage(MessagePackage msg)
+        //{
+        //    mCurMessage = msg;
+        //    return Task.Run(() => Task_SendMessage(msg));
+        //}
+
+        public MessagePackage SendMessage(MessagePackage msg)
         {
-            mCurMessage = msg;
-            return Task.Run(() => Task_SendMessage(msg));
-        }
-
-        private MessagePackage Task_SendMessage(MessagePackage msg)
-        {
-
-           
-            mSocket.SendAsync(msg.RawMessage, MessageResponse);
-            //mSocket.SendAsync(msg.RawMessage);
-            ///zzz deal with timeout
-           // mSingleMessageWait.WaitOne();
-            msg = mCurMessage;
-            mCurMessage = null;
-            return msg;
-        }
-
-
-        public void SendMessage2(MessagePackage msg, bool response = true)
-        {
-            bool wtf = mSocket.IsAlive;
             mCurMessage = msg;
             mSocket.Send(mCurMessage.RawMessage);
-            if(!response)
+            //zzzz deal with timeout
+            if (msg.ResponseExcpected)
             {
-                mCurMessage?.ActionHandler?.Invoke(mCurMessage);
-                mCurMessage = null;
+                mSingleMessageWait.WaitOne();
             }
+           
+            return mCurMessage;
         }
 
 
-        private void MessageResponse(bool compl)
-        {
-            //???
-        }
+    
+      
 
         private void MSocket_OnMessage(object sender, MessageEventArgs e)
         {
             Response r = new Response();
             if (e.Data != null)
             {
-                List<string> data = JsonConvert.DeserializeObject<List<string>>(e.Data);
-                r.Results = data;
+                r = JsonConvert.DeserializeObject<Response>(e.Data);
             }
             if (e.RawData != null)
             {
                 r.RawData = e.RawData;
             }
             mCurMessage.MsgResponse = r;
-            mCurMessage.ActionHandler?.Invoke(mCurMessage);
-            mCurMessage = null;
-           // mSingleMessageWait.Set();
+    
+            mSingleMessageWait.Set();
         }
 
         private void MSocket_OnError(object sender, ErrorEventArgs e)
@@ -102,28 +85,8 @@ namespace SMZ3FC
 
         }
 
-        private void OnDeviceList(MessageEventArgs msg)
-        {
-            Response resp = JsonConvert.DeserializeObject<Response>(msg.Data);
 
-            if (resp.Results.Any())
-            {
-                //  Attach to the first available device
-                Request req = new Request()
-                {
-                    Opcode = OpcodeType.Attach.ToString(),
-                    Operands = new List<string>(new[] { resp.Results.First() })
-                };
-
-
-
-            }
-        }
-
-        private void OnGameState(MessageEventArgs msg)
-        {
-            byte[] x = msg.RawData;
-        }
+      
 
 
         public void TryConnect()
@@ -134,14 +97,7 @@ namespace SMZ3FC
             mSocket.Connect();
         }
 
-        public void GetInfo()
-        {
-            Request r = new Request()
-            {
-                Opcode = OpcodeType.Info.ToString()
-            };
-            // PostMessage(JsonConvert.SerializeObject(r), OnGameState);
-        }
+       
 
         public void ReadGame()
         {

@@ -97,7 +97,14 @@
     <Compile Include="ActiveArea.cs" />
     <Compile Include="ActiveLocation.cs" />
     <Compile Include="AreaDefinition.cs" />
+    <Compile Include="AutoTrackingDebugLoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoTrackingDebugLoc.Designer.cs">
+      <DependentUpon>AutoTrackingDebugLoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutotrackingManager.cs" />
+    <Compile Include="AutoTrackingMemoryBlock.cs" />
     <Compile Include="AutoTrackTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +118,7 @@
     <Compile Include="Request.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="SMZ3Adress.cs" />
     <Compile Include="Updater.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +243,9 @@
     <Content Include="UpdateConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="AutoTrackingDebugLoc.resx">
+      <DependentUpon>AutoTrackingDebugLoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutoTrackTestForm.resx">
       <DependentUpon>AutoTrackTestForm.cs</DependentUpon>
     </EmbeddedResource>

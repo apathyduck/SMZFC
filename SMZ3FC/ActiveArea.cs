@@ -151,11 +151,16 @@ namespace SMZ3FC
             }     
         }
 
-      
-     
+        public override string ToString()
+        {
+            return Name;
+        }
 
 
-       
+
+
+
+
 
 
     }

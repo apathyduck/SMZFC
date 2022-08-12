@@ -14,6 +14,24 @@ namespace SMZ3FC
         
         public bool IsInitialized { get; private set; }
 
+        public bool IsErrored
+        {
+            get
+            {
+                return !string.IsNullOrEmpty(ErrorMessages);
+            }
+
+        }
+
+        public string ErrorMessages
+        {
+            get
+            {
+                return mErrorMessageBuilder.ToString();
+            }
+        }
+        private StringBuilder mErrorMessageBuilder = new StringBuilder();
+
         public Dictionary<string, MajorItemsDefinition> ItemSets { get; private set; }
 
         public Dictionary<string, WorldDefinition> Worlds { get; private set; }
@@ -154,9 +172,17 @@ namespace SMZ3FC
         {
             
             settings = set;
+          
             
             SpoilerLogStructure.ParseStructureJson(Path.Combine(Environment.CurrentDirectory, settings.LocationInfoJsonPath));
       
+            if(SpoilerLogStructure.HasError)
+            {
+
+                mErrorMessageBuilder.AppendLine(SpoilerLogStructure.ErrorReports);
+                return;
+            }
+
             FCXMLParser.DiscoverSMZ3DefinitionFiles();
             Worlds = new Dictionary<string, WorldDefinition>();
             ItemSets = new Dictionary<string, MajorItemsDefinition>();
@@ -179,12 +205,7 @@ namespace SMZ3FC
             if (Worlds.Count == 0)
             {
                 IsInitialized = false;
-                SMZ3FCManagerErrorEventArgs ea = new SMZ3FCManagerErrorEventArgs()
-                {
-                    ErrorMessage = $"No World Files Have Been Loaded. At least 1 World File is required to run."
-                };
-
-                SMZ3ManagerError?.Invoke(this, ea);
+                mErrorMessageBuilder.AppendLine($"No World Files Have Been Loaded. At least 1 World File is required to run.");
                 return;
 
             }
@@ -193,12 +214,7 @@ namespace SMZ3FC
             if (ItemSets.Count == 0)
             {
                 IsInitialized = false;
-                SMZ3FCManagerErrorEventArgs ea = new SMZ3FCManagerErrorEventArgs()
-                {
-                    ErrorMessage = $"No Item Files Have Been Loaded. At least 1 Item File is required to run."
-                };
-
-                SMZ3ManagerError?.Invoke(this, ea);
+                mErrorMessageBuilder.AppendLine($"No World Files Have Been Loaded. At least 1 World File is required to run.");
                 return;
             }
 

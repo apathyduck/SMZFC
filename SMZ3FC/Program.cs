@@ -29,13 +29,16 @@ namespace SMZ3FC
            //Application.ThreadException += Application_ThreadException;
 
            // var ass = Assembly.GetCallingAssembly();
-            
-           
+                       
             smz3Set = new SMZ3FCSettings();
 
-         
-
             aiManager = new SMZ3FCManager(smz3Set);
+            if(aiManager.IsErrored)
+            {
+                MessageBox.Show(aiManager.ErrorMessages, "Initialization Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             FCAutoUpdate.InitUpdater(smz3Set);
            
 

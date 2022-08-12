@@ -43,10 +43,26 @@ namespace SMZ3FC
         }
 
         [JsonProperty("offset")]
-        public int AddressOffset { get; set; }
+        public string AddressOffsetString { get; set; }
+
+        public int AddressOffset
+        {
+            get
+            {
+                return Convert.ToInt32(AddressOffsetString, 16);
+            }
+        }
 
         [JsonProperty("mask")]
-        public int Mask { get; set; }
+        public string MaskString { get; set; }
+
+        public int Mask
+        {
+            get
+            {
+                return Convert.ToInt32(MaskString, 16);
+            }
+        }
 
         [JsonProperty("game")]
         public string Game { get; set; }
