@@ -1,0 +1,3171 @@
+[
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Ether Tablet",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Spectacle Rock",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x283",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Spectacle Rock Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1D5",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain West",
+    "spoilername": "Old Man",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Floating Island",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x285",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Spiral Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1FC",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Upper - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1FE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Upper - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1FE",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Far Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1DE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1DE",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Middle",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1DF",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1DE",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Paradox Cave Lower - Far Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1DE",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World Death Mountain East",
+    "spoilername": "Mimic Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x218",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Master Sword Pedestal",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x300",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Mushroom",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Lost Woods Hideout",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1C3",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Lumberjack Tree",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1C5",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Pegasus Rocks",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x248",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Graveyard Ledge",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x237",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "King's Tomb",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x226",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Top",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05E",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Middle",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05E",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05E",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Well - Bottom",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05F",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Top",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Far Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23A",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23A",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23A",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Blind's Hideout - Far Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23B",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Bottle Merchant",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x3C9",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Chicken House",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x210",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Sick Kid",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Kakariko Tavern",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x206",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North West",
+    "spoilername": "Magic Bat",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "King Zora",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Zora's Ledge",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x301",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Waterfall Fairy - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x228",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Waterfall Fairy - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x228",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Potion Shop",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x20A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Middle",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x20A",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla's Hut - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x20A",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World North East",
+    "spoilername": "Sahasrahla",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Maze Race",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2A8",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Library",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Flute Spot",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2AA",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "South of Grove",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x237",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Link's House",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x208",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Aginah's Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x214",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Far Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x246",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x246",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - NPC",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x246",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x247",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Mini Moldorm Cave - Far Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x246",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Desert Ledge",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2B0",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Checkerboard Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x24D",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Bombos Tablet",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x02",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Floodgate Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x216",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Sunken Treasure",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2BB",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+
+  {
+    "areaname": "Light World South",
+    "spoilername": "Lake Hylia Island",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2B5",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Hobo",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x3C9",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Light World South",
+    "spoilername": "Ice Rod Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x240",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sanctuary",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x024",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x022",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Middle",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x022",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Secret Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x022",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Sewers - Dark Cross",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x064",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0E4",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Boomerang Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0E2",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Hyrule Castle - Zelda's Cell",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x100",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Link's Uncle",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x3C6",
+    "mask": "0x01",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Hyrule Castle",
+    "spoilername": "Secret Passage",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0AA",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain West",
+    "spoilername": "Spike Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x22E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Top Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x078",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Top Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x078",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Bottom Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x078",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Hookshot Cave - Bottom Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x078",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Superbunny Cave - Top",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1F0",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Death Mountain East",
+    "spoilername": "Superbunny Cave - Bottom",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1F0",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Bumper Cave",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2CA",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Chest Game",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x20D",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "C-Shaped House",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x238",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Brewery",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x20C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Hammer Pegs",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x24F",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Blacksmith",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x411",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North West",
+    "spoilername": "Purple Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x3C9",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Catfish",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2DB",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid Fairy - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x22C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World North East",
+    "spoilername": "Pyramid Fairy - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x22C",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Digging Game",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x2E8",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Stumpy",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x410",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Top",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Middle Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23C",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Middle Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23C",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - Bottom",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23C",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World South",
+    "spoilername": "Hype Cave - NPC",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x23D",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Mire",
+    "spoilername": "Mire Shed - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x21A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Dark World Mire",
+    "spoilername": "Mire Shed - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x21A",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Castle Tower",
+    "spoilername": "Castle Tower - Foyer",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1C0",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Castle Tower",
+    "spoilername": "Castle Tower - Dark Maze",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1A0",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Cannonball Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x172",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x154",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x150",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x152",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x170",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Eastern Palace",
+    "spoilername": "Eastern Palace - Armos Knights",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x191",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0E6",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Torch",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0E7",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0E8",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0EA",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x10A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Desert Palace",
+    "spoilername": "Desert Palace - Lanmolas",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x067",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Basement Cage",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x10E",
+    "mask": "4",
+    "game": "ALTTP",
+    "group": ""
+
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0EE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x10E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x04E",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x04E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Tower of Hera",
+    "spoilername": "Tower of Hera - Moldorm",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x00F",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Shooter Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x012",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x074",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Stalfos Basement",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x014",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - The Arena - Bridge",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x054",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - The Arena - Ledge",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x054",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x056",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x032",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Harmless Hellway",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x032",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Basement - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x034",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Basement - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x034",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Maze - Top",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0D4",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Dark Maze - Bottom",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0D4",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x034",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Palace of Darkness",
+    "spoilername": "Palace of Darkness - Helmasaur King",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0B5",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Entrance",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x050",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x08C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - West Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x068",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Flooded Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0EC",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Flooded Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0EC",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Waterfall Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0CC",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Swamp Palace",
+    "spoilername": "Swamp Palace - Arrghus",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x00D",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Pot Prison",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0AE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0B0",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0B0",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0CE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Pinball Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0D0",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0AE",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Bridge Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0B2",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Skull Woods",
+    "spoilername": "Skull Woods - Mothula",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x053",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1B6",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Ambush Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1B8",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1B6",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x196",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Attic",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0CA",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Blind's Cell",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x08A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x088",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Thieves' Town",
+    "spoilername": "Thieves' Town - Blind",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x159",
+    "mask": "0x008",
+
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Spike Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x03E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x07E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0FC",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Iced T Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x15C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Freezor Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0BE",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ice Palace",
+    "spoilername": "Ice Palace - Kholdstare",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1BD",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Main Lobby",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x184",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x186",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Bridge Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x144",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Spike Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x166",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x182",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1A2",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x186",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Misery Mire",
+    "spoilername": "Misery Mire - Vitreous",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x121",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Compass Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1AC",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Roller Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x16E",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Roller Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x16E",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Chain Chomps",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x16C",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x028",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x048",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Crystaroller Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x008",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Top Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1AA",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Top Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1AA",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Bottom Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1AA",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Eye Bridge - Bottom Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x1AA",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Turtle Rock",
+    "spoilername": "Turtle Rock - Trinexx",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x149",
+    "mask": "0x08",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Bob's Torch",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x119",
+    "mask": "0x04",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Top Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F6",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Top Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F6",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Bottom Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F6",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - DMs Room - Bottom Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F6",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Map Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x116",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Firesnake Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0FA",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Top Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F8",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Top Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F8",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Bottom Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F8",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Randomizer Room - Bottom Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x0F8",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Hope Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x118",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Hope Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x118",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Tile Room",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x11A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Top Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Top Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13A",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Bottom Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13A",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Compass Room - Bottom Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13A",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Bob's Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x118",
+    "mask": "0x80",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x118",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x038",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x038",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Big Key Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x038",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Mini Helmasaur Room - Left",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x07A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Mini Helmasaur Room - Right",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x07A",
+    "mask": "0x20",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Pre-Moldorm Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x07A",
+    "mask": "0x40",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Ganon's Tower",
+    "spoilername": "Ganon's Tower - Moldorm Chest",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x09A",
+    "mask": "0x10",
+    "game": "ALTTP",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "\"Energy Tank, Terminator\"",
+    "friendlyname": "Terminator Energy Tank",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "\"Energy Tank, Gauntlet\"",
+    "friendlyname": "Gauntlet Energy Tank",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "Missile (Crateria gauntlet right)",
+    "friendlyname": "Gauntlet Missile - Right",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria West",
+    "spoilername": "Missile (Crateria gauntlet left)",
+    "friendlyname": "Gauntlet Missile - Left",
+    "use": true,
+    "offset": "0x1",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Power Bomb (Crateria surface)",
+    "friendlyname": "Landing Site Power Bomb",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Missile (Crateria middle)",
+    "friendlyname": "230 Missle",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Missile (Crateria bottom)",
+    "friendlyname": "Old Mother Brain Missile",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Super Missile (Crateria)",
+    "friendlyname": "Crateria Super Missile",
+    "use": true,
+    "offset": "0x1",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria Central",
+    "spoilername": "Bombs",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship bottom)",
+    "friendlyname": "West Ocean Missile",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship top)",
+    "friendlyname": "Top of the World Missile",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (outside Wrecked Ship middle)",
+    "friendlyname": "West Ocean Middle Missile",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Crateria East",
+    "spoilername": "Missile (Crateria moat)",
+    "friendlyname": "Moat Missile",
+    "use": true,
+    "offset": "0x00",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Morphing Ball",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Power Bomb (blue Brinstar)",
+    "friendlyname": "Blue Brinstar Power Bomb",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar middle)",
+    "friendlyname": "Beta Missile",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "\"Energy Tank, Brinstar Ceiling\"",
+    "friendlyname": "Ceiling Energy Tank",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar bottom)",
+    "friendlyname": "Alpha Missile",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar top)",
+    "friendlyname": "Billy Mays Missile",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Blue",
+    "spoilername": "Missile (blue Brinstar behind missile)",
+    "friendlyname": "Billy Mays Hidden Missile",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Power Bomb (green Brinstar bottom)",
+    "friendlyname": "Etecoons Power Bomb",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar below super missile)",
+    "friendlyname": "Early Supers Bridge Missile",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Super Missile (green Brinstar top)",
+    "friendlyname": "Early Supers",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "\"Reserve Tank, Brinstar\"",
+    "friendlyname": "Brinstar Reserve Tank",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar behind missile)",
+    "friendlyname": "Brinstar Reserve Missile",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Missile (green Brinstar behind reserve tank)",
+    "friendlyname": "Brinstar Reserve Hidden Missile",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "\"Energy Tank, Etecoons\"",
+    "friendlyname": "Etecoons Energy Tank",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Green",
+    "spoilername": "Super Missile (green Brinstar bottom)",
+    "friendlyname": "Etecoons Super Missile",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Super Missile (pink Brinstar)",
+    "friendlyname": "Spore Spawn Super Missile",
+    "use": true,
+    "offset": "0x01",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (pink Brinstar top)",
+    "friendlyname": "Big Pink Top Missile",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (pink Brinstar bottom)",
+    "friendlyname": "Charge Missile",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Charge Beam",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x02",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Power Bomb (pink Brinstar)",
+    "friendlyname": "Mission Impossible Power Bomb",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "Missile (green Brinstar pipe)",
+    "friendlyname": "Green Hills Zone Missile",
+    "use": true,
+    "offset": "0x03",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "\"Energy Tank, Waterway\"",
+    "friendlyname": "Waterway Energy Tank",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Pink",
+    "spoilername": "\"Energy Tank, Brinstar Gate\"",
+    "friendlyname": "Wave Gate Energy Tank",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "X-Ray Scope",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Power Bomb (red Brinstar sidehopper room)",
+    "friendlyname": "Beta Power Bomb",
+    "use": true,
+    "offset": "0x04",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Power Bomb (red Brinstar spike room)",
+    "friendlyname": "Alpha Power Bomb",
+    "use": true,
+    "offset": "0x05",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Missile (red Brinstar spike room)",
+    "friendlyname": "Alpha Power Bomb Missile",
+    "use": true,
+    "offset": "0x05",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Red",
+    "spoilername": "Spazer",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x05",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "\"Energy Tank, Kraid\"",
+    "friendlyname": "Kraid Energy Tank",
+    "use": true,
+    "offset": "0x05",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "Varia Suit",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Brinstar Kraid",
+    "spoilername": "Missile (Kraid)",
+    "friendlyname": "Kraid Missile",
+    "use": true,
+    "offset": "0x05",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Wrecked Ship middle)",
+    "friendlyname": "Spooky Missile",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Reserve Tank, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Reserve Tank",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Gravity Suit)",
+    "friendlyname": "Gravity Suit Missile",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Missile (Wrecked Ship top)",
+    "friendlyname": "Worker Robots Missile",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Energy Tank, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Energy Tank",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Super Missile (Wrecked Ship left)",
+    "friendlyname": "Wrecked Ship Left Super Missile",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "\"Right Super, Wrecked Ship\"",
+    "friendlyname": "Wrecked Ship Right Super Missile",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Wrecked Ship",
+    "spoilername": "Gravity Suit",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x10",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Missile (green Maridia shinespark)",
+    "friendlyname": "Main Street Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Super Missile (green Maridia)",
+    "friendlyname": "Crab Super Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "\"Energy Tank, Mama turtle\"",
+    "friendlyname": "Mama Turtle Energy Tank",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Outer",
+    "spoilername": "Missile (green Maridia tatori)",
+    "friendlyname": "Mama Turtle Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Super Missile (yellow Maridia)",
+    "friendlyname": "Watering Hole Super Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (yellow Maridia super missile)",
+    "friendlyname": "Watering Hole Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (yellow Maridia false wall)",
+    "friendlyname": "Beach Missile",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Plasma Beam",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x11",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (left Maridia sand pit room)",
+    "friendlyname": "Left Sandpit Missile",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "\"Reserve Tank, Maridia\"",
+    "friendlyname": "Left Sandpit Reserve Tank",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (right Maridia sand pit room)",
+    "friendlyname": "Right Sandpit Missile",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Power Bomb (right Maridia sand pit room)",
+    "friendlyname": "Right Sandpit Power Bomb ",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (pink Maridia)",
+    "friendlyname": "Aqueduct Missilie",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Super Missile (pink Maridia)",
+    "friendlyname": "Aqueduct Super Missile",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Spring Ball",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Missile (Draygon)",
+    "friendlyname": "Precious Missile",
+    "use": true,
+    "offset": "0x12",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "\"Energy Tank, Botwoon\"",
+    "friendlyname": "Botwoon Energy Tank",
+    "use": true,
+    "offset": "0x13",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Maridia Inner",
+    "spoilername": "Space Jump",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x13",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (lava room)",
+    "friendlyname": "Cathedral Missile",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Ice Beam",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (below Ice Beam)",
+    "friendlyname": "Crumble Tower Missile",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Hi-Jump Boots",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Missile (Hi-Jump Boots)",
+    "friendlyname": "Hi-Jump Missile",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper West",
+    "spoilername": "Energy Tank (Hi-Jump Boots)",
+    "friendlyname": "Hi-Jump Energy Tank",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "\"Reserve Tank, Norfair\"",
+    "friendlyname": "Norfair Reserve Tank",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Norfair Reserve Tank)",
+    "friendlyname": "Norfair Reserve Missile",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (bubble Norfair green door)",
+    "friendlyname": "Norfair Reserve Entrance Missile",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (bubble Norfair)",
+    "friendlyname": "Bubble Mountain Missile",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Speed Booster)",
+    "friendlyname": "Speed Missile",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Speed Booster",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Missile (Wave Beam)",
+    "friendlyname": "Wave Missile",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper East",
+    "spoilername": "Wave Beam",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "\"Energy Tank, Crocomire\"",
+    "friendlyname": "Crocomire Energy Tank",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (above Crocomire)",
+    "friendlyname": "Crocomire Escape Missile",
+    "use": true,
+    "offset": "0x06",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Power Bomb (Crocomire)",
+    "friendlyname": "Crocomire Power Bomb",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (below Crocomire)",
+    "friendlyname": "Cosine Missile",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Missile (Grappling Beam)",
+    "friendlyname": "Indiana Jones Missile",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Upper Crocomire",
+    "spoilername": "Grappling Beam",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x07",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Missile (Gold Torizo)",
+    "friendlyname": "Gold Torizo Missile",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Super Missile (Gold Torizo)",
+    "friendlyname": "Gold Torizo Super Missile",
+    "use": true,
+    "offset": "0x08",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Screw Attack",
+    "friendlyname": "",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x80",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower West",
+    "spoilername": "Missile (Mickey Mouse room)",
+    "friendlyname": "Mickey Mouse Missile",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x02",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Missile (lower Norfair above fire flea room)",
+    "friendlyname": "Hotarubi Special Missile",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x04",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Power Bomb (lower Norfair above fire flea room)",
+    "friendlyname": "Jail Power Bomb",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x08",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Power Bomb (Power Bombs of shame)",
+    "friendlyname": "Power Bombs of Shame",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x10",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "Missile (lower Norfair near Wave Beam)",
+    "friendlyname": "Three Musketeers Missile",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x20",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "\"Energy Tank, Ridley\"",
+    "friendlyname": "Ridley Energy Tank",
+    "use": true,
+    "offset": "0x09",
+    "mask": "0x40",
+    "game": "SM",
+    "group": ""
+  },
+  {
+    "areaname": "Norfair Lower East",
+    "spoilername": "\"Energy Tank, Firefleas\"",
+    "friendlyname": "Firefleas Energy Tank",
+    "use": true,
+    "offset": "0x0a",
+    "mask": "0x01",
+    "game": "SM",
+    "group": ""
+  }
+]
